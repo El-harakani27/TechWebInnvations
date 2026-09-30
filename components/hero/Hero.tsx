@@ -20,6 +20,38 @@ const EASE: Transition['ease'] = [0.16, 1, 0.3, 1];
 
 const VIDEO_SRC =
   'https://d8j0ntlcm91z4.cloudfront.net/user_38xzZboKViGWJOttwIXH07lWA1P/hf_20260508_215831_c6a8989c-d716-4d8d-8745-e972a2eec711.mp4';
+const VIDEO_PAUSE_MS = 3000; // hold on the last frame before replaying
+const VIDEO_FADE_MS = 600; // fade out → rewind → fade in, so the jump back to frame 1 isn't visible
+
+/** Plays once, holds the final frame, then fades and replays — forever. */
+function useDelayedLoop(ref: React.RefObject<HTMLVideoElement>) {
+  useEffect(() => {
+    const video = ref.current;
+    if (!video) return;
+    const timers: number[] = [];
+
+    const onEnded = () => {
+      timers.push(
+        window.setTimeout(() => {
+          video.style.opacity = '0';
+          timers.push(
+            window.setTimeout(() => {
+              video.currentTime = 0;
+              void video.play().catch(() => {});
+              video.style.opacity = '1';
+            }, VIDEO_FADE_MS),
+          );
+        }, VIDEO_PAUSE_MS),
+      );
+    };
+
+    video.addEventListener('ended', onEnded);
+    return () => {
+      video.removeEventListener('ended', onEnded);
+      timers.forEach(clearTimeout);
+    };
+  }, [ref]);
+}
 
 function Counter({ to, delay }: { to: number; delay: number }) {
   const ref = useRef<HTMLSpanElement>(null);
@@ -56,6 +88,9 @@ export default function Hero() {
   const { ui } = s;
   // 150+ companies migrated · 26 service languages · 10+ years of experience
   const stats = s.stats.filter((_, i) => i !== 2);
+
+  const videoRef = useRef<HTMLVideoElement>(null);
+  useDelayedLoop(videoRef);
 
   // Frosted navbar once the page is scrolled
   const [scrolled, setScrolled] = useState(false);
@@ -179,7 +214,7 @@ export default function Hero() {
         animate={{ opacity: 1, scale: 1 }}
         transition={{ duration: 1.8, ease: EASE }}
       >
-        <video className={styles.video} src={VIDEO_SRC} autoPlay muted playsInline />
+        <video ref={videoRef} className={styles.video} src={VIDEO_SRC} autoPlay muted playsInline />
       </motion.div>
 
       {/* About block — sits in the open space beside the hand (desktop only) */}
