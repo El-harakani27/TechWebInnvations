@@ -21,17 +21,30 @@ export default function Process() {
   const { process } = useSite();
   const steps = process.steps;
   const [active, setActive] = useState(0);
-  const listRef = useRef<HTMLOListElement>(null);
+  const listRef = useRef<HTMLDivElement>(null);
   const barHighlight = useRef<HTMLDivElement>(null);
   const cardHighlight = useRef<HTMLDivElement>(null);
   const barRefs = useRef<(HTMLDivElement | null)[]>([]);
   const cardRefs = useRef<(HTMLDivElement | null)[]>([]);
   const placed = useRef(false);
+  // Autoplay pauses while the user hovers / focuses the steps, or the tab is hidden
+  const [hoverPaused, setHoverPaused] = useState(false);
+  const [focusPaused, setFocusPaused] = useState(false);
+  const [docHidden, setDocHidden] = useState(false);
+  const paused = hoverPaused || focusPaused || docHidden;
   const activeRef = useRef(active);
   activeRef.current = active;
 
   const inView = useInView(listRef, { margin: '-15% 0px -15% 0px' });
   const reduceMotion = useReducedMotion();
+
+  // StrictMode remounts effects — make sure the first placement snaps rather than glides
+  useEffect(
+    () => () => {
+      placed.current = false;
+    },
+    [],
+  );
 
   // Glide the two dark highlights (bar + card) onto the active step
   useGSAP(
@@ -82,6 +95,8 @@ export default function Process() {
       const bar = barRefs.current[activeRef.current];
       const card = cardRefs.current[activeRef.current];
       if (!bar || !card) return;
+      // gsap.set doesn't stop an in-flight glide, which would keep writing stale values
+      gsap.killTweensOf([barHighlight.current, cardHighlight.current]);
       gsap.set(barHighlight.current, { y: bar.offsetTop, height: bar.offsetHeight });
       gsap.set(cardHighlight.current, { y: card.offsetTop, height: card.offsetHeight });
     });
@@ -89,14 +104,21 @@ export default function Process() {
     return () => ro.disconnect();
   }, []);
 
+  useEffect(() => {
+    const onVisibility = () => setDocHidden(document.hidden);
+    onVisibility();
+    document.addEventListener('visibilitychange', onVisibility);
+    return () => document.removeEventListener('visibilitychange', onVisibility);
+  }, []);
+
   // Autoplay — advances on its own while the section is on screen
   useEffect(() => {
-    if (!inView || reduceMotion) return;
+    if (!inView || reduceMotion || paused) return;
     const call = gsap.delayedCall(STEP_SECONDS, () => setActive((a) => (a + 1) % STEP_COUNT));
     return () => {
       call.kill();
     };
-  }, [active, inView, reduceMotion]);
+  }, [active, inView, reduceMotion, paused]);
 
   return (
     <section id="process" className={styles.section}>
@@ -151,42 +173,50 @@ export default function Process() {
         </div>
 
         {/* Right — steps (display only; the highlight moves by itself) */}
-        <motion.ol
+        <motion.div
           ref={listRef}
-          className={styles.steps}
+          className={styles.stepsWrap}
           initial={{ y: 32, opacity: 0 }}
           whileInView={{ y: 0, opacity: 1 }}
           viewport={{ once: true, margin: '-80px' }}
           transition={{ duration: 1, delay: 0.15, ease: EASE }}
+          onPointerEnter={() => setHoverPaused(true)}
+          onPointerLeave={() => setHoverPaused(false)}
+          onFocus={() => setFocusPaused(true)}
+          onBlur={(e) => {
+            if (!e.currentTarget.contains(e.relatedTarget as Node | null)) setFocusPaused(false);
+          }}
         >
           <div ref={barHighlight} className={`${styles.highlight} ${styles.highlightBar}`} aria-hidden />
           <div ref={cardHighlight} className={`${styles.highlight} ${styles.highlightCard}`} aria-hidden />
 
-          {steps.map((step, i) => (
-            <li key={step.title} className={styles.step} data-active={i === active} aria-current={i === active ? 'step' : undefined}>
-              <div ref={(el) => { barRefs.current[i] = el; }} className={styles.bar}>
-                <span className={styles.barLabel}>{step.phase}</span>
-                <span className={styles.ticks} aria-hidden>
-                  {steps.map((s, t) => (
-                    <i key={s.title} data-on={t <= i} />
-                  ))}
-                </span>
-              </div>
+          <ol className={styles.steps}>
+            {steps.map((step, i) => (
+              <li key={i} className={styles.step} data-active={i === active}>
+                <div ref={(el) => { barRefs.current[i] = el; }} className={styles.bar}>
+                  <span className={styles.barLabel}>{step.phase}</span>
+                  <span className={styles.ticks} aria-hidden>
+                    {steps.map((_, t) => (
+                      <i key={t} data-on={t <= i} />
+                    ))}
+                  </span>
+                </div>
 
-              <div ref={(el) => { cardRefs.current[i] = el; }} className={styles.card}>
-                <span className={styles.cardNumber} data-settle>
-                  {pad(i + 1)}
-                </span>
-                <h3 className={styles.cardTitle} data-settle>
-                  {step.title}
-                </h3>
-                <p className={styles.cardText} data-settle>
-                  {step.text}
-                </p>
-              </div>
-            </li>
-          ))}
-        </motion.ol>
+                <div ref={(el) => { cardRefs.current[i] = el; }} className={styles.card}>
+                  <span className={styles.cardNumber} data-settle>
+                    {pad(i + 1)}
+                  </span>
+                  <h3 className={styles.cardTitle} data-settle>
+                    {step.title}
+                  </h3>
+                  <p className={styles.cardText} data-settle>
+                    {step.text}
+                  </p>
+                </div>
+              </li>
+            ))}
+          </ol>
+        </motion.div>
       </div>
     </section>
   );

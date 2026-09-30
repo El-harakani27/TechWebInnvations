@@ -25,6 +25,8 @@ interface GlobeProps {
   /** Index of the point to turn towards, or null for the idle drift between both. */
   focus: number | null;
   className?: string;
+  /** Accessible description of the globe (translated) */
+  label: string;
 }
 
 const HALF_PI = Math.PI / 2;
@@ -34,7 +36,7 @@ const DOT_STEP = 1.7; // degrees between land dots
  * Dotted wireframe globe on <canvas>. GSAP drives the rotation, the arc draw-on and the
  * travelling pulse; the ticker redraws only while the globe is on screen.
  */
-export default function Globe({ points, focus, className }: GlobeProps) {
+export default function Globe({ points, focus, className, label }: GlobeProps) {
   const wrapRef = useRef<HTMLDivElement>(null);
   const canvasRef = useRef<HTMLCanvasElement>(null);
   const state = useRef({ lambda: -55, phi: -32, arc: 0, pulse: 0 });
@@ -56,31 +58,40 @@ export default function Globe({ points, focus, className }: GlobeProps) {
       .to(s, { lambda: -(midLon + 18), phi: -26, duration: 9, ease: 'sine.inOut' });
   };
 
+  // Set by the canvas effect; lets other effects request a one-off redraw
+  const renderRef = useRef<() => void>(() => {});
+
   // Turn towards the focused city, or go back to drifting
   useEffect(() => {
     const s = state.current;
-    if (focus === null) {
-      gsap.to(s, {
-        lambda: -midLon,
-        phi: -30,
-        duration: 1.6,
-        ease: 'power3.inOut',
-        overwrite: true,
-        onComplete: startIdle,
-      });
+    const reduce = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+    const target =
+      focus === null
+        ? { lambda: -midLon, phi: -30 }
+        : { lambda: -points[focus].lon, phi: -Math.max(Math.min(points[focus].lat, 45), 10) };
+
+    idleRef.current?.kill();
+    // Only stop rotation tweens — the arc draw-on and the travelling pulse must keep running
+    gsap.killTweensOf(s, 'lambda,phi');
+
+    if (reduce) {
+      gsap.set(s, target);
+      renderRef.current();
       return;
     }
-    idleRef.current?.kill();
-    const p = points[focus];
     gsap.to(s, {
-      lambda: -p.lon,
-      phi: -Math.max(Math.min(p.lat, 45), 10),
+      ...target,
       duration: 1.6,
       ease: 'power3.inOut',
-      overwrite: true,
+      onComplete: focus === null ? startIdle : undefined,
     });
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [focus]);
+
+  // Redraw when the city labels change language (the ticker doesn't run under reduced motion)
+  useEffect(() => {
+    renderRef.current();
+  }, [a.label, b.label]);
 
   useEffect(() => {
     const wrap = wrapRef.current;
@@ -111,8 +122,11 @@ export default function Globe({ points, focus, className }: GlobeProps) {
       render();
     };
 
+    let dead = false;
+
     // Rasterise the land once into an equirectangular bitmap, then sample it on a lat/lon grid
     import('world-atlas/land-110m.json').then((mod) => {
+      if (dead) return;
       const topo = ((mod as { default?: unknown }).default ?? mod) as Topology<{ land: GeometryCollection }>;
       const land = feature(topo, topo.objects.land);
       const W = 720;
@@ -140,7 +154,11 @@ export default function Globe({ points, focus, className }: GlobeProps) {
       }
       dots = found;
       render();
+    }).catch(() => {
+      /* land data failed to load — the globe still renders without continents */
     });
+
+    renderRef.current = () => render();
 
     function render() {
       if (!size || !ctx) return;
@@ -259,8 +277,8 @@ export default function Globe({ points, focus, className }: GlobeProps) {
 
     // Only animate while on screen
     let started = false;
-    const io = new IntersectionObserver(([entry]) => {
-      visible = entry.isIntersecting;
+    const io = new IntersectionObserver((entries) => {
+      visible = entries[entries.length - 1].isIntersecting;
       if (visible && !started) {
         started = true;
         if (reduce) {
@@ -281,6 +299,8 @@ export default function Globe({ points, focus, className }: GlobeProps) {
     gsap.ticker.add(tick);
 
     return () => {
+      dead = true;
+      renderRef.current = () => {};
       gsap.ticker.remove(tick);
       ro.disconnect();
       io.disconnect();
@@ -292,7 +312,7 @@ export default function Globe({ points, focus, className }: GlobeProps) {
 
   return (
     <div ref={wrapRef} className={className}>
-      <canvas ref={canvasRef} role="img" aria-label={`Globe showing ${a.label} and ${b.label}`} />
+      <canvas ref={canvasRef} role="img" aria-label={label} />
     </div>
   );
 }

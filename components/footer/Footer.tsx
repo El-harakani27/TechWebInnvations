@@ -1,6 +1,6 @@
 'use client';
 
-import { useEffect, useRef, useState } from 'react';
+import { useCallback, useEffect, useId, useRef, useState } from 'react';
 import Image from 'next/image';
 import { AnimatePresence, motion, type Transition } from 'motion/react';
 import { ArrowUp, ArrowUpRight, X } from 'lucide-react';
@@ -14,8 +14,9 @@ type Doc = 'legal' | 'privacy' | null;
 
 export default function Footer() {
   const s = useSite();
-  const { ui, footer, legal, privacy } = s;
+  const { ui, footer, legal } = s;
   const [doc, setDoc] = useState<Doc>(null);
+  const closeDoc = useCallback(() => setDoc(null), []);
 
   return (
     <footer className={styles.footer}>
@@ -41,7 +42,7 @@ export default function Footer() {
           <a href="#contact" className={styles.cta}>
             {ui.menu.cta}
             <span className={styles.ctaCircle}>
-              <ArrowUpRight size={15} strokeWidth={2} />
+              <ArrowUpRight size={15} strokeWidth={2} aria-hidden />
             </span>
           </a>
           <a href={`mailto:${footer.email}`} className={styles.email}>
@@ -131,7 +132,7 @@ export default function Footer() {
         <div className={styles.bottomActions}>
           <LanguageSwitcher placement="up" tone="dark" />
           <a href="#top" className={styles.backToTop} aria-label={ui.footer.backToTop}>
-            <ArrowUp size={15} strokeWidth={2} />
+            <ArrowUp size={15} strokeWidth={2} aria-hidden />
           </a>
         </div>
       </div>
@@ -141,7 +142,7 @@ export default function Footer() {
         {s.brand.name}
       </div>
 
-      <LegalModal doc={doc} onClose={() => setDoc(null)} />
+      <LegalModal doc={doc} onClose={closeDoc} />
     </footer>
   );
 }
@@ -151,17 +152,49 @@ export default function Footer() {
 function LegalModal({ doc, onClose }: { doc: Doc; onClose: () => void }) {
   const { legal, privacy, ui } = useSite();
   const closeRef = useRef<HTMLButtonElement>(null);
+  const dialogRef = useRef<HTMLDivElement>(null);
+  const titleId = `legal-title-${useId().replace(/:/g, '')}`;
 
   useEffect(() => {
     if (!doc) return;
+    // Remember what opened the dialog so focus can go back there on close (WCAG 2.4.3)
+    const opener = document.activeElement instanceof HTMLElement ? document.activeElement : null;
     const prev = document.body.style.overflow;
     document.body.style.overflow = 'hidden';
     closeRef.current?.focus();
-    const onKey = (e: KeyboardEvent) => e.key === 'Escape' && onClose();
+
+    const onKey = (e: KeyboardEvent) => {
+      if (e.key === 'Escape') {
+        onClose();
+        return;
+      }
+      if (e.key !== 'Tab') return;
+      const dialog = dialogRef.current;
+      if (!dialog) return;
+      const focusable = Array.from(dialog.querySelectorAll<HTMLElement>('a[href], button:not([disabled])'));
+      if (focusable.length === 0) {
+        e.preventDefault();
+        return;
+      }
+      const first = focusable[0];
+      const last = focusable[focusable.length - 1];
+      const active = document.activeElement;
+      if (!dialog.contains(active)) {
+        e.preventDefault();
+        (e.shiftKey ? last : first).focus();
+      } else if (e.shiftKey && active === first) {
+        e.preventDefault();
+        last.focus();
+      } else if (!e.shiftKey && active === last) {
+        e.preventDefault();
+        first.focus();
+      }
+    };
     document.addEventListener('keydown', onKey);
     return () => {
       document.body.style.overflow = prev;
       document.removeEventListener('keydown', onKey);
+      if (opener && opener.isConnected) opener.focus();
     };
   }, [doc, onClose]);
 
@@ -179,9 +212,10 @@ function LegalModal({ doc, onClose }: { doc: Doc; onClose: () => void }) {
           onClick={onClose}
         >
           <motion.div
+            ref={dialogRef}
             role="dialog"
             aria-modal="true"
-            aria-label={title}
+            aria-labelledby={titleId}
             className={styles.dialog}
             initial={{ y: 24, opacity: 0, scale: 0.98 }}
             animate={{ y: 0, opacity: 1, scale: 1 }}
@@ -190,9 +224,9 @@ function LegalModal({ doc, onClose }: { doc: Doc; onClose: () => void }) {
             onClick={(e) => e.stopPropagation()}
           >
             <div className={styles.dialogHead}>
-              <h2 className={styles.dialogTitle}>{title}</h2>
+              <h2 id={titleId} className={styles.dialogTitle}>{title}</h2>
               <button ref={closeRef} type="button" className={styles.close} onClick={onClose} aria-label={ui.footer.close}>
-                <X size={16} strokeWidth={2} />
+                <X size={16} strokeWidth={2} aria-hidden />
               </button>
             </div>
 

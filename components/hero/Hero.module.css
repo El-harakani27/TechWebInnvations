@@ -11,6 +11,26 @@
   overflow: hidden;
 }
 
+/* ---------- Skip link ---------- */
+
+.skipLink {
+  position: fixed;
+  top: 8px;
+  inset-inline-start: 8px;
+  z-index: 100;
+  padding: 10px 18px;
+  border-radius: 999px;
+  background: var(--ink);
+  color: var(--white);
+  font-size: 13px;
+  font-weight: 500;
+  transform: translateY(-150%);
+}
+
+.skipLink:focus {
+  transform: translateY(0);
+}
+
 /* ---------- Navbar ---------- */
 
 .nav {
@@ -54,7 +74,7 @@
 .logo {
   display: flex;
   align-items: center;
-  margin-right: 6px;
+  margin-inline-end: 6px;
 }
 
 /* The brand file is white-on-transparent (made for the dark site) — render it in ink here. */
@@ -156,7 +176,7 @@
 .menuDesc {
   grid-column: 2;
   font-size: 12px;
-  color: rgba(16, 20, 28, 0.5);
+  color: rgba(16, 20, 28, 0.64);
 }
 
 .menuArrow {
@@ -274,7 +294,7 @@
 
 .navRightLabel {
   display: none;
-  padding-right: 12px;
+  padding-inline-end: 12px;
   font-size: 11px;
   font-weight: 500;
   color: var(--ink);
@@ -336,7 +356,7 @@
   gap: 8px;
   margin-bottom: 16px;
   font-size: 13px;
-  color: rgba(0, 0, 0, 0.55);
+  color: rgba(0, 0, 0, 0.62);
 }
 
 .dot {
@@ -428,6 +448,22 @@
   gap: 6px;
 }
 
+/* Pause / play toggle for the background video — sits with the chips */
+.videoToggle {
+  display: grid;
+  place-items: center;
+  width: 32px;
+  height: 32px;
+  border-radius: 999px;
+  background: var(--pill);
+  color: var(--ink);
+  transition: background 0.3s ease;
+}
+
+.videoToggle:hover {
+  background: #e9eaee;
+}
+
 .chip {
   padding: 7px 14px;
   background: var(--white);
@@ -454,7 +490,7 @@
   font-weight: 500;
   letter-spacing: 0.08em;
   text-transform: uppercase;
-  color: rgba(0, 0, 0, 0.45);
+  color: rgba(0, 0, 0, 0.62);
 }
 
 .asideLabel span:first-child {
@@ -520,7 +556,7 @@
   font-size: 11px;
   font-weight: 500;
   line-height: 1.35;
-  color: rgba(16, 20, 28, 0.55);
+  color: rgba(16, 20, 28, 0.64);
 }
 
 .statLabel::first-letter {
@@ -538,7 +574,7 @@
     position: absolute;
     z-index: 20;
     top: 40%;
-    right: 32px;
+    inset-inline-end: 32px;
     width: 340px;
     transform: translateY(-50%);
   }
@@ -615,7 +651,7 @@
   }
 
   .footerMain {
-    text-align: left;
+    text-align: start;
   }
 
   .subtitle,
@@ -629,11 +665,23 @@
   }
 
   .mobileAbout {
-    margin-left: 0;
+    margin-inline-start: 0;
     max-width: 420px;
   }
 
   .chips {
     justify-content: flex-end;
+  }
+}
+
+/* ---------- Reduced motion ---------- */
+
+@media (prefers-reduced-motion: reduce) {
+  .dot::after {
+    animation: none;
+  }
+
+  .video {
+    transition: none;
   }
 }

@@ -53,9 +53,13 @@ export const site = {
 
   // Interface text that used to be hard-coded in components (kept here so it can be translated)
   ui: {
+    skipLink: 'Skip to content',
     menu: { open: 'Menu', close: 'Close', cta: 'Start a project' },
     language: { label: 'Language' },
+    locations: { globeAlt: 'Globe showing our offices in Tallinn and Hua Hin' },
     hero: {
+      pauseVideo: 'Pause background video',
+      playVideo: 'Play background video',
       navTags: ['Web Design', 'IT Services'],
       officesPill: 'Tallinn · Hua Hin',
       subtitle: '150+ companies migrated · 26 languages',
@@ -80,6 +84,7 @@ export const site = {
       officesLabel: 'Offices',
       languagesValue: '26 languages',
       note: 'We reply within 24 hours.',
+      required: 'Required',
       sentNote: 'Your mail app should open with your request. Just press send.',
       mailSubject: 'New project request',
       mailFields: { name: 'Name', email: 'Email', company: 'Company', topic: 'Topic', notGiven: 'not given' },

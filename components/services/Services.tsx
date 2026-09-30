@@ -96,10 +96,11 @@ export default function Services() {
           const description = isActive && hovered !== null ? group.items[hovered].text : group.text;
 
           return (
-            <div key={group.title} className={styles.panel} data-active={isActive}>
+            <div key={i} className={styles.panel} data-active={isActive}>
               {/* Collapsed face — also the mobile header row */}
               <button
                 type="button"
+                id={`service-face-${i}`}
                 className={styles.face}
                 onClick={() => open(i)}
                 aria-expanded={isActive}
@@ -113,7 +114,13 @@ export default function Services() {
               </button>
 
               {/* Expanded body */}
-              <div id={`service-${i}`} className={styles.body} aria-hidden={!isActive}>
+              <div
+                id={`service-${i}`}
+                role="region"
+                aria-labelledby={`service-face-${i}`}
+                className={styles.body}
+                aria-hidden={!isActive}
+              >
                 <div className={styles.bodyInner}>
                   <div className={styles.media}>
                     <Image
@@ -122,7 +129,6 @@ export default function Services() {
                       fill
                       sizes="(min-width: 1024px) 70vw, 100vw"
                       className={styles.image}
-                      priority={i === 0}
                     />
                     <div className={styles.shade} />
                     <Blueprint />
@@ -132,7 +138,7 @@ export default function Services() {
                     <AnimatePresence mode="wait">
                       {isActive && (
                         <motion.div
-                          key={group.title}
+                          key={`content-${i}`}
                           initial="hidden"
                           animate="show"
                           exit="hidden"
@@ -165,20 +171,27 @@ export default function Services() {
                           <motion.ul
                             className={styles.pills}
                             variants={reveal}
-                            onMouseLeave={() => setHovered(null)}
+                            onMouseLeave={(e) => {
+                              // Keep the swapped description while a pill still has keyboard focus
+                              if (!e.currentTarget.contains(document.activeElement)) setHovered(null);
+                            }}
                           >
                             {group.items.map((item, j) => (
-                              <li key={item.title}>
+                              <li key={j}>
                                 <button
                                   type="button"
                                   className={styles.pill}
                                   data-hovered={hovered === j}
+                                  aria-describedby={`service-pill-desc-${i}-${j}`}
                                   onMouseEnter={() => setHovered(j)}
                                   onFocus={() => setHovered(j)}
                                   onBlur={() => setHovered(null)}
                                 >
                                   {item.title}
                                 </button>
+                                <span id={`service-pill-desc-${i}-${j}`} className={styles.srOnly}>
+                                  {item.text}
+                                </span>
                               </li>
                             ))}
                           </motion.ul>

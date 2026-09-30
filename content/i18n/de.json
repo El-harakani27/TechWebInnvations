@@ -49,7 +49,9 @@
         "Microsoft 365",
         "E-Commerce",
         "Branding"
-      ]
+      ],
+      "pauseVideo": "Hintergrundvideo pausieren",
+      "playVideo": "Hintergrundvideo abspielen"
     },
     "services": {
       "countLabel": "Leistungen",
@@ -77,7 +79,8 @@
         "company": "Unternehmen",
         "topic": "Thema",
         "notGiven": "nicht angegeben"
-      }
+      },
+      "required": "Erforderlich"
     },
     "footer": {
       "navigation": "Navigation",
@@ -95,6 +98,10 @@
       "representedBy": "Vertreten durch",
       "registration": "Registernummer (Registrikood)",
       "responsible": "Verantwortlich für den Inhalt"
+    },
+    "skipLink": "Zum Inhalt springen",
+    "locations": {
+      "globeAlt": "Globus mit unseren Büros in Tallinn und Hua Hin"
     }
   },
   "hero": {

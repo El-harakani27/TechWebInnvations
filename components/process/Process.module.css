@@ -97,16 +97,23 @@
 
 /* ---------- Steps ---------- */
 
-.steps {
+/* Positioned frame: the highlights are placed against this element (offsetParent of bar/card) */
+.stepsWrap {
   position: relative;
-  display: flex;
-  flex-direction: column;
-  gap: 6px;
   padding: 6px;
-  list-style: none;
   border-radius: 28px;
   background: var(--pill);
   border: 1px solid rgba(0, 0, 0, 0.05);
+}
+
+.steps {
+  position: static;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
 }
 
 /*
@@ -148,7 +155,7 @@
   background: var(--white);
   color: var(--ink);
   /* Text colour turns over as the highlight arrives / leaves */
-  transition: color 0.7s cubic-bezier(0.65, 0, 0.35, 1) 0.25s;
+  transition: color 0.7s cubic-bezier(0.65, 0, 0.35, 1) 0.1s;
 }
 
 .bar > *,
@@ -178,7 +185,7 @@
 
 .ticks {
   position: absolute !important;
-  right: 16px;
+  inset-inline-end: 16px;
   top: 50%;
   display: flex;
   gap: 3px;
@@ -191,7 +198,7 @@
   height: 11px;
   border-radius: 2px;
   background: rgba(16, 20, 28, 0.2);
-  transition: background 0.7s ease 0.25s;
+  transition: background 0.7s ease 0.1s;
 }
 
 .ticks i[data-on='true'] {
@@ -220,7 +227,7 @@
   font-weight: 500;
   font-variant-numeric: tabular-nums;
   color: var(--blue-deep);
-  transition: color 0.7s ease 0.25s;
+  transition: color 0.7s ease 0.1s;
 }
 
 .cardTitle {
@@ -237,7 +244,7 @@
   font-size: 15px;
   line-height: 1.55;
   color: rgba(16, 20, 28, 0.62);
-  transition: color 0.7s ease 0.25s;
+  transition: color 0.7s ease 0.1s;
 }
 
 /* Active step colours (the dark itself comes from the gliding highlight) */
@@ -254,6 +261,16 @@
   color: rgba(255, 255, 255, 0.74);
 }
 
+/* Gaining the active state: wait for the dark highlight to arrive (glide is ~1.3s)
+   before the text turns light, so it never flashes white-on-white. */
+.step[data-active='true'] .bar,
+.step[data-active='true'] .card,
+.step[data-active='true'] .cardNumber,
+.step[data-active='true'] .cardText,
+.step[data-active='true'] .ticks i {
+  transition-delay: 0.55s;
+}
+
 /* ---------- Tablet+ ---------- */
 
 @media (min-width: 768px) {
@@ -267,12 +284,12 @@
   }
 
   .ticks {
-    right: 18px;
+    inset-inline-end: 18px;
   }
 
   .card {
     padding: 30px 28px 32px;
-    text-align: left;
+    text-align: start;
   }
 
   .cardText {
@@ -295,11 +312,11 @@
     position: sticky;
     top: 120px;
     align-items: flex-start;
-    text-align: left;
+    text-align: start;
   }
 
   .lead {
-    margin-left: 0;
+    margin-inline-start: 0;
   }
 }
 

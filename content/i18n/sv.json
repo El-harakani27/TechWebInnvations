@@ -49,7 +49,9 @@
         "Microsoft 365",
         "E-handel",
         "Branding"
-      ]
+      ],
+      "pauseVideo": "Pausa bakgrundsvideon",
+      "playVideo": "Spela upp bakgrundsvideon"
     },
     "services": {
       "countLabel": "tjänster",
@@ -77,7 +79,8 @@
         "company": "Företag",
         "topic": "Ämne",
         "notGiven": "ej angivet"
-      }
+      },
+      "required": "Obligatoriskt"
     },
     "footer": {
       "navigation": "Navigering",
@@ -95,6 +98,10 @@
       "representedBy": "Företrädd av",
       "registration": "Registreringsnummer (Registrikood)",
       "responsible": "Ansvarig för innehållet"
+    },
+    "skipLink": "Gå till innehållet",
+    "locations": {
+      "globeAlt": "Jordglob som visar våra kontor i Tallinn och Hua Hin"
     }
   },
   "hero": {

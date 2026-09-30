@@ -7,7 +7,8 @@
   --pill: #f4f4f6;
   --blue: #4da3ff;
   --blue-soft: #8cc4ff;
-  --blue-deep: #1e7fe0;
+  /* Slightly darker than the live site's #1e7fe0 so small blue text passes WCAG AA (≈5:1 on white) */
+  --blue-deep: #1a6fc9;
   --muted-l: #5b6b80;
 }
 
@@ -17,6 +18,11 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+}
+
+html {
+  /* Keep anchored sections and focused elements clear of the fixed navbar */
+  scroll-padding-top: 88px;
 }
 
 html,
@@ -41,4 +47,16 @@ button {
   border: 0;
   background: none;
   cursor: pointer;
+}
+
+/* Visible keyboard focus everywhere (mouse clicks don't show it) */
+:focus-visible {
+  outline: 2px solid var(--blue-deep);
+  outline-offset: 2px;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
 }

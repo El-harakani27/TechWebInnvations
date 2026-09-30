@@ -23,6 +23,7 @@
     }
   ],
   "ui": {
+    "skipLink": "Skip to content",
     "menu": {
       "open": "Menu",
       "close": "Close",
@@ -31,7 +32,12 @@
     "language": {
       "label": "Language"
     },
+    "locations": {
+      "globeAlt": "Globe showing our offices in Tallinn and Hua Hin"
+    },
     "hero": {
+      "pauseVideo": "Pause background video",
+      "playVideo": "Play background video",
       "navTags": [
         "Web Design",
         "IT Services"
@@ -69,6 +75,7 @@
       "officesLabel": "Offices",
       "languagesValue": "26 languages",
       "note": "We reply within 24 hours.",
+      "required": "Required",
       "sentNote": "Your mail app should open with your request. Just press send.",
       "mailSubject": "New project request",
       "mailFields": {

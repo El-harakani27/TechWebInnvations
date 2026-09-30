@@ -49,7 +49,9 @@
         "Microsoft 365",
         "E-commerce",
         "Branding"
-      ]
+      ],
+      "pauseVideo": "Pozastavit video na pozadí",
+      "playVideo": "Přehrát video na pozadí"
     },
     "services": {
       "countLabel": "služeb",
@@ -77,7 +79,8 @@
         "company": "Firma",
         "topic": "Téma",
         "notGiven": "neuvedeno"
-      }
+      },
+      "required": "Povinné"
     },
     "footer": {
       "navigation": "Navigace",
@@ -95,6 +98,10 @@
       "representedBy": "Zastoupená",
       "registration": "Registrační číslo (Registrikood)",
       "responsible": "Odpovědnost za obsah"
+    },
+    "skipLink": "Přejít na obsah",
+    "locations": {
+      "globeAlt": "Glóbus s našimi pobočkami v Tallinnu a Hua Hinu"
     }
   },
   "hero": {

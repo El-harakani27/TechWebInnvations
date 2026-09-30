@@ -22,15 +22,21 @@ export default function LanguageSwitcher({ placement = 'down', align = 'end', to
   const { ui } = useSite();
   const [open, setOpen] = useState(false);
   const rootRef = useRef<HTMLDivElement>(null);
+  const triggerRef = useRef<HTMLButtonElement>(null);
   const listId = useId();
+  const currentName = site.languages.find((l) => l.code === lang)?.label ?? lang.toUpperCase();
 
-  // Close on outside click / Escape
+  // Close on outside click / Escape (Escape hands focus back to the trigger)
   useEffect(() => {
     if (!open) return;
     const onDown = (e: PointerEvent) => {
       if (!rootRef.current?.contains(e.target as Node)) setOpen(false);
     };
-    const onKey = (e: KeyboardEvent) => e.key === 'Escape' && setOpen(false);
+    const onKey = (e: KeyboardEvent) => {
+      if (e.key !== 'Escape') return;
+      setOpen(false);
+      triggerRef.current?.focus();
+    };
     document.addEventListener('pointerdown', onDown);
     document.addEventListener('keydown', onKey);
     return () => {
@@ -42,19 +48,29 @@ export default function LanguageSwitcher({ placement = 'down', align = 'end', to
   const y = placement === 'down' ? -8 : 8;
 
   return (
-    <div ref={rootRef} className={styles.root} data-tone={tone}>
+    <div
+      ref={rootRef}
+      className={styles.root}
+      data-tone={tone}
+      onBlur={(e) => {
+        // Keyboard focus left the switcher: close the panel
+        const next = e.relatedTarget as Node | null;
+        if (open && next && !e.currentTarget.contains(next)) setOpen(false);
+      }}
+    >
       <button
+        ref={triggerRef}
         type="button"
         className={styles.trigger}
+        data-lang-trigger
         onClick={() => setOpen((o) => !o)}
-        aria-haspopup="listbox"
         aria-expanded={open}
         aria-controls={listId}
-        aria-label={ui.language.label}
+        aria-label={`${ui.language.label}: ${currentName}`}
       >
-        <Globe size={14} strokeWidth={1.75} />
+        <Globe size={14} strokeWidth={1.75} aria-hidden />
         <span className={styles.code}>{lang.toUpperCase()}</span>
-        <ChevronDown size={13} strokeWidth={2} className={styles.chevron} data-open={open} />
+        <ChevronDown size={13} strokeWidth={2} className={styles.chevron} data-open={open} aria-hidden />
       </button>
 
       <AnimatePresence>
@@ -69,23 +85,24 @@ export default function LanguageSwitcher({ placement = 'down', align = 'end', to
             transition={{ duration: 0.35, ease: EASE }}
           >
             <p className={styles.heading}>{ui.language.label}</p>
-            <ul id={listId} role="listbox" aria-label={ui.language.label} className={styles.list}>
+            <ul id={listId} aria-label={ui.language.label} className={styles.list}>
               {site.languages.map((l) => (
                 <li key={l.code}>
                   <button
                     type="button"
-                    role="option"
-                    aria-selected={l.code === lang}
                     lang={l.code}
+                    data-lang-option={l.code}
+                    aria-current={l.code === lang ? 'true' : undefined}
                     className={styles.option}
                     onClick={() => {
                       void setLanguage(l.code);
                       setOpen(false);
+                      triggerRef.current?.focus();
                     }}
                   >
                     <span className={styles.optionCode}>{l.code.toUpperCase()}</span>
                     <span className={styles.optionLabel}>{l.label}</span>
-                    {l.code === lang && <Check size={14} strokeWidth={2.25} className={styles.check} />}
+                    {l.code === lang && <Check size={14} strokeWidth={2.25} className={styles.check} aria-hidden />}
                   </button>
                 </li>
               ))}

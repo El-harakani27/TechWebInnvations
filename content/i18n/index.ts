@@ -54,13 +54,18 @@ function applyDocument(code: LangCode) {
   document.documentElement.dir = meta && 'dir' in meta ? meta.dir : 'ltr';
 }
 
+let request = 0;
+
 export async function setLanguage(code: LangCode) {
+  const id = ++request;
   try {
     await load(code);
   } catch {
     // Translation file missing: stay on the current language
     return;
   }
+  // A newer choice was made while this file loaded — don't overwrite it
+  if (id !== request) return;
   current = code;
   applyDocument(code);
   try {
@@ -99,8 +104,12 @@ export function useLanguage(): LangCode {
   );
 }
 
+// One merged object per language, shared by every component
+const merged: Partial<Record<LangCode, Site>> = { en: site };
+const siteFor = (lang: LangCode): Site => (merged[lang] ??= merge(site, loaded[lang]));
+
 /** The site content in the active language (English on the server and until a translation loads). */
 export function useSite(): Site {
   const lang = useLanguage();
-  return useMemo(() => merge(site, loaded[lang]), [lang]);
+  return useMemo(() => siteFor(lang), [lang]);
 }

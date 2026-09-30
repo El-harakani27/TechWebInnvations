@@ -49,7 +49,9 @@
         "Microsoft 365",
         "Thương mại điện tử",
         "Thương hiệu"
-      ]
+      ],
+      "pauseVideo": "Tạm dừng video nền",
+      "playVideo": "Phát video nền"
     },
     "services": {
       "countLabel": "dịch vụ",
@@ -77,7 +79,8 @@
         "company": "Công ty",
         "topic": "Chủ đề",
         "notGiven": "không cung cấp"
-      }
+      },
+      "required": "Bắt buộc"
     },
     "footer": {
       "navigation": "Điều hướng",
@@ -95,6 +98,10 @@
       "representedBy": "Người đại diện",
       "registration": "Mã số đăng ký (Registrikood)",
       "responsible": "Chịu trách nhiệm nội dung"
+    },
+    "skipLink": "Bỏ qua đến nội dung",
+    "locations": {
+      "globeAlt": "Quả địa cầu hiển thị các văn phòng của chúng tôi tại Tallinn và Hua Hin"
     }
   },
   "hero": {

@@ -181,19 +181,42 @@ export default function TextLoop({
     });
 
     const root = rootRef.current;
-    const pause = () => tween.pause();
-    const resume = () => tween.resume();
+    // Run only while the ribbon is on screen and (optionally) not hovered
+    let hovered = false;
+    let visible = true;
+    const sync = () => {
+      if (hovered || !visible) tween.pause();
+      else tween.resume();
+    };
+    const onEnter = () => {
+      hovered = true;
+      sync();
+    };
+    const onLeave = () => {
+      hovered = false;
+      sync();
+    };
 
     if (pauseOnHover && root) {
-      root.addEventListener('pointerenter', pause);
-      root.addEventListener('pointerleave', resume);
+      root.addEventListener('pointerenter', onEnter);
+      root.addEventListener('pointerleave', onLeave);
+    }
+
+    let observer: IntersectionObserver | undefined;
+    if (root && typeof IntersectionObserver !== 'undefined') {
+      observer = new IntersectionObserver((entries) => {
+        visible = entries[entries.length - 1].isIntersecting;
+        sync();
+      });
+      observer.observe(root);
     }
 
     return () => {
       tween.kill();
+      observer?.disconnect();
       if (pauseOnHover && root) {
-        root.removeEventListener('pointerenter', pause);
-        root.removeEventListener('pointerleave', resume);
+        root.removeEventListener('pointerenter', onEnter);
+        root.removeEventListener('pointerleave', onLeave);
       }
     };
   }, [metrics, speed, direction, pauseOnHover]);

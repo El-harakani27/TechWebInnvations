@@ -49,7 +49,9 @@
         "Microsoft 365",
         "电子商务",
         "品牌塑造"
-      ]
+      ],
+      "pauseVideo": "暂停背景视频",
+      "playVideo": "播放背景视频"
     },
     "services": {
       "countLabel": "项服务",
@@ -77,7 +79,8 @@
         "company": "公司",
         "topic": "主题",
         "notGiven": "未填写"
-      }
+      },
+      "required": "必填"
     },
     "footer": {
       "navigation": "导航",
@@ -95,6 +98,10 @@
       "representedBy": "代表人",
       "registration": "注册号（Registrikood）",
       "responsible": "内容负责人"
+    },
+    "skipLink": "跳至内容",
+    "locations": {
+      "globeAlt": "显示我们在塔林和华欣办公室的地球仪"
     }
   },
   "hero": {

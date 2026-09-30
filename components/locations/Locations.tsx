@@ -1,17 +1,42 @@
 'use client';
 
 import { useEffect, useMemo, useState } from 'react';
+import dynamic from 'next/dynamic';
 import { motion, type Transition } from 'motion/react';
 import { useSite } from '@/content/i18n';
-import Globe, { type GlobePoint } from './Globe';
+import type { GlobePoint } from './Globe';
 import styles from './Locations.module.css';
+
+// Canvas globe (d3-geo + map data) is below the fold and client-only: load it on demand
+const Globe = dynamic(() => import('./Globe'), {
+  ssr: false,
+  loading: () => <div className={styles.globe} aria-hidden />,
+});
 
 const EASE: Transition['ease'] = [0.16, 1, 0.3, 1];
 
+/** "GMT+3" style offset; older Safari lacks `shortOffset`, so fall back to `short` (e.g. "GMT+7"/"EEST"). */
+function offsetFormatter(timeZone: string) {
+  for (const timeZoneName of ['shortOffset', 'short'] as const) {
+    try {
+      return new Intl.DateTimeFormat('en-US', { timeZone, timeZoneName });
+    } catch {
+      /* try the next style */
+    }
+  }
+  return null;
+}
 
 /** Live local time for a time zone. Renders placeholders on the server to avoid a hydration mismatch. */
 function LocalTime({ timeZone }: { timeZone: string }) {
   const [now, setNow] = useState<Date | null>(null);
+  const formatters = useMemo(
+    () => ({
+      time: new Intl.DateTimeFormat('en-GB', { timeZone, hour: '2-digit', minute: '2-digit', hour12: false }),
+      offset: offsetFormatter(timeZone),
+    }),
+    [timeZone],
+  );
 
   useEffect(() => {
     setNow(new Date());
@@ -19,16 +44,8 @@ function LocalTime({ timeZone }: { timeZone: string }) {
     return () => clearInterval(id);
   }, []);
 
-  const [hh, mm] = now
-    ? new Intl.DateTimeFormat('en-GB', { timeZone, hour: '2-digit', minute: '2-digit', hour12: false })
-        .format(now)
-        .split(':')
-    : ['--', '--'];
-  const offset = now
-    ? new Intl.DateTimeFormat('en-US', { timeZone, timeZoneName: 'shortOffset' })
-        .formatToParts(now)
-        .find((p) => p.type === 'timeZoneName')?.value
-    : 'GMT';
+  const [hh, mm] = now ? formatters.time.format(now).split(':') : ['--', '--'];
+  const offset = now ? formatters.offset?.formatToParts(now).find((p) => p.type === 'timeZoneName')?.value : '';
 
   return (
     <span className={styles.time}>
@@ -43,7 +60,7 @@ function LocalTime({ timeZone }: { timeZone: string }) {
 }
 
 export default function Locations() {
-  const { locations } = useSite();
+  const { locations, ui } = useSite();
   const [first, second] = locations.items;
   const globePoints = useMemo<[GlobePoint, GlobePoint]>(
     () => [
@@ -116,8 +133,8 @@ export default function Locations() {
           viewport={{ once: true, margin: '-80px' }}
           transition={{ duration: 1.4, ease: EASE }}
         >
-          <Globe points={globePoints} focus={focus} className={styles.globe} />
-          <span className={styles.globeCaption}>
+          <Globe points={globePoints} focus={focus} className={styles.globe} label={ui.locations.globeAlt} />
+          <span className={styles.globeCaption} aria-hidden>
             {first.city} ⟷ {second.city}
           </span>
         </motion.div>
@@ -125,7 +142,7 @@ export default function Locations() {
         <div className={styles.cards}>
           {locations.items.map((loc, i) => (
             <motion.article
-              key={loc.city}
+              key={loc.countryCode}
               className={styles.card}
               data-focus={focus === i}
               onMouseEnter={() => setFocus(i)}

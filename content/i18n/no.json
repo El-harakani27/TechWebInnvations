@@ -49,7 +49,9 @@
         "Microsoft 365",
         "E-handel",
         "Branding"
-      ]
+      ],
+      "pauseVideo": "Sett bakgrunnsvideoen på pause",
+      "playVideo": "Spill av bakgrunnsvideoen"
     },
     "services": {
       "countLabel": "tjenester",
@@ -77,7 +79,8 @@
         "company": "Bedrift",
         "topic": "Tema",
         "notGiven": "ikke oppgitt"
-      }
+      },
+      "required": "Obligatorisk"
     },
     "footer": {
       "navigation": "Navigasjon",
@@ -95,6 +98,10 @@
       "representedBy": "Representert ved",
       "registration": "Registreringsnummer (Registrikood)",
       "responsible": "Ansvarlig for innholdet"
+    },
+    "skipLink": "Gå til innhold",
+    "locations": {
+      "globeAlt": "Globus som viser kontorene våre i Tallinn og Hua Hin"
     }
   },
   "hero": {

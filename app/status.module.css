@@ -1,0 +1,58 @@
+/* Shared by not-found.tsx and error.tsx — matches the site's type and pill buttons */
+.page {
+  min-height: 100vh;
+  min-height: 100svh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 16px;
+  padding: 32px 16px;
+  text-align: center;
+  background: var(--white);
+}
+
+.code {
+  font-size: 12px;
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--blue-deep);
+}
+
+.title {
+  font-size: clamp(2.25rem, 8vw, 4rem);
+  font-weight: 300;
+  line-height: 1;
+  letter-spacing: -0.035em;
+  color: var(--ink);
+}
+
+.dot {
+  color: var(--blue-deep);
+}
+
+.text {
+  max-width: 420px;
+  font-size: 15px;
+  line-height: 1.55;
+  color: rgba(16, 20, 28, 0.66);
+}
+
+.button {
+  display: inline-flex;
+  align-items: center;
+  height: 48px;
+  margin-top: 8px;
+  padding: 0 24px;
+  border-radius: 999px;
+  background: var(--ink);
+  color: var(--white);
+  font-size: 14px;
+  font-weight: 500;
+  transition: background 0.3s ease;
+}
+
+.button:hover {
+  background: var(--blue-deep);
+}

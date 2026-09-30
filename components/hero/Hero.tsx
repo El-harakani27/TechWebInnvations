@@ -11,7 +11,7 @@ import {
   useScroll,
   type Transition,
 } from 'motion/react';
-import { ArrowUpRight, Plus } from 'lucide-react';
+import { ArrowUpRight, Pause, Play, Plus } from 'lucide-react';
 import { useSite } from '@/content/i18n';
 import LanguageSwitcher from '@/components/language/LanguageSwitcher';
 import styles from './Hero.module.css';
@@ -23,12 +23,35 @@ const VIDEO_SRC =
 const VIDEO_PAUSE_MS = 3000; // hold on the last frame before replaying
 const VIDEO_FADE_MS = 600; // fade out → rewind → fade in, so the jump back to frame 1 isn't visible
 
-/** Plays once, holds the final frame, then fades and replays — forever. */
-function useDelayedLoop(ref: React.RefObject<HTMLVideoElement>) {
+/**
+ * Plays once, holds the final frame, then fades and replays — forever.
+ * Honours prefers-reduced-motion (no autoplay loop) and a user pause toggle (WCAG 2.2.2).
+ */
+function useDelayedLoop(ref: React.RefObject<HTMLVideoElement>, paused: boolean) {
+  const wasPaused = useRef(false);
+
   useEffect(() => {
     const video = ref.current;
     if (!video) return;
     const timers: number[] = [];
+
+    if (paused) {
+      wasPaused.current = true;
+      video.pause();
+      video.style.opacity = '1';
+      return;
+    }
+
+    if (wasPaused.current) {
+      // Resuming after a pause: rewind if the clip had finished, then play.
+      wasPaused.current = false;
+      if (video.ended) video.currentTime = 0;
+      void video.play().catch(() => {});
+    } else if (window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+      // Reduced motion on first load: keep the clip still and skip the replay loop.
+      video.pause();
+      return;
+    }
 
     const onEnded = () => {
       timers.push(
@@ -50,7 +73,7 @@ function useDelayedLoop(ref: React.RefObject<HTMLVideoElement>) {
       video.removeEventListener('ended', onEnded);
       timers.forEach(clearTimeout);
     };
-  }, [ref]);
+  }, [ref, paused]);
 }
 
 function Counter({ to, delay }: { to: number; delay: number }) {
@@ -90,7 +113,12 @@ export default function Hero() {
   const stats = s.stats.filter((_, i) => i !== 2);
 
   const videoRef = useRef<HTMLVideoElement>(null);
-  useDelayedLoop(videoRef);
+  const [videoPaused, setVideoPaused] = useState(false);
+  useDelayedLoop(videoRef, videoPaused);
+  // Read the motion preference after mount (not during render) to avoid a hydration mismatch
+  useEffect(() => {
+    if (window.matchMedia('(prefers-reduced-motion: reduce)').matches) setVideoPaused(true);
+  }, []);
 
   // Frosted navbar once the page is scrolled
   const [scrolled, setScrolled] = useState(false);
@@ -100,12 +128,17 @@ export default function Hero() {
   // Menu dropdown
   const [menuOpen, setMenuOpen] = useState(false);
   const menuRef = useRef<HTMLDivElement>(null);
+  const menuBtnRef = useRef<HTMLButtonElement>(null);
   useEffect(() => {
     if (!menuOpen) return;
     const onDown = (e: PointerEvent) => {
       if (!menuRef.current?.contains(e.target as Node)) setMenuOpen(false);
     };
-    const onKey = (e: KeyboardEvent) => e.key === 'Escape' && setMenuOpen(false);
+    const onKey = (e: KeyboardEvent) => {
+      if (e.key !== 'Escape') return;
+      setMenuOpen(false);
+      menuBtnRef.current?.focus();
+    };
     document.addEventListener('pointerdown', onDown);
     document.addEventListener('keydown', onKey);
     return () => {
@@ -116,9 +149,14 @@ export default function Hero() {
 
   return (
     <section id="top" className={styles.hero}>
+      <a href="#services" className={styles.skipLink}>
+        {ui.skipLink}
+      </a>
+
       {/* Navbar */}
       <motion.nav
         className={styles.nav}
+        aria-label={ui.footer.navigation}
         data-scrolled={scrolled}
         initial={{ y: -16, opacity: 0 }}
         animate={{ y: 0, opacity: 1 }}
@@ -129,8 +167,16 @@ export default function Hero() {
             <Image src="/logo.webp" alt={s.brand.logoAlt} width={320} height={138} priority className={styles.logoImg} />
           </a>
 
-          <div ref={menuRef} className={styles.menuWrap}>
+          <div
+            ref={menuRef}
+            className={styles.menuWrap}
+            onBlur={(e) => {
+              const next = e.relatedTarget as Node | null;
+              if (next && !menuRef.current?.contains(next)) setMenuOpen(false);
+            }}
+          >
             <motion.button
+              ref={menuBtnRef}
               type="button"
               className={styles.menuBtn}
               data-open={menuOpen}
@@ -140,7 +186,7 @@ export default function Hero() {
               whileTap={{ scale: 0.96 }}
             >
               <span className={styles.menuCircle}>
-                <Plus size={12} strokeWidth={3} />
+                <Plus size={12} strokeWidth={3} aria-hidden />
               </span>
               {menuOpen ? ui.menu.close : ui.menu.open}
             </motion.button>
@@ -170,7 +216,7 @@ export default function Hero() {
                           <span className={styles.menuNumber}>{String(i + 1).padStart(2, '0')}</span>
                           <span className={styles.menuLabel}>{item.label}</span>
                           <span className={styles.menuDesc}>{item.description}</span>
-                          <ArrowUpRight size={16} className={styles.menuArrow} />
+                          <ArrowUpRight size={16} className={styles.menuArrow} aria-hidden />
                         </a>
                       </motion.li>
                     ))}
@@ -198,7 +244,7 @@ export default function Hero() {
 
         <div className={styles.navRightGroup}>
           <LanguageSwitcher />
-          <a href="#locations" className={styles.navRight}>
+          <a href="#locations" className={styles.navRight} aria-label={ui.hero.officesPill}>
             <span className={styles.gridBtn}>
               <GridIcon />
             </span>
@@ -214,7 +260,7 @@ export default function Hero() {
         animate={{ opacity: 1, scale: 1 }}
         transition={{ duration: 1.8, ease: EASE }}
       >
-        <video ref={videoRef} className={styles.video} src={VIDEO_SRC} autoPlay muted playsInline />
+        <video ref={videoRef} className={styles.video} src={VIDEO_SRC} autoPlay muted playsInline aria-hidden="true" />
       </motion.div>
 
       {/* About block — sits in the open space beside the hand (desktop only) */}
@@ -317,6 +363,19 @@ export default function Hero() {
               {chip}
             </span>
           ))}
+          <button
+            type="button"
+            className={styles.videoToggle}
+            onClick={() => setVideoPaused((p) => !p)}
+            aria-label={videoPaused ? ui.hero.playVideo : ui.hero.pauseVideo}
+            aria-pressed={videoPaused}
+          >
+            {videoPaused ? (
+              <Play size={12} strokeWidth={2.5} aria-hidden />
+            ) : (
+              <Pause size={12} strokeWidth={2.5} aria-hidden />
+            )}
+          </button>
         </div>
       </motion.div>
     </section>
