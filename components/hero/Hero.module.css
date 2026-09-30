@@ -574,13 +574,19 @@
     height: 32px;
   }
 
-  /* Desktop: dropdown hangs from the Menu button instead of spanning the screen */
+  /* Desktop: dropdown hangs from the Menu button instead of spanning the screen.
+     Logical insets so it opens inward in both LTR and RTL (Arabic). */
   .menuPanel {
     position: absolute;
     top: calc(100% + 12px);
-    left: 0;
+    left: auto;
     right: auto;
+    inset-inline-start: 0;
     width: 360px;
+  }
+
+  :global([dir='rtl']) .menuPanel {
+    transform-origin: top right;
   }
 
   .tags {

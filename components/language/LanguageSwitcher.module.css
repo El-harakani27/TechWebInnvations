@@ -56,21 +56,53 @@
 
 .panel[data-placement='down'] {
   top: calc(100% + 10px);
-  transform-origin: top right;
 }
 
 .panel[data-placement='up'] {
   bottom: calc(100% + 10px);
-  transform-origin: bottom right;
 }
 
+/* Logical insets: "end"/"start" follow the text direction, so in RTL (Arabic)
+   the list still opens inward instead of off the screen edge. */
 .panel[data-align='end'] {
-  right: 0;
+  inset-inline-end: 0;
+  transform-origin: top right;
 }
 
 .panel[data-align='start'] {
-  left: 0;
+  inset-inline-start: 0;
   transform-origin: top left;
+}
+
+:global([dir='rtl']) .panel[data-align='end'] {
+  transform-origin: top left;
+}
+
+:global([dir='rtl']) .panel[data-align='start'] {
+  transform-origin: top right;
+}
+
+/* Phones: pin the list to the screen with a 16px gutter so it can never overflow,
+   whichever side the trigger sits on (LTR or RTL). */
+@media (max-width: 767px) {
+  /* [data-align] matches the desktop rules' specificity so these insets win */
+  .panel,
+  .panel[data-align] {
+    position: fixed;
+    width: auto;
+    inset-inline-start: 16px;
+    inset-inline-end: 16px;
+  }
+
+  .panel[data-placement='down'] {
+    top: 64px;
+    bottom: auto;
+  }
+
+  .panel[data-placement='up'] {
+    top: auto;
+    bottom: 16px;
+  }
 }
 
 .heading {
