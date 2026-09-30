@@ -49,9 +49,7 @@
         "Microsoft 365",
         "E-commerce",
         "Брендинг"
-      ],
-      "pauseVideo": "Приостановить фоновое видео",
-      "playVideo": "Воспроизвести фоновое видео"
+      ]
     },
     "services": {
       "countLabel": "услуг",

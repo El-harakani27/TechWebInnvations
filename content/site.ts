@@ -58,8 +58,6 @@ export const site = {
     language: { label: 'Language' },
     locations: { globeAlt: 'Globe showing our offices in Tallinn and Hua Hin' },
     hero: {
-      pauseVideo: 'Pause background video',
-      playVideo: 'Play background video',
       navTags: ['Web Design', 'IT Services'],
       officesPill: 'Tallinn · Hua Hin',
       subtitle: '150+ companies migrated · 26 languages',

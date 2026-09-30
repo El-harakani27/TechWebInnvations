@@ -49,9 +49,7 @@
         "Microsoft 365",
         "E-commerce",
         "Branding"
-      ],
-      "pauseVideo": "Pozastavit video na pozadí",
-      "playVideo": "Přehrát video na pozadí"
+      ]
     },
     "services": {
       "countLabel": "služeb",

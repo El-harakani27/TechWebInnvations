@@ -448,22 +448,6 @@
   gap: 6px;
 }
 
-/* Pause / play toggle for the background video — sits with the chips */
-.videoToggle {
-  display: grid;
-  place-items: center;
-  width: 32px;
-  height: 32px;
-  border-radius: 999px;
-  background: var(--pill);
-  color: var(--ink);
-  transition: background 0.3s ease;
-}
-
-.videoToggle:hover {
-  background: #e9eaee;
-}
-
 .chip {
   padding: 7px 14px;
   background: var(--white);

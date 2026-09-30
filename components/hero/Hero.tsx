@@ -11,7 +11,7 @@ import {
   useScroll,
   type Transition,
 } from 'motion/react';
-import { ArrowUpRight, Pause, Play, Plus } from 'lucide-react';
+import { ArrowUpRight, Plus } from 'lucide-react';
 import { useSite } from '@/content/i18n';
 import LanguageSwitcher from '@/components/language/LanguageSwitcher';
 import styles from './Hero.module.css';
@@ -363,19 +363,6 @@ export default function Hero() {
               {chip}
             </span>
           ))}
-          <button
-            type="button"
-            className={styles.videoToggle}
-            onClick={() => setVideoPaused((p) => !p)}
-            aria-label={videoPaused ? ui.hero.playVideo : ui.hero.pauseVideo}
-            aria-pressed={videoPaused}
-          >
-            {videoPaused ? (
-              <Play size={12} strokeWidth={2.5} aria-hidden />
-            ) : (
-              <Pause size={12} strokeWidth={2.5} aria-hidden />
-            )}
-          </button>
         </div>
       </motion.div>
     </section>

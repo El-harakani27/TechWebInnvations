@@ -49,9 +49,7 @@
         "Microsoft 365",
         "E-commerce",
         "Branding"
-      ],
-      "pauseVideo": "Pausar el vídeo de fondo",
-      "playVideo": "Reproducir el vídeo de fondo"
+      ]
     },
     "services": {
       "countLabel": "servicios",

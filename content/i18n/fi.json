@@ -49,9 +49,7 @@
         "Microsoft 365",
         "Verkkokauppa",
         "Brändäys"
-      ],
-      "pauseVideo": "Keskeytä taustavideo",
-      "playVideo": "Toista taustavideo"
+      ]
     },
     "services": {
       "countLabel": "palvelua",

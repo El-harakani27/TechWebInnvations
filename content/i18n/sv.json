@@ -49,9 +49,7 @@
         "Microsoft 365",
         "E-handel",
         "Branding"
-      ],
-      "pauseVideo": "Pausa bakgrundsvideon",
-      "playVideo": "Spela upp bakgrundsvideon"
+      ]
     },
     "services": {
       "countLabel": "tjänster",
