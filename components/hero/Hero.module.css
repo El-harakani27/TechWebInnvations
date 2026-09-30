@@ -1,0 +1,631 @@
+/* ---------- Layout ---------- */
+
+.hero {
+  position: relative;
+  min-height: 100vh;
+  min-height: 100svh;
+  background: var(--white);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  overflow: hidden;
+}
+
+/* ---------- Navbar ---------- */
+
+.nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 50;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 16px;
+  pointer-events: none;
+  border-bottom: 1px solid transparent;
+  transition: background 0.5s cubic-bezier(0.16, 1, 0.3, 1), padding 0.5s cubic-bezier(0.16, 1, 0.3, 1),
+    border-color 0.5s ease, box-shadow 0.5s ease;
+}
+
+.nav > * {
+  pointer-events: auto;
+}
+
+/* Frosted glass once the page is scrolled */
+.nav[data-scrolled='true'] {
+  pointer-events: auto;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  background: rgba(255, 255, 255, 0.68);
+  backdrop-filter: blur(16px) saturate(1.6);
+  -webkit-backdrop-filter: blur(16px) saturate(1.6);
+  border-bottom-color: rgba(16, 20, 28, 0.06);
+  box-shadow: 0 8px 32px -16px rgba(16, 20, 28, 0.18);
+}
+
+.navLeft {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  margin-right: 6px;
+}
+
+/* The brand file is white-on-transparent (made for the dark site) — render it in ink here. */
+.logoImg {
+  display: block;
+  height: 32px;
+  width: auto;
+  filter: brightness(0) saturate(100%);
+}
+
+/* Black pill with white circle */
+.menuBtn {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 4px 14px 4px 4px;
+  background: var(--ink);
+  border-radius: 999px;
+  color: var(--white);
+  font-size: 11px;
+  font-weight: 500;
+  letter-spacing: 0.01em;
+}
+
+.menuCircle {
+  display: grid;
+  place-items: center;
+  width: 28px;
+  height: 28px;
+  border-radius: 999px;
+  background: var(--white);
+  color: var(--ink);
+  transition: transform 0.5s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.menuBtn:hover .menuCircle {
+  transform: rotate(90deg);
+}
+
+/* Plus turns into × while the menu is open */
+.menuBtn[data-open='true'] .menuCircle {
+  transform: rotate(135deg);
+}
+
+/* ---------- Menu dropdown ---------- */
+
+.menuWrap {
+  position: relative;
+}
+
+.menuPanel {
+  position: fixed;
+  top: 64px;
+  left: 16px;
+  right: 16px;
+  z-index: 60;
+  padding: 8px;
+  border-radius: 24px;
+  background: var(--white);
+  border: 1px solid rgba(16, 20, 28, 0.08);
+  box-shadow: 0 30px 70px -30px rgba(16, 20, 28, 0.4);
+  transform-origin: top left;
+}
+
+.menuList {
+  list-style: none;
+}
+
+.menuItem {
+  display: grid;
+  grid-template-columns: auto 1fr auto;
+  align-items: center;
+  column-gap: 14px;
+  padding: 14px 14px;
+  border-radius: 16px;
+  color: var(--ink);
+  transition: background 0.3s ease;
+}
+
+.menuItem:hover {
+  background: var(--pill);
+}
+
+.menuNumber {
+  grid-row: span 2;
+  font-size: 12px;
+  font-weight: 500;
+  color: var(--blue-deep);
+  font-variant-numeric: tabular-nums;
+}
+
+.menuLabel {
+  font-size: 24px;
+  font-weight: 300;
+  line-height: 1.1;
+  letter-spacing: -0.03em;
+}
+
+.menuDesc {
+  grid-column: 2;
+  font-size: 12px;
+  color: rgba(16, 20, 28, 0.5);
+}
+
+.menuArrow {
+  grid-column: 3;
+  grid-row: 1 / span 2;
+  color: rgba(16, 20, 28, 0.3);
+  transition: transform 0.4s cubic-bezier(0.16, 1, 0.3, 1), color 0.3s ease;
+}
+
+.menuItem:hover .menuArrow {
+  color: var(--blue-deep);
+  transform: translate(2px, -2px);
+}
+
+.menuFooter {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+  margin-top: 6px;
+  padding: 12px 12px 12px 16px;
+  border-radius: 18px;
+  background: var(--ink);
+}
+
+.menuEmail {
+  min-width: 0;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  font-size: 12px;
+  color: rgba(255, 255, 255, 0.75);
+  transition: color 0.3s ease;
+}
+
+.menuEmail:hover {
+  color: var(--white);
+}
+
+.menuCta {
+  flex-shrink: 0;
+  height: 34px;
+  padding: 0 14px;
+  display: grid;
+  place-items: center;
+  border-radius: 999px;
+  background: var(--white);
+  color: var(--ink);
+  font-size: 12px;
+  font-weight: 500;
+  transition: background 0.3s ease;
+}
+
+.menuCta:hover {
+  background: var(--blue-soft);
+}
+
+.navRightGroup {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.tags {
+  display: none;
+  align-items: center;
+  gap: 16px;
+  height: 36px;
+  padding: 0 16px;
+  background: var(--pill);
+  border-radius: 999px;
+  font-size: 11px;
+  font-weight: 500;
+  color: rgba(16, 20, 28, 0.7);
+  white-space: nowrap;
+}
+
+.tags span {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.tags span + span::before {
+  content: '';
+  width: 3px;
+  height: 3px;
+  border-radius: 999px;
+  background: rgba(16, 20, 28, 0.35);
+}
+
+.navRight {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 4px;
+  background: var(--pill);
+  border-radius: 999px;
+}
+
+.gridBtn {
+  display: grid;
+  place-items: center;
+  width: 28px;
+  height: 28px;
+  border-radius: 999px;
+  background: var(--ink);
+  color: var(--white);
+  transition: background 0.3s ease;
+}
+
+.navRight:hover .gridBtn {
+  background: var(--blue-deep);
+}
+
+.navRightLabel {
+  display: none;
+  padding-right: 12px;
+  font-size: 11px;
+  font-weight: 500;
+  color: var(--ink);
+  white-space: nowrap;
+}
+
+/* ---------- Background video ---------- */
+
+.videoWrap {
+  position: absolute;
+  z-index: 0;
+  /* Sits higher than the spec's centred 80% box so the hand clears the taller,
+     centred mobile text block below it. */
+  top: 7%;
+  left: 10%;
+  width: 80%;
+  height: 62%;
+  /* The clip's backdrop is ~#fafafa, not pure white — feather the edges so the
+     80% box melts into the page instead of showing a seam. */
+  -webkit-mask-image: linear-gradient(to right, transparent, #000 14%, #000 86%, transparent),
+    linear-gradient(to bottom, transparent, #000 10%, #000 90%, transparent);
+  -webkit-mask-composite: source-in;
+  mask-image: linear-gradient(to right, transparent, #000 14%, #000 86%, transparent),
+    linear-gradient(to bottom, transparent, #000 10%, #000 90%, transparent);
+  mask-composite: intersect;
+}
+
+.video {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* ---------- Footer content ---------- */
+
+.footer {
+  position: relative;
+  z-index: 30;
+  margin-top: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  padding: 96px 16px 20px;
+  background: linear-gradient(to top, #ffffff 0%, rgba(255, 255, 255, 0.8) 50%, transparent 100%);
+}
+
+/* Mobile: the whole footer block is centered */
+.footerMain {
+  text-align: center;
+}
+
+.subtitle {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  margin-bottom: 16px;
+  font-size: 13px;
+  color: rgba(0, 0, 0, 0.55);
+}
+
+.dot {
+  position: relative;
+  width: 8px;
+  height: 8px;
+  border-radius: 999px;
+  background: var(--ink);
+}
+
+/* Soft brand-blue ping behind the dot */
+.dot::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  border-radius: inherit;
+  background: var(--blue);
+  animation: ping 2.4s cubic-bezier(0.16, 1, 0.3, 1) infinite;
+}
+
+@keyframes ping {
+  0% { transform: scale(1); opacity: 0.7; }
+  80%, 100% { transform: scale(2.8); opacity: 0; }
+}
+
+.heading {
+  font-size: clamp(2rem, 8vw, 4.5rem);
+  font-weight: 300;
+  letter-spacing: -0.03em;
+  line-height: 1;
+  color: var(--ink);
+  margin-bottom: 20px;
+}
+
+.heading span {
+  display: block;
+}
+
+.mobileAbout {
+  max-width: 360px;
+  margin: 0 auto 28px;
+  font-size: 14px;
+  line-height: 1.55;
+  color: rgba(16, 20, 28, 0.7);
+}
+
+.buttons {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 8px;
+}
+
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  height: 44px;
+  padding: 0 22px;
+  border-radius: 999px;
+  font-size: 13px;
+  font-weight: 500;
+  transition: background 0.3s ease, color 0.3s ease, border-color 0.3s ease;
+}
+
+.btnPrimary {
+  background: var(--ink);
+  color: var(--white);
+}
+
+.btnPrimary:hover {
+  background: var(--blue-deep);
+}
+
+.btnSecondary {
+  border: 1px solid rgba(0, 0, 0, 0.35);
+  color: var(--ink);
+}
+
+.btnSecondary:hover {
+  border-color: var(--ink);
+  background: rgba(0, 0, 0, 0.04);
+}
+
+.chips {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 6px;
+}
+
+.chip {
+  padding: 7px 14px;
+  background: var(--white);
+  border: 1px solid rgba(0, 0, 0, 0.12);
+  border-radius: 999px;
+  font-size: 11px;
+  font-weight: 500;
+  color: var(--ink);
+  white-space: nowrap;
+}
+
+/* ---------- About block (beside the video subject) ---------- */
+
+.aside {
+  display: none;
+}
+
+.asideLabel {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 18px;
+  font-size: 11px;
+  font-weight: 500;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: rgba(0, 0, 0, 0.45);
+}
+
+.asideLabel span:first-child {
+  color: var(--blue-deep);
+}
+
+.asideRule {
+  width: 32px;
+  height: 1px;
+  background: rgba(0, 0, 0, 0.2);
+}
+
+.asideText {
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 1.55;
+  letter-spacing: -0.005em;
+  color: rgba(16, 20, 28, 0.78);
+}
+
+/* Three equal pill-cards — same surface as the navbar pills */
+.stats {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 6px;
+  margin-top: 28px;
+}
+
+.stat {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 18px;
+  padding: 16px 16px 14px;
+  background: rgba(244, 244, 246, 0.82);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border-radius: 18px;
+}
+
+.statValue {
+  display: flex;
+  align-items: flex-start;
+  font-size: 34px;
+  font-weight: 300;
+  line-height: 1;
+  letter-spacing: -0.04em;
+  color: var(--ink);
+  font-variant-numeric: tabular-nums;
+}
+
+.statSuffix {
+  margin-left: 2px;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 1.1;
+  letter-spacing: 0;
+  color: var(--blue-deep);
+}
+
+.statLabel {
+  font-size: 11px;
+  font-weight: 500;
+  line-height: 1.35;
+  color: rgba(16, 20, 28, 0.55);
+}
+
+.statLabel::first-letter {
+  text-transform: uppercase;
+}
+
+/* Only from 1024px — narrower screens would put it on top of the hand */
+@media (min-width: 1024px) {
+  .mobileAbout {
+    display: none;
+  }
+
+  .aside {
+    display: block;
+    position: absolute;
+    z-index: 20;
+    top: 40%;
+    right: 32px;
+    width: 340px;
+    transform: translateY(-50%);
+  }
+}
+
+/* ---------- Desktop ---------- */
+
+@media (min-width: 768px) {
+  .nav {
+    padding: 24px 32px;
+  }
+
+  .nav[data-scrolled='true'] {
+    padding-top: 12px;
+    padding-bottom: 12px;
+  }
+
+  .navLeft {
+    gap: 10px;
+  }
+
+  .logo {
+    margin-right: 10px;
+  }
+
+  .logoImg {
+    height: 44px;
+  }
+
+  .menuCircle,
+  .gridBtn {
+    width: 32px;
+    height: 32px;
+  }
+
+  /* Desktop: dropdown hangs from the Menu button instead of spanning the screen */
+  .menuPanel {
+    position: absolute;
+    top: calc(100% + 12px);
+    left: 0;
+    right: auto;
+    width: 360px;
+  }
+
+  .tags {
+    display: flex;
+    height: 40px;
+  }
+
+  .navRightLabel {
+    display: block;
+  }
+
+  .videoWrap {
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    -webkit-mask-image: none;
+    mask-image: none;
+  }
+
+  .footer {
+    flex-direction: row;
+    align-items: flex-end;
+    justify-content: space-between;
+    padding: 140px 32px 32px;
+  }
+
+  .footerMain {
+    text-align: left;
+  }
+
+  .subtitle,
+  .buttons {
+    justify-content: flex-start;
+  }
+
+  .heading {
+    font-size: clamp(2.5rem, 5.5vw, 4.5rem);
+    margin-bottom: 28px;
+  }
+
+  .mobileAbout {
+    margin-left: 0;
+    max-width: 420px;
+  }
+
+  .chips {
+    justify-content: flex-end;
+  }
+}

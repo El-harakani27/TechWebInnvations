@@ -1,0 +1,392 @@
+/* ---------- Section (dark band) ---------- */
+
+.section {
+  position: relative;
+  padding: 72px 16px 80px;
+  background: var(--black);
+  color: var(--white);
+  overflow: hidden;
+}
+
+/* Brand glow in the corner, like the live site's hero */
+.section::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  background: radial-gradient(900px 520px at 20% 70%, rgba(77, 163, 255, 0.1), transparent 60%),
+    radial-gradient(700px 460px at 95% 0%, rgba(30, 127, 224, 0.08), transparent 60%);
+}
+
+.section > * {
+  position: relative;
+}
+
+/* ---------- Header (mobile: centred, see agent.md) ---------- */
+
+.header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 28px;
+  margin-bottom: 40px;
+  text-align: center;
+}
+
+.label {
+  display: inline-flex;
+  align-items: center;
+  height: 30px;
+  padding: 0 14px;
+  margin-bottom: 22px;
+  border: 1px dashed rgba(255, 255, 255, 0.3);
+  border-radius: 999px;
+  font-size: 11px;
+  font-weight: 500;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+}
+
+.title {
+  font-size: clamp(2.25rem, 9vw, 4.5rem);
+  font-weight: 300;
+  line-height: 1;
+  letter-spacing: -0.035em;
+}
+
+.titleDot {
+  color: var(--blue);
+}
+
+.lead {
+  max-width: 480px;
+  margin: 20px auto 0;
+  font-size: 15px;
+  line-height: 1.55;
+  color: rgba(255, 255, 255, 0.62);
+}
+
+/* White pill — inverse of the other sections' CTA */
+.cta {
+  display: inline-flex;
+  align-items: center;
+  gap: 12px;
+  height: 48px;
+  padding: 0 6px 0 22px;
+  border-radius: 999px;
+  background: var(--white);
+  color: var(--ink);
+  font-size: 13px;
+  font-weight: 500;
+  transition: background 0.3s ease, color 0.3s ease;
+}
+
+.cta:hover {
+  background: var(--blue);
+  color: var(--black);
+}
+
+.ctaCircle {
+  display: grid;
+  place-items: center;
+  width: 36px;
+  height: 36px;
+  border-radius: 999px;
+  border: 1px solid rgba(16, 20, 28, 0.25);
+}
+
+.ctaCircle span {
+  width: 6px;
+  height: 6px;
+  border-radius: 999px;
+  background: var(--ink);
+  transition: transform 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.cta:hover .ctaCircle span {
+  transform: scale(1.6);
+}
+
+/* ---------- Globe ---------- */
+
+.grid {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.globeFrame {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px 12px 18px;
+  border-radius: 28px;
+  background: rgba(255, 255, 255, 0.025);
+  border: 1px solid rgba(255, 255, 255, 0.07);
+}
+
+.globe {
+  width: 100%;
+  max-width: 420px;
+  aspect-ratio: 1;
+}
+
+.globe canvas {
+  display: block;
+}
+
+.globeCaption {
+  margin-top: 12px;
+  font-size: 11px;
+  font-weight: 500;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: rgba(255, 255, 255, 0.45);
+}
+
+/* ---------- Location cards ---------- */
+
+.cards {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.card {
+  padding: 26px 20px 24px;
+  border-radius: 24px;
+  background: rgba(255, 255, 255, 0.035);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  text-align: center;
+  transition: border-color 0.5s ease, background 0.5s ease, transform 0.6s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.card[data-focus='true'] {
+  border-color: rgba(77, 163, 255, 0.45);
+  background: rgba(77, 163, 255, 0.06);
+}
+
+.cardTop {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 14px;
+  margin-bottom: 22px;
+}
+
+.region {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 11px;
+  font-weight: 500;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: rgba(255, 255, 255, 0.55);
+}
+
+.code {
+  display: grid;
+  place-items: center;
+  height: 24px;
+  padding: 0 8px;
+  border-radius: 999px;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  font-size: 10px;
+  font-weight: 600;
+  letter-spacing: 0.06em;
+  color: var(--white);
+}
+
+.time {
+  display: inline-flex;
+  align-items: baseline;
+  gap: 8px;
+}
+
+.timeValue {
+  font-size: 26px;
+  font-weight: 300;
+  letter-spacing: -0.02em;
+  font-variant-numeric: tabular-nums;
+}
+
+.timeColon {
+  animation: blink 1s steps(1) infinite;
+}
+
+@keyframes blink {
+  50% { opacity: 0.2; }
+}
+
+.timeZone {
+  font-size: 11px;
+  font-weight: 500;
+  color: var(--blue-soft);
+}
+
+.city {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  justify-content: center;
+  gap: 4px 12px;
+  font-size: clamp(2rem, 9vw, 2.75rem);
+  font-weight: 300;
+  line-height: 1;
+  letter-spacing: -0.035em;
+}
+
+.country {
+  font-size: 15px;
+  font-weight: 400;
+  letter-spacing: 0;
+  color: rgba(255, 255, 255, 0.5);
+}
+
+.company {
+  margin-top: 10px;
+  font-size: 13px;
+  color: var(--blue-soft);
+}
+
+.text {
+  max-width: 460px;
+  margin: 16px auto 22px;
+  font-size: 15px;
+  line-height: 1.55;
+  color: rgba(255, 255, 255, 0.7);
+}
+
+.cardBottom {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 14px;
+}
+
+.tags {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 6px;
+  list-style: none;
+}
+
+.tags li {
+  height: 28px;
+  padding: 0 12px;
+  display: grid;
+  place-items: center;
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.06);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  font-size: 11px;
+  font-weight: 500;
+  white-space: nowrap;
+}
+
+.coords {
+  font-size: 11px;
+  font-weight: 500;
+  letter-spacing: 0.04em;
+  color: rgba(255, 255, 255, 0.4);
+  font-variant-numeric: tabular-nums;
+}
+
+/* ---------- Tablet+ ---------- */
+
+@media (min-width: 768px) {
+  .section {
+    padding: 112px 32px 120px;
+  }
+
+  .header {
+    flex-direction: row;
+    align-items: flex-end;
+    justify-content: space-between;
+    margin-bottom: 48px;
+    text-align: left;
+  }
+
+  .lead {
+    margin-left: 0;
+  }
+
+  .cta {
+    flex-shrink: 0;
+  }
+
+  .card {
+    padding: 28px 28px 26px;
+    text-align: left;
+  }
+
+  .cardTop {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .city {
+    justify-content: flex-start;
+  }
+
+  .text {
+    margin-left: 0;
+  }
+
+  .cardBottom {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .tags {
+    justify-content: flex-start;
+  }
+}
+
+/* ---------- Desktop: globe left, cards right ---------- */
+
+@media (min-width: 1024px) {
+  .grid {
+    display: grid;
+    grid-template-columns: minmax(0, 1.05fr) minmax(0, 1fr);
+    gap: 12px;
+    align-items: stretch;
+  }
+
+  .globeFrame {
+    justify-content: center;
+    padding: 32px;
+  }
+
+  .globe {
+    max-width: 560px;
+  }
+
+  .cards {
+    justify-content: space-between;
+  }
+
+  .card {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    padding: 32px 32px 28px;
+  }
+
+  .card[data-focus='true'] {
+    transform: translateX(-4px);
+  }
+
+  .cardBottom {
+    margin-top: auto;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .timeColon {
+    animation: none;
+  }
+}

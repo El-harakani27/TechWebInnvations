@@ -1,0 +1,338 @@
+{
+  "meta": {
+    "title": "TechWebInnovations | Web Tasarım, Pazarlama & BT Hizmetleri",
+    "description": "TechWebInnovations: web tasarım, yazılım geliştirme, SEO & BT hizmetleri (Microsoft 365, BT desteği) tek elden. 150+ müşteri, 26 dil. Tallinn · Hua Hin.",
+    "ogDescription": "Web tasarım, yazılım geliştirme, SEO, fotoğraf & video ve kurumsal BT tek elden. 150+ şirketin geçişi tamamlandı · 26 dilde hizmet · Tallinn, Hua Hin."
+  },
+  "nav": [
+    {
+      "label": "Hizmetler",
+      "description": "Web, medya & BT"
+    },
+    {
+      "label": "Süreç",
+      "description": "Nasıl çalışıyoruz"
+    },
+    {
+      "label": "Konumlar",
+      "description": "Tallinn · Hua Hin"
+    },
+    {
+      "label": "İletişim",
+      "description": "Konuşalım"
+    }
+  ],
+  "ui": {
+    "menu": {
+      "open": "Menü",
+      "close": "Kapat",
+      "cta": "Proje başlatın"
+    },
+    "language": {
+      "label": "Dil"
+    },
+    "hero": {
+      "navTags": [
+        "Web Tasarım",
+        "BT Hizmetleri"
+      ],
+      "officesPill": "Tallinn · Hua Hin",
+      "subtitle": "150+ şirket geçişi · 26 dil",
+      "headingLines": [
+        "Tasarım, Kod & BT.",
+        "Tek Ekip. Dünya Çapında."
+      ],
+      "about": "Modern web geliştirmeyi, profesyonel fotoğraf ve video prodüksiyonunu ve kurumsal BT'yi bir araya getiriyoruz: web siteniz veya online mağazanız için özel yazılımdan Microsoft 365 geçişine ve sürekli BT desteğine kadar.",
+      "ctaPrimary": "Proje Başlatın",
+      "ctaSecondary": "Hizmetleri Keşfedin",
+      "chips": [
+        "Microsoft 365",
+        "E-Ticaret",
+        "Marka Kimliği"
+      ]
+    },
+    "services": {
+      "countLabel": "hizmet",
+      "imageAlts": [
+        "Dizüstü bilgisayarda kod yazan bir geliştirici",
+        "Fotoğraf stüdyosunda bir kamera",
+        "Veri merkezinde sunucu kabinleri"
+      ]
+    },
+    "contact": {
+      "eyebrow": "İletişim",
+      "loopMain": "Konuşalım",
+      "loopServices": "Web Tasarım · Pazarlama · BT Hizmetleri",
+      "emailLabel": "E-posta",
+      "responseLabel": "Yanıt",
+      "responseValue": "24 saat içinde",
+      "officesLabel": "Ofisler",
+      "languagesValue": "26 dil",
+      "note": "24 saat içinde yanıt veriyoruz.",
+      "sentNote": "E-posta uygulamanız talebinizle birlikte açılacaktır. Yalnızca Gönder'e basmanız yeterli.",
+      "mailSubject": "Yeni proje talebi",
+      "mailFields": {
+        "name": "Ad Soyad",
+        "email": "E-posta",
+        "company": "Şirket",
+        "topic": "Konu",
+        "notGiven": "belirtilmedi"
+      }
+    },
+    "footer": {
+      "navigation": "Gezinme",
+      "services": "Hizmetler",
+      "offices": "Ofisler",
+      "contact": "İletişim",
+      "phone": "Telefon",
+      "backToTop": "Başa dön",
+      "close": "Kapat"
+    },
+    "legal": {
+      "contact": "İletişim",
+      "email": "E-posta",
+      "phone": "Telefon",
+      "representedBy": "Temsil eden",
+      "registration": "Sicil numarası (Registrikood)",
+      "responsible": "İçerikten sorumlu"
+    }
+  },
+  "hero": {
+    "eyebrow": "Web Tasarım · Pazarlama · BT Hizmetleri",
+    "title": "Tasarım, pazarlama ve BT için dijital ajansınız.",
+    "lead": "TechWebInnovations; modern web geliştirmeyi, profesyonel fotoğraf ve video prodüksiyonunu ve kurumsal BT'yi bir araya getiriyor: web siteniz veya online mağazanız için özel yazılımdan Microsoft 365 geçişine ve sürekli BT desteğine kadar. Hepsi tek bir ekipten, 26 dilde.",
+    "ctaPrimary": {
+      "label": "Proje başlatın"
+    },
+    "ctaSecondary": {
+      "label": "Hizmetleri keşfedin"
+    },
+    "locations": [
+      {
+        "city": "Tallinn",
+        "country": "Estonya"
+      },
+      {
+        "city": "Hua Hin",
+        "country": "Tayland"
+      }
+    ]
+  },
+  "services": {
+    "eyebrow": "Hizmetlerimiz",
+    "title": "İşletmenizin dijitalde ihtiyaç duyduğu her şey",
+    "lead": "Web tasarım ajansı, kreatif stüdyo ve BT hizmet sağlayıcısı bir arada: tasarlıyor, kodluyor, üretiyor ve işletiyoruz. Ölçülebilir, güvenli ve çok dilli.",
+    "cta": {
+      "label": "Proje başlatın"
+    },
+    "groups": [
+      {
+        "eyebrow": "Geliştirme",
+        "title": "Web Tasarım, Yazılım & Pazarlama",
+        "text": "Modern, hızlı web siteleri, online mağazalar ve özel web uygulamaları: arama motorları için optimize edilmiş, dönüşüm odaklı ve akılda kalan bir markayla desteklenen.",
+        "items": [
+          {
+            "title": "Web Tasarım & Geliştirme",
+            "text": "Mobil uyumlu tasarıma sahip modern, hızlı web siteleri: arama motorları için optimize edilmiş, erişilebilir ve dönüşüm odaklı."
+          },
+          {
+            "title": "Özel Yazılım & Mağaza Sistemleri",
+            "text": "Size özel web çözümleri, online mağazalar ve e-ticaret sistemleri: WooCommerce'ten tamamen özel web uygulamalarına kadar."
+          },
+          {
+            "title": "Marka & Kurumsal Kimlik",
+            "text": "Logo, renk paleti, tipografi ve akılda kalan bir marka duruşu, tüm kanallarda tutarlı."
+          },
+          {
+            "title": "Online Pazarlama & SEO",
+            "text": "Arama motoru optimizasyonu, kampanyalar ve performans raporlaması. Ölçebileceğiniz görünürlük."
+          }
+        ]
+      },
+      {
+        "eyebrow": "Medya",
+        "title": "İçerik, Fotoğraf & Video",
+        "text": "Strateji, yayın planlaması ve içerik üretiminin yanı sıra çekimden post prodüksiyona profesyonel fotoğraf ve video: daha fazla erişim ve güven için.",
+        "items": [
+          {
+            "title": "Sosyal Medya & İçerik",
+            "text": "Markanıza daha fazla erişim ve güven kazandırmak için strateji, yayın planlaması ve içerik üretimi."
+          },
+          {
+            "title": "Profesyonel Fotoğrafçılık",
+            "text": "Web siteleri, mağazalar ve sosyal medya için profesyonel düzeyde ürün, kurumsal ve marka fotoğrafçılığı."
+          },
+          {
+            "title": "Video, Ses & Kurgu",
+            "text": "Çekimden post prodüksiyona video prodüksiyonu: profesyonel ses, kurgu ve renk düzenleme ile."
+          }
+        ]
+      },
+      {
+        "eyebrow": "BT Hizmetleri",
+        "title": "Altyapı, Destek & Projeler",
+        "text": "Microsoft 365, bulut ve altyapı: devreye alma, güvenlik ve işletim bizden, ekibiniz için çok dilli bir destek hattıyla birlikte. 150'den fazla şirketin geçişi tamamlandı.",
+        "items": [
+          {
+            "title": "Microsoft 365 & Bulut Geçişi",
+            "text": "Microsoft 365'in devreye alınması, taşınması ve işletilmesi: Exchange, SharePoint, Teams ve OneDrive, güvenli şekilde yapılandırılmış. 150'den fazla şirketin geçişi tamamlandı."
+          },
+          {
+            "title": "BT Altyapısı & Yönetimi",
+            "text": "BT ortamınızın planlanması, kurulması ve yönetimi: şirket içinde, hibrit veya Azure bulutunda."
+          },
+          {
+            "title": "BT Destek Hattı & BT Desteği",
+            "text": "Ekibiniz için ulaşılabilir, çok dilli bir BT destek hattı ve hızlı destek: uzaktan ve proaktif."
+          },
+          {
+            "title": "Yönetilen Hizmetler & İşletim",
+            "text": "Sürekli işletim, izleme, güncellemeler ve bakım: BT'niz sorunsuz çalışsın diye."
+          },
+          {
+            "title": "Güvenlik & Uç Nokta Yönetimi",
+            "text": "Microsoft Intune ile cihaz yönetimi, uyumluluk politikaları ve en iyi uygulamalara göre sıkılaştırma."
+          },
+          {
+            "title": "Proje & Değişim Yönetimi",
+            "text": "Planlamadan devreye almaya kadar yapılandırılmış BT projeleri, değişim yönetimi ve kullanıcı iletişimi dahil."
+          }
+        ]
+      }
+    ]
+  },
+  "process": {
+    "eyebrow": "Süreç",
+    "title": "Nasıl çalışıyoruz",
+    "lead": "Net bir yapıyla ve şeffaf iletişimle, ilk görüşmeden sürekli işletime kadar.",
+    "steps": [
+      {
+        "phase": "İlk görüşme",
+        "title": "Anlama",
+        "text": "Sizi dinliyor, hedeflerinizi ve mevcut durumunuzu teknik ve stratejik açıdan analiz ediyoruz."
+      },
+      {
+        "phase": "Konsept & sabit fiyat",
+        "title": "Planlama",
+        "text": "Kapsam, zaman planı ve sabit fiyat içeren net bir konsept alırsınız. Sürpriz yok."
+      },
+      {
+        "phase": "Kısa iterasyonlar",
+        "title": "Uygulama",
+        "text": "Tasarım, geliştirme, prodüksiyon veya geçiş: kısa iterasyonlarla ve düzenli ara görüşmelerle."
+      },
+      {
+        "phase": "Sürekli",
+        "title": "Destek",
+        "text": "Yayına alındıktan sonra da yanınızdayız: destek, bakım, sürekli geliştirme ve raporlama."
+      }
+    ],
+    "cta": {
+      "label": "Proje başlatın"
+    }
+  },
+  "stats": [
+    {
+      "label": "şirket geçişi"
+    },
+    {
+      "label": "hizmet dili"
+    },
+    {
+      "label": "ofis"
+    },
+    {
+      "label": "yıllık deneyim"
+    }
+  ],
+  "locations": {
+    "eyebrow": "Konumlar",
+    "title": "İki ofis, tek ekip",
+    "lead": "Tallinn'den Hua Hin'e her ofisimiz tüm hizmet yelpazemizi sunar: web tasarım, pazarlama, fotoğraf & video ve BT hizmetleri. Kişisel, çok dilli ve sizin saat diliminizde.",
+    "items": [
+      {
+        "title": "TechWebInnovations OÜ, Tallinn",
+        "city": "Tallinn",
+        "country": "Estonya",
+        "region": "Avrupa",
+        "tag": "Web Tasarım · Pazarlama · BT Hizmetleri",
+        "text": "Tallinn'den Avrupa genelindeki müşterilerimize aynı kapsamlı hizmet yelpazesini sunuyoruz: web geliştirme, marka kimliği, medya prodüksiyonu ve kurumsal BT. Dijital, verimli ve AB mevzuatına uygun."
+      },
+      {
+        "title": "TechWebInnovations Co., Ltd., Hua Hin",
+        "city": "Hua Hin",
+        "country": "Tayland",
+        "region": "Güneydoğu Asya",
+        "tag": "Web Tasarım · Pazarlama · BT Hizmetleri",
+        "text": "Hua Hin ofisimiz Güneydoğu Asya için birebir aynı hizmet portföyünü sunar: web tasarım, sosyal medya, profesyonel fotoğraf ve video prodüksiyonu ve BT hizmetleri, tam da sizin saat diliminizde."
+      }
+    ],
+    "cta": {
+      "label": "Proje başlatın"
+    }
+  },
+  "contact": {
+    "title": "Konuşalım.",
+    "lead": "İster yeni bir web sitesi, online mağaza veya marka kimliği ister Microsoft 365 geçişi olsun, bize projenizden bahsedin. 24 saat içinde yanıt veriyoruz.",
+    "form": {
+      "fields": {
+        "name": "Ad Soyad",
+        "email": "E-posta",
+        "company": "Şirket (isteğe bağlı)",
+        "topic": "Konu",
+        "message": "Mesajınız"
+      },
+      "topics": [
+        "Web tasarım & geliştirme",
+        "Pazarlama & medya",
+        "BT hizmetleri",
+        "Diğer"
+      ],
+      "submit": "Talebi gönder"
+    }
+  },
+  "footer": {
+    "links": [
+      "Yasal Bildirim",
+      "Gizlilik Politikası",
+      "Çerez ayarları"
+    ],
+    "backToTop": "Başa dön"
+  },
+  "cookieBanner": {
+    "text": "Çerezler ve benzeri teknolojiler kullanıyoruz. Teknik olarak gerekli depolama (ör. dil seçiminiz) her zaman geçerlidir. İstatistik veya pazarlama amaçlı isteğe bağlı çerezler yalnızca onayınızla kullanılır. İsteğe bağlı çerezleri kaydetmemize izin veriyor musunuz?",
+    "more": "Ayrıntılar gizlilik politikamızda",
+    "accept": "Evet, kabul ediyorum",
+    "decline": "Hayır, reddediyorum"
+  },
+  "legal": {
+    "title": "Yasal Bildirim (Impressum)",
+    "intro": "Hizmet sağlayıcı hakkında bilgiler:"
+  },
+  "privacy": {
+    "title": "Gizlilik Politikası",
+    "intro": "Verilerinizin korunması bizim için önemlidir. Aşağıda, GDPR uyarınca bu web sitesinde kişisel verilerin işlenmesi hakkında sizi bilgilendiriyoruz.",
+    "sections": [
+      {
+        "title": "1. Veri sorumlusu",
+        "text": "TechWebInnovations OÜ, Sepapaja tn 6, 11415 Tallinn, Estonya. E-posta: info@techwebinnovations.com"
+      },
+      {
+        "title": "2. Barındırma & sunucu günlük dosyaları",
+        "text": "Bu web sitesini ziyaret ettiğinizde barındırma sağlayıcımız, web sitesinin sunulması, kararlılığının ve güvenliğinin sağlanması için gerekli olduğu ölçüde teknik verileri (ör. IP adresi, erişim tarihi ve saati, tarayıcı türü) otomatik olarak işler (Art. 6(1)(f) GDPR). Bu veriler kısa bir süre sonra silinir."
+      },
+      {
+        "title": "3. Bizimle iletişim",
+        "text": "Bizimle e-posta yoluyla iletişime geçerseniz bilgilerinizi yalnızca talebinizi yanıtlamak amacıyla işleriz (Art. 6(1)(b) GDPR)."
+      },
+      {
+        "title": "4. Çerezler & yerel depolama",
+        "text": "Teknik olarak gerekli depolama (ör. dil seçiminiz ve çerez kararınızın tarayıcınızın yerel depolamasında saklanması) Art. 6(1)(f) GDPR hükmüne dayanır. İsteğe bağlı çerezler (ör. istatistik veya pazarlama amaçlı) yalnızca onayınızla yerleştirilir (Art. 6(1)(a) GDPR). Kararınızı istediğiniz zaman alt bilgideki “Çerez ayarları” bağlantısından değiştirebilirsiniz."
+      },
+      {
+        "title": "5. Haklarınız",
+        "text": "Verilerinize erişim, düzeltme, silme, işlemenin kısıtlanması, veri taşınabilirliği ve verilerinizin işlenmesine itiraz etme haklarına sahipsiniz. Ayrıca bir veri koruma denetim makamına şikâyette bulunma hakkınız da bulunmaktadır. İletişim: info@techwebinnovations.com"
+      }
+    ]
+  }
+}

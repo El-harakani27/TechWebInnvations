@@ -1,0 +1,518 @@
+/* ---------- Section ---------- */
+
+.section {
+  position: relative;
+  padding: 72px 16px 80px;
+  background: var(--pill);
+  overflow: hidden;
+}
+
+/* Fine grain, like the reference's paper texture */
+.section::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  opacity: 0.35;
+  mix-blend-mode: multiply;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='160' height='160'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='2' stitchTiles='stitch'/%3E%3CfeColorMatrix values='0 0 0 0 0.5 0 0 0 0 0.5 0 0 0 0 0.5 0 0 0 0.35 0'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
+}
+
+.section > * {
+  position: relative;
+}
+
+/* ---------- Header ---------- */
+
+/* Mobile: everything centred (see agent.md) */
+.header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 28px;
+  margin-bottom: 40px;
+  text-align: center;
+}
+
+.label {
+  display: inline-flex;
+  align-items: center;
+  height: 30px;
+  padding: 0 14px;
+  margin-bottom: 22px;
+  border: 1px dashed rgba(0, 0, 0, 0.28);
+  border-radius: 999px;
+  font-size: 11px;
+  font-weight: 500;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: var(--ink);
+}
+
+.title {
+  font-size: clamp(2.25rem, 9vw, 4.5rem);
+  font-weight: 300;
+  line-height: 1;
+  letter-spacing: -0.035em;
+  color: var(--ink);
+}
+
+.title {
+  text-wrap: balance;
+}
+
+.titleDot {
+  color: var(--blue-deep);
+}
+
+.lead {
+  max-width: 460px;
+  margin: 20px auto 0;
+  font-size: 15px;
+  line-height: 1.55;
+  color: rgba(16, 20, 28, 0.62);
+}
+
+/* Black pill with a white "record" circle — echoes the hero's Menu button */
+.cta {
+  align-self: center;
+  display: inline-flex;
+  align-items: center;
+  gap: 12px;
+  height: 48px;
+  padding: 0 6px 0 22px;
+  border-radius: 999px;
+  background: var(--ink);
+  color: var(--white);
+  font-size: 13px;
+  font-weight: 500;
+  transition: background 0.3s ease;
+}
+
+.cta:hover {
+  background: var(--blue-deep);
+}
+
+.ctaCircle {
+  display: grid;
+  place-items: center;
+  width: 36px;
+  height: 36px;
+  border-radius: 999px;
+  border: 1px solid rgba(255, 255, 255, 0.35);
+}
+
+.ctaCircle span {
+  width: 6px;
+  height: 6px;
+  border-radius: 999px;
+  background: var(--white);
+  transition: transform 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.cta:hover .ctaCircle span {
+  transform: scale(1.6);
+}
+
+/* ---------- Track (mobile: stacked accordion) ---------- */
+
+.track {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  padding: 6px;
+  border-radius: 28px;
+  background: rgba(255, 255, 255, 0.45);
+  border: 1px solid rgba(0, 0, 0, 0.06);
+}
+
+.panel {
+  position: relative;
+  border-radius: 22px;
+  overflow: hidden;
+  background: rgba(255, 255, 255, 0.6);
+  border: 1px solid rgba(0, 0, 0, 0.06);
+}
+
+.panel[data-active='true'] {
+  background: var(--black);
+  border-color: transparent;
+}
+
+/* Collapsed face = header row on mobile */
+/* Mobile: number + title centred in the row, toggle pinned to the right */
+.face {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  width: 100%;
+  padding: 18px 64px;
+  text-align: center;
+  color: var(--ink);
+}
+
+.faceNumber {
+  font-size: 12px;
+  font-weight: 500;
+  color: var(--blue-deep);
+}
+
+.faceTitle {
+  font-size: 20px;
+  font-weight: 400;
+  letter-spacing: -0.02em;
+}
+
+.faceToggle {
+  position: absolute;
+  right: 18px;
+  top: 50%;
+  margin-top: -16px;
+  display: grid;
+  place-items: center;
+  width: 32px;
+  height: 32px;
+  border-radius: 999px;
+  border: 1px dashed rgba(0, 0, 0, 0.3);
+  transition: transform 0.6s cubic-bezier(0.16, 1, 0.3, 1), background 0.3s ease, color 0.3s ease;
+}
+
+.face:hover .faceToggle {
+  background: var(--ink);
+  color: var(--white);
+  border-style: solid;
+  transform: rotate(90deg);
+}
+
+.panel[data-active='true'] .face {
+  color: var(--white);
+}
+
+.panel[data-active='true'] .faceNumber {
+  color: var(--blue-soft);
+}
+
+.panel[data-active='true'] .faceToggle {
+  border-color: rgba(255, 255, 255, 0.35);
+  transform: rotate(45deg);
+}
+
+/* Height animation via grid rows (0fr → 1fr) */
+.body {
+  display: grid;
+  grid-template-rows: 0fr;
+  transition: grid-template-rows 0.8s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.panel[data-active='true'] .body {
+  grid-template-rows: 1fr;
+}
+
+.bodyInner {
+  min-height: 0;
+  overflow: hidden;
+}
+
+.media {
+  position: relative;
+  height: 260px;
+  margin: 0 6px;
+  border-radius: 16px;
+  overflow: hidden;
+}
+
+.image {
+  object-fit: cover;
+  filter: grayscale(1) contrast(1.08) brightness(0.92);
+  transform: scale(1.08);
+  transition: transform 1.6s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.panel[data-active='true'] .image {
+  transform: scale(1);
+}
+
+/* Mobile: the copy sits below the photo, so the fade just blends the photo into the dark card */
+.shade {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(to top, rgba(10, 13, 18, 0.85) 0%, rgba(10, 13, 18, 0.35) 35%, rgba(10, 13, 18, 0) 65%);
+}
+
+.blueprint {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+}
+
+.node {
+  filter: drop-shadow(0 0 8px rgba(77, 163, 255, 0.9));
+}
+
+.nodePing {
+  transform-box: fill-box;
+  transform-origin: center;
+  animation: ping 2.4s cubic-bezier(0.16, 1, 0.3, 1) infinite;
+}
+
+@keyframes ping {
+  0% { transform: scale(1); opacity: 0.9; }
+  80%, 100% { transform: scale(3.2); opacity: 0; }
+}
+
+.content {
+  padding: 22px 18px 22px;
+  color: var(--white);
+  text-align: center;
+}
+
+.contentMeta {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  margin-bottom: 12px;
+  font-size: 11px;
+  font-weight: 500;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: rgba(255, 255, 255, 0.55);
+}
+
+.contentMeta span {
+  color: var(--blue);
+}
+
+.contentTitle {
+  font-size: clamp(1.5rem, 6vw, 2.125rem);
+  font-weight: 400;
+  line-height: 1.1;
+  letter-spacing: -0.03em;
+  margin-bottom: 14px;
+}
+
+.contentTextWrap {
+  min-height: 72px;
+  margin-bottom: 22px;
+}
+
+.contentText {
+  max-width: 480px;
+  margin: 0 auto;
+  font-size: 15px;
+  line-height: 1.55;
+  color: rgba(255, 255, 255, 0.78);
+}
+
+.pills {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 8px;
+  list-style: none;
+}
+
+.pill {
+  height: 34px;
+  padding: 0 14px;
+  border-radius: 999px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  background: rgba(255, 255, 255, 0.06);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+  color: var(--white);
+  font-size: 11px;
+  font-weight: 600;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  transition: background 0.3s ease, border-color 0.3s ease, color 0.3s ease;
+}
+
+.pill:hover,
+.pill[data-hovered='true'] {
+  background: var(--white);
+  border-color: var(--white);
+  color: var(--ink);
+}
+
+/* ---------- Tablet header ---------- */
+
+@media (min-width: 768px) {
+  .section {
+    padding: 112px 32px 120px;
+  }
+
+  .header {
+    flex-direction: row;
+    align-items: flex-end;
+    justify-content: space-between;
+    margin-bottom: 48px;
+    text-align: left;
+  }
+
+  .lead {
+    margin-left: 0;
+  }
+
+  .title {
+    max-width: 12em;
+  }
+
+  .cta {
+    align-self: auto;
+    flex-shrink: 0;
+  }
+}
+
+/* ---------- Desktop: horizontal accordion ---------- */
+
+@media (min-width: 1024px) {
+  .track {
+    flex-direction: row;
+    height: 600px;
+    border-radius: 32px;
+  }
+
+  .panel {
+    flex: 0 0 132px;
+    border-radius: 26px;
+    transition: flex-grow 0.9s cubic-bezier(0.76, 0, 0.24, 1), background 0.4s ease;
+  }
+
+  .panel[data-active='true'] {
+    flex-grow: 1;
+  }
+
+  .panel:not([data-active='true']):hover {
+    background: var(--white);
+  }
+
+  /* Face becomes a vertical strip: number top, rotated title centre, toggle bottom */
+  .face {
+    position: absolute;
+    inset: 0;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding: 26px 0 24px;
+    text-align: center;
+    transition: opacity 0.35s ease;
+  }
+
+  .faceToggle {
+    position: static;
+    margin-top: 0;
+  }
+
+  .faceTitle {
+    flex: 0;
+    writing-mode: vertical-rl;
+    transform: rotate(180deg);
+    font-size: 30px;
+    white-space: nowrap;
+  }
+
+  .panel[data-active='true'] .face {
+    opacity: 0;
+    pointer-events: none;
+  }
+
+  /* Body fills the panel and fades in once the panel has mostly opened */
+  .body {
+    position: absolute;
+    inset: 0;
+    display: block;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.4s ease;
+  }
+
+  .panel[data-active='true'] .body {
+    opacity: 1;
+    pointer-events: auto;
+    transition: opacity 0.6s ease 0.25s;
+  }
+
+  .bodyInner {
+    height: 100%;
+  }
+
+  .media {
+    position: absolute;
+    inset: 0;
+    height: auto;
+    margin: 0;
+    border-radius: 0;
+  }
+
+  /* Two layers: a tall bottom fade plus a left fade, so the bottom-left copy
+     stays readable even over the bright white-studio photos. */
+  .shade {
+    background:
+      linear-gradient(
+        to top,
+        rgba(10, 13, 18, 0.97) 0%,
+        rgba(10, 13, 18, 0.9) 24%,
+        rgba(10, 13, 18, 0.62) 46%,
+        rgba(10, 13, 18, 0.22) 68%,
+        rgba(10, 13, 18, 0) 86%
+      ),
+      linear-gradient(
+        to right,
+        rgba(10, 13, 18, 0.72) 0%,
+        rgba(10, 13, 18, 0.38) 38%,
+        rgba(10, 13, 18, 0) 66%
+      );
+  }
+
+  .content {
+    text-align: left;
+    text-shadow: 0 1px 18px rgba(10, 13, 18, 0.55);
+  }
+
+  .contentMeta,
+  .pills {
+    justify-content: flex-start;
+  }
+
+  .contentText {
+    margin: 0;
+  }
+
+  /* Fixed width so the copy never reflows while the panel animates open */
+  .content {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 600px;
+    padding: 0 36px 36px;
+  }
+}
+
+@media (min-width: 1280px) {
+  .panel {
+    flex-basis: 150px;
+  }
+
+  .content {
+    width: 660px;
+    padding: 0 40px 40px;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .panel,
+  .body,
+  .image,
+  .faceToggle {
+    transition: none;
+  }
+
+  .nodePing {
+    animation: none;
+  }
+}

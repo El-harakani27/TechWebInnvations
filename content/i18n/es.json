@@ -1,0 +1,338 @@
+{
+  "meta": {
+    "title": "TechWebInnovations | Diseño web, marketing & servicios TI",
+    "description": "TechWebInnovations: diseño web, programación, SEO y servicios TI (Microsoft 365, soporte TI) en un solo lugar. Más de 150 clientes, 26 idiomas. Tallin · Hua Hin.",
+    "ogDescription": "Diseño web, programación, SEO, foto y vídeo, y TI empresarial en un solo lugar. Más de 150 empresas migradas · Atención en 26 idiomas · Tallin, Hua Hin."
+  },
+  "nav": [
+    {
+      "label": "Servicios",
+      "description": "Web, medios & TI"
+    },
+    {
+      "label": "Proceso",
+      "description": "Cómo trabajamos"
+    },
+    {
+      "label": "Ubicaciones",
+      "description": "Tallin · Hua Hin"
+    },
+    {
+      "label": "Contacto",
+      "description": "Hablemos"
+    }
+  ],
+  "ui": {
+    "menu": {
+      "open": "Menú",
+      "close": "Cerrar",
+      "cta": "Iniciar proyecto"
+    },
+    "language": {
+      "label": "Idioma"
+    },
+    "hero": {
+      "navTags": [
+        "Diseño web",
+        "Servicios TI"
+      ],
+      "officesPill": "Tallin · Hua Hin",
+      "subtitle": "150+ empresas migradas · 26 idiomas",
+      "headingLines": [
+        "Diseño, código & TI.",
+        "Un equipo. Global."
+      ],
+      "about": "Combinamos desarrollo web moderno, producción profesional de foto y vídeo, y TI empresarial, desde la programación a medida de tu web o tienda online hasta la migración a Microsoft 365 y el soporte informático continuo.",
+      "ctaPrimary": "Iniciar proyecto",
+      "ctaSecondary": "Ver servicios",
+      "chips": [
+        "Microsoft 365",
+        "E-commerce",
+        "Branding"
+      ]
+    },
+    "services": {
+      "countLabel": "servicios",
+      "imageAlts": [
+        "Desarrollador escribiendo código en un portátil",
+        "Cámara en un estudio fotográfico",
+        "Racks de servidores en un centro de datos"
+      ]
+    },
+    "contact": {
+      "eyebrow": "Contacto",
+      "loopMain": "Hablemos",
+      "loopServices": "Diseño web · Marketing · Servicios TI",
+      "emailLabel": "Email",
+      "responseLabel": "Respuesta",
+      "responseValue": "En menos de 24 horas",
+      "officesLabel": "Oficinas",
+      "languagesValue": "26 idiomas",
+      "note": "Respondemos en menos de 24 horas.",
+      "sentNote": "Tu aplicación de correo debería abrirse con tu solicitud. Solo tienes que pulsar enviar.",
+      "mailSubject": "Nueva solicitud de proyecto",
+      "mailFields": {
+        "name": "Nombre",
+        "email": "Email",
+        "company": "Empresa",
+        "topic": "Tema",
+        "notGiven": "no indicado"
+      }
+    },
+    "footer": {
+      "navigation": "Navegación",
+      "services": "Servicios",
+      "offices": "Oficinas",
+      "contact": "Contacto",
+      "phone": "Teléfono",
+      "backToTop": "Volver arriba",
+      "close": "Cerrar"
+    },
+    "legal": {
+      "contact": "Contacto",
+      "email": "Email",
+      "phone": "Teléfono",
+      "representedBy": "Representada por",
+      "registration": "Número de registro (Registrikood)",
+      "responsible": "Responsable del contenido"
+    }
+  },
+  "hero": {
+    "eyebrow": "Diseño web · Marketing · Servicios TI",
+    "title": "Tu agencia digital de diseño, marketing y TI.",
+    "lead": "TechWebInnovations combina desarrollo web moderno, producción profesional de foto y vídeo, y TI empresarial: desde la programación a medida de tu web o tienda online hasta la migración a Microsoft 365 y el soporte informático continuo. Todo con un solo equipo, en 26 idiomas.",
+    "ctaPrimary": {
+      "label": "Iniciar proyecto"
+    },
+    "ctaSecondary": {
+      "label": "Ver servicios"
+    },
+    "locations": [
+      {
+        "city": "Tallin",
+        "country": "Estonia"
+      },
+      {
+        "city": "Hua Hin",
+        "country": "Tailandia"
+      }
+    ]
+  },
+  "services": {
+    "eyebrow": "Nuestros servicios",
+    "title": "Todo lo que tu empresa necesita en digital",
+    "lead": "Agencia de diseño web, estudio creativo y proveedor de servicios TI en uno: diseñamos, programamos, producimos y gestionamos. Medible, seguro y multilingüe.",
+    "cta": {
+      "label": "Iniciar proyecto"
+    },
+    "groups": [
+      {
+        "eyebrow": "Desarrollo",
+        "title": "Diseño web, programación & marketing",
+        "text": "Webs modernas y rápidas, tiendas online y aplicaciones web a medida: optimizadas para buscadores, pensadas para convertir y respaldadas por una marca que se recuerda.",
+        "items": [
+          {
+            "title": "Diseño & desarrollo web",
+            "text": "Webs modernas y rápidas con diseño responsive: optimizadas para buscadores, accesibles y pensadas para convertir."
+          },
+          {
+            "title": "Programación a medida & tiendas online",
+            "text": "Soluciones web a medida, tiendas online y sistemas de e-commerce, desde WooCommerce hasta aplicaciones web totalmente personalizadas."
+          },
+          {
+            "title": "Branding & identidad corporativa",
+            "text": "Logotipo, paleta de colores, tipografía y una presencia de marca que se recuerda, coherente en todos los canales."
+          },
+          {
+            "title": "Marketing online & SEO",
+            "text": "Posicionamiento en buscadores, campañas e informes de rendimiento. Visibilidad que puedes medir."
+          }
+        ]
+      },
+      {
+        "eyebrow": "Medios",
+        "title": "Contenido, foto & vídeo",
+        "text": "Estrategia, planificación editorial y producción de contenidos, además de fotografía y vídeo profesionales desde el rodaje hasta la postproducción, para ganar alcance y confianza.",
+        "items": [
+          {
+            "title": "Redes sociales & contenido",
+            "text": "Estrategia, planificación editorial y producción de contenidos para ganar alcance y confianza en tu marca."
+          },
+          {
+            "title": "Fotografía profesional",
+            "text": "Fotografía de producto, corporativa y de marca a nivel profesional, para webs, tiendas online y redes sociales."
+          },
+          {
+            "title": "Vídeo, sonido & edición",
+            "text": "Producción de vídeo desde el rodaje hasta la postproducción, con sonido profesional, edición y etalonaje."
+          }
+        ]
+      },
+      {
+        "eyebrow": "Servicios TI",
+        "title": "Infraestructura, soporte & proyectos",
+        "text": "Microsoft 365, nube e infraestructura: implantadas, protegidas y gestionadas, con una línea de soporte multilingüe para tu equipo. Más de 150 empresas migradas.",
+        "items": [
+          {
+            "title": "Microsoft 365 & migración a la nube",
+            "text": "Implantación, migración y operación de Microsoft 365: Exchange, SharePoint, Teams y OneDrive, configurados de forma segura. Más de 150 empresas migradas."
+          },
+          {
+            "title": "Infraestructura & administración TI",
+            "text": "Planificación, implementación y administración de tu entorno TI, on-premises, híbrido o en la nube de Azure."
+          },
+          {
+            "title": "Hotline & soporte TI",
+            "text": "Una línea de soporte TI accesible y multilingüe, con asistencia rápida para tu equipo, en remoto y de forma proactiva."
+          },
+          {
+            "title": "Servicios gestionados & operación",
+            "text": "Operación continua, monitorización, actualizaciones y mantenimiento, para que tu TI simplemente funcione."
+          },
+          {
+            "title": "Seguridad & gestión de endpoints",
+            "text": "Gestión de dispositivos con Microsoft Intune, políticas de cumplimiento y bastionado según las mejores prácticas."
+          },
+          {
+            "title": "Gestión de proyectos & del cambio",
+            "text": "Proyectos TI estructurados desde la planificación hasta el despliegue, incluida la gestión del cambio y la comunicación con los usuarios."
+          }
+        ]
+      }
+    ]
+  },
+  "process": {
+    "eyebrow": "Proceso",
+    "title": "Cómo trabajamos",
+    "lead": "Con una estructura clara y una comunicación transparente, desde la primera conversación hasta la operación continua.",
+    "steps": [
+      {
+        "phase": "Primera conversación",
+        "title": "Entender",
+        "text": "Escuchamos y analizamos tus objetivos y tu situación actual, a nivel técnico y estratégico."
+      },
+      {
+        "phase": "Concepto & precio cerrado",
+        "title": "Planificar",
+        "text": "Recibes un concepto claro con alcance, plazos y precio cerrado. Sin sorpresas."
+      },
+      {
+        "phase": "Iteraciones cortas",
+        "title": "Construir",
+        "text": "Diseño, desarrollo, producción o migración, en iteraciones cortas y con revisiones periódicas."
+      },
+      {
+        "phase": "Continuo",
+        "title": "Acompañar",
+        "text": "Tras el lanzamiento, seguimos contigo: soporte, mantenimiento, evolución e informes."
+      }
+    ],
+    "cta": {
+      "label": "Iniciar proyecto"
+    }
+  },
+  "stats": [
+    {
+      "label": "empresas migradas"
+    },
+    {
+      "label": "idiomas de atención"
+    },
+    {
+      "label": "ubicaciones"
+    },
+    {
+      "label": "años de experiencia"
+    }
+  ],
+  "locations": {
+    "eyebrow": "Ubicaciones",
+    "title": "Dos ubicaciones, un equipo",
+    "lead": "De Tallin a Hua Hin, cada ubicación ofrece toda nuestra gama de servicios: diseño web, marketing, foto & vídeo y servicios TI. Trato cercano, multilingüe y en tu zona horaria.",
+    "items": [
+      {
+        "title": "TechWebInnovations OÜ, Tallin",
+        "city": "Tallin",
+        "country": "Estonia",
+        "region": "Europa",
+        "tag": "Diseño web · Marketing · Servicios TI",
+        "text": "Desde Tallin atendemos a clientes de toda Europa con la misma oferta integral: desarrollo web, branding, producción audiovisual y TI empresarial. Digital, eficiente y bajo la normativa de la UE."
+      },
+      {
+        "title": "TechWebInnovations Co., Ltd., Hua Hin",
+        "city": "Hua Hin",
+        "country": "Tailandia",
+        "region": "Sudeste Asiático",
+        "tag": "Diseño web · Marketing · Servicios TI",
+        "text": "Nuestra sede de Hua Hin ofrece exactamente la misma cartera para el Sudeste Asiático: diseño web, redes sociales, producción profesional de foto y vídeo, y servicios TI, en tu misma zona horaria."
+      }
+    ],
+    "cta": {
+      "label": "Iniciar proyecto"
+    }
+  },
+  "contact": {
+    "title": "Hablemos.",
+    "lead": "Ya sea una nueva web, una tienda online, una identidad de marca o una migración a Microsoft 365, cuéntanos tu proyecto. Respondemos en menos de 24 horas.",
+    "form": {
+      "fields": {
+        "name": "Nombre",
+        "email": "Email",
+        "company": "Empresa (opcional)",
+        "topic": "Tema",
+        "message": "Tu mensaje"
+      },
+      "topics": [
+        "Diseño & desarrollo web",
+        "Marketing & medios",
+        "Servicios TI",
+        "Otro"
+      ],
+      "submit": "Enviar solicitud"
+    }
+  },
+  "footer": {
+    "links": [
+      "Aviso legal",
+      "Política de privacidad",
+      "Configuración de cookies"
+    ],
+    "backToTop": "Volver arriba"
+  },
+  "cookieBanner": {
+    "text": "Utilizamos cookies y tecnologías similares. El almacenamiento técnicamente necesario (p. ej., tu elección de idioma) se aplica siempre. Las cookies opcionales de estadística o marketing solo se usan con tu consentimiento. ¿Podemos guardar cookies opcionales?",
+    "more": "Más información en nuestra política de privacidad",
+    "accept": "Sí, aceptar",
+    "decline": "No, rechazar"
+  },
+  "legal": {
+    "title": "Aviso legal (Impressum)",
+    "intro": "Información sobre el prestador del servicio:"
+  },
+  "privacy": {
+    "title": "Política de privacidad",
+    "intro": "La protección de tus datos es importante para nosotros. A continuación te informamos, conforme al RGPD, sobre el tratamiento de datos personales en este sitio web.",
+    "sections": [
+      {
+        "title": "1. Responsable del tratamiento",
+        "text": "TechWebInnovations OÜ, Sepapaja tn 6, 11415 Tallinn, Estonia. Email: info@techwebinnovations.com"
+      },
+      {
+        "title": "2. Alojamiento & registros del servidor",
+        "text": "Cuando visitas este sitio web, nuestro proveedor de alojamiento procesa automáticamente datos técnicos (p. ej., dirección IP, fecha y hora de acceso, tipo de navegador) en la medida necesaria para prestar, estabilizar y proteger el sitio web (Art. 6(1)(f) RGPD). Estos datos se eliminan tras un breve periodo."
+      },
+      {
+        "title": "3. Contacto",
+        "text": "Si nos contactas por email, tratamos tus datos únicamente para gestionar tu consulta (Art. 6(1)(b) RGPD)."
+      },
+      {
+        "title": "4. Cookies & almacenamiento local",
+        "text": "El almacenamiento técnicamente necesario (p. ej., tu selección de idioma y tu decisión sobre cookies en el almacenamiento local de tu navegador) se basa en el Art. 6(1)(f) RGPD. Las cookies opcionales (p. ej., de estadística o marketing) solo se instalan con tu consentimiento (Art. 6(1)(a) RGPD). Puedes cambiar tu decisión en cualquier momento desde «Configuración de cookies» en el pie de página."
+      },
+      {
+        "title": "5. Tus derechos",
+        "text": "Tienes derecho de acceso, rectificación, supresión, limitación del tratamiento, portabilidad de los datos y oposición al tratamiento de tus datos. También tienes derecho a presentar una reclamación ante una autoridad de control en materia de protección de datos. Contacto: info@techwebinnovations.com"
+      }
+    ]
+  }
+}

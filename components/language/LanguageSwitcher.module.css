@@ -1,0 +1,139 @@
+.root {
+  position: relative;
+}
+
+/* Pill trigger — matches the navbar's light pills */
+.trigger {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  height: 36px;
+  padding: 0 10px 0 12px;
+  border-radius: 999px;
+  background: var(--pill);
+  color: var(--ink);
+  font-size: 11px;
+  font-weight: 600;
+  letter-spacing: 0.04em;
+  transition: background 0.3s ease;
+}
+
+.trigger:hover {
+  background: #e9eaee;
+}
+
+.root[data-tone='dark'] .trigger {
+  background: rgba(255, 255, 255, 0.07);
+  color: var(--white);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.root[data-tone='dark'] .trigger:hover {
+  background: rgba(255, 255, 255, 0.12);
+}
+
+.chevron {
+  opacity: 0.6;
+  transition: transform 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.chevron[data-open='true'] {
+  transform: rotate(180deg);
+}
+
+/* Dropdown panel */
+.panel {
+  position: absolute;
+  z-index: 60;
+  width: min(340px, calc(100vw - 32px));
+  padding: 10px;
+  border-radius: 22px;
+  background: var(--white);
+  color: var(--ink);
+  border: 1px solid rgba(16, 20, 28, 0.08);
+  box-shadow: 0 24px 60px -24px rgba(16, 20, 28, 0.35);
+}
+
+.panel[data-placement='down'] {
+  top: calc(100% + 10px);
+  transform-origin: top right;
+}
+
+.panel[data-placement='up'] {
+  bottom: calc(100% + 10px);
+  transform-origin: bottom right;
+}
+
+.panel[data-align='end'] {
+  right: 0;
+}
+
+.panel[data-align='start'] {
+  left: 0;
+  transform-origin: top left;
+}
+
+.heading {
+  padding: 6px 10px 10px;
+  font-size: 11px;
+  font-weight: 600;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: rgba(16, 20, 28, 0.45);
+}
+
+.list {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2px;
+  max-height: min(60vh, 420px);
+  overflow-y: auto;
+  list-style: none;
+}
+
+.option {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  width: 100%;
+  height: 38px;
+  padding: 0 10px;
+  border-radius: 12px;
+  text-align: start;
+  color: var(--ink);
+  transition: background 0.2s ease;
+}
+
+.option:hover {
+  background: var(--pill);
+}
+
+.option[aria-selected='true'] {
+  background: var(--ink);
+  color: var(--white);
+}
+
+.optionCode {
+  width: 22px;
+  font-size: 10px;
+  font-weight: 600;
+  letter-spacing: 0.04em;
+  color: var(--blue-deep);
+}
+
+.option[aria-selected='true'] .optionCode {
+  color: var(--blue);
+}
+
+.optionLabel {
+  flex: 1;
+  font-size: 13px;
+  font-weight: 500;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.check {
+  flex-shrink: 0;
+}

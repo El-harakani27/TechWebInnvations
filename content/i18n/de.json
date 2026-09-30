@@ -1,0 +1,338 @@
+{
+  "meta": {
+    "title": "TechWebInnovations | Webdesign, Marketing & IT-Services",
+    "description": "TechWebInnovations: Webdesign, Programmierung, SEO & IT-Services (Microsoft 365, IT-Support) aus einer Hand. 150+ Kunden, 26 Sprachen. Tallinn · Hua Hin.",
+    "ogDescription": "Webdesign, Programmierung, SEO, Foto & Video und Enterprise-IT aus einer Hand. 150+ Unternehmen migriert · Service in 26 Sprachen · Tallinn, Hua Hin."
+  },
+  "nav": [
+    {
+      "label": "Leistungen",
+      "description": "Web, Medien & IT"
+    },
+    {
+      "label": "Ablauf",
+      "description": "So arbeiten wir"
+    },
+    {
+      "label": "Standorte",
+      "description": "Tallinn · Hua Hin"
+    },
+    {
+      "label": "Kontakt",
+      "description": "Sprechen wir"
+    }
+  ],
+  "ui": {
+    "menu": {
+      "open": "Menü",
+      "close": "Schließen",
+      "cta": "Projekt starten"
+    },
+    "language": {
+      "label": "Sprache"
+    },
+    "hero": {
+      "navTags": [
+        "Webdesign",
+        "IT-Services"
+      ],
+      "officesPill": "Tallinn · Hua Hin",
+      "subtitle": "150+ Unternehmen migriert · 26 Sprachen",
+      "headingLines": [
+        "Design, Code & IT.",
+        "Ein Team. Weltweit."
+      ],
+      "about": "Wir verbinden moderne Webentwicklung, professionelle Foto- und Videoproduktion und Enterprise-IT, von der individuellen Programmierung Ihrer Website oder Ihres Onlineshops bis zur Migration zu Microsoft 365 und laufendem IT-Support.",
+      "ctaPrimary": "Projekt starten",
+      "ctaSecondary": "Leistungen entdecken",
+      "chips": [
+        "Microsoft 365",
+        "E-Commerce",
+        "Branding"
+      ]
+    },
+    "services": {
+      "countLabel": "Leistungen",
+      "imageAlts": [
+        "Entwickler schreibt Code auf einem Laptop",
+        "Kamera in einem Fotostudio",
+        "Serverschränke in einem Rechenzentrum"
+      ]
+    },
+    "contact": {
+      "eyebrow": "Kontakt",
+      "loopMain": "Sprechen wir",
+      "loopServices": "Webdesign · Marketing · IT-Services",
+      "emailLabel": "E-Mail",
+      "responseLabel": "Antwort",
+      "responseValue": "Innerhalb von 24 Stunden",
+      "officesLabel": "Büros",
+      "languagesValue": "26 Sprachen",
+      "note": "Wir antworten innerhalb von 24 Stunden.",
+      "sentNote": "Ihr E-Mail-Programm sollte sich mit Ihrer Anfrage öffnen. Einfach auf Senden klicken.",
+      "mailSubject": "Neue Projektanfrage",
+      "mailFields": {
+        "name": "Name",
+        "email": "E-Mail",
+        "company": "Unternehmen",
+        "topic": "Thema",
+        "notGiven": "nicht angegeben"
+      }
+    },
+    "footer": {
+      "navigation": "Navigation",
+      "services": "Leistungen",
+      "offices": "Büros",
+      "contact": "Kontakt",
+      "phone": "Telefon",
+      "backToTop": "Nach oben",
+      "close": "Schließen"
+    },
+    "legal": {
+      "contact": "Kontakt",
+      "email": "E-Mail",
+      "phone": "Telefon",
+      "representedBy": "Vertreten durch",
+      "registration": "Registernummer (Registrikood)",
+      "responsible": "Verantwortlich für den Inhalt"
+    }
+  },
+  "hero": {
+    "eyebrow": "Webdesign · Marketing · IT-Services",
+    "title": "Ihre Digitalagentur für Design, Marketing und IT.",
+    "lead": "TechWebInnovations verbindet moderne Webentwicklung, professionelle Foto- und Videoproduktion und Enterprise-IT: von der individuellen Programmierung Ihrer Website oder Ihres Onlineshops bis zur Migration zu Microsoft 365 und laufendem IT-Support. Alles aus einem Team, in 26 Sprachen.",
+    "ctaPrimary": {
+      "label": "Projekt starten"
+    },
+    "ctaSecondary": {
+      "label": "Leistungen entdecken"
+    },
+    "locations": [
+      {
+        "city": "Tallinn",
+        "country": "Estland"
+      },
+      {
+        "city": "Hua Hin",
+        "country": "Thailand"
+      }
+    ]
+  },
+  "services": {
+    "eyebrow": "Unsere Leistungen",
+    "title": "Alles, was Ihr Unternehmen digital braucht",
+    "lead": "Webdesign-Agentur, Kreativstudio und IT-Dienstleister in einem: Wir gestalten, programmieren, produzieren und betreiben. Messbar, sicher und mehrsprachig.",
+    "cta": {
+      "label": "Projekt starten"
+    },
+    "groups": [
+      {
+        "eyebrow": "Entwicklung",
+        "title": "Webdesign, Programmierung & Marketing",
+        "text": "Moderne, schnelle Websites, Onlineshops und individuelle Web-Apps: suchmaschinenoptimiert, auf Conversion ausgelegt und getragen von einer Marke, die in Erinnerung bleibt.",
+        "items": [
+          {
+            "title": "Webdesign & Entwicklung",
+            "text": "Moderne, schnelle Websites mit responsivem Design: suchmaschinenoptimiert, barrierefrei und auf Conversion ausgelegt."
+          },
+          {
+            "title": "Individuelle Programmierung & Shopsysteme",
+            "text": "Maßgeschneiderte Weblösungen, Onlineshops und E-Commerce-Systeme, von WooCommerce bis zur komplett individuellen Web-App."
+          },
+          {
+            "title": "Branding & Corporate Identity",
+            "text": "Logo, Farbpalette, Typografie und ein Markenauftritt, der in Erinnerung bleibt, einheitlich auf allen Kanälen."
+          },
+          {
+            "title": "Online-Marketing & SEO",
+            "text": "Suchmaschinenoptimierung, Kampagnen und Performance-Reporting. Sichtbarkeit, die sich messen lässt."
+          }
+        ]
+      },
+      {
+        "eyebrow": "Medien",
+        "title": "Content, Foto & Video",
+        "text": "Strategie, Redaktionsplanung und Content-Produktion sowie professionelle Fotografie und Video vom Dreh bis zur Postproduktion, für Reichweite und Vertrauen.",
+        "items": [
+          {
+            "title": "Social Media & Content",
+            "text": "Strategie, Redaktionsplanung und Content-Produktion für mehr Reichweite und Vertrauen in Ihre Marke."
+          },
+          {
+            "title": "Professionelle Fotografie",
+            "text": "Produkt-, Business- und Markenfotografie auf professionellem Niveau, für Websites, Shops und Social Media."
+          },
+          {
+            "title": "Videografie, Ton & Schnitt",
+            "text": "Videoproduktion vom Dreh bis zur Postproduktion, mit professionellem Ton, Schnitt und Color Grading."
+          }
+        ]
+      },
+      {
+        "eyebrow": "IT-Services",
+        "title": "Infrastruktur, Support & Projekte",
+        "text": "Microsoft 365, Cloud und Infrastruktur: eingeführt, abgesichert und betrieben, mit einer mehrsprachigen Hotline für Ihr Team. Über 150 Unternehmen migriert.",
+        "items": [
+          {
+            "title": "Microsoft 365 & Cloud-Migration",
+            "text": "Einführung, Migration und Betrieb von Microsoft 365: Exchange, SharePoint, Teams und OneDrive, sicher konfiguriert. Über 150 Unternehmen migriert."
+          },
+          {
+            "title": "IT-Infrastruktur & Administration",
+            "text": "Planung, Aufbau und Administration Ihrer IT-Umgebung, on-premises, hybrid oder in der Azure Cloud."
+          },
+          {
+            "title": "IT-Hotline & IT-Support",
+            "text": "Eine gut erreichbare, mehrsprachige IT-Hotline und schneller Support für Ihr Team, remote und proaktiv."
+          },
+          {
+            "title": "Managed Services & Betrieb",
+            "text": "Laufender Betrieb, Monitoring, Updates und Wartung, damit Ihre IT einfach funktioniert."
+          },
+          {
+            "title": "Sicherheit & Endpoint Management",
+            "text": "Geräteverwaltung mit Microsoft Intune, Compliance-Richtlinien und Härtung nach Best Practices."
+          },
+          {
+            "title": "Projekt- & Change-Management",
+            "text": "Strukturierte IT-Projekte von der Planung bis zum Rollout, inklusive Change-Management und Anwenderkommunikation."
+          }
+        ]
+      }
+    ]
+  },
+  "process": {
+    "eyebrow": "Ablauf",
+    "title": "So arbeiten wir",
+    "lead": "Klar strukturiert, transparent kommuniziert, vom ersten Gespräch bis zum laufenden Betrieb.",
+    "steps": [
+      {
+        "phase": "Erstgespräch",
+        "title": "Verstehen",
+        "text": "Wir hören zu und analysieren Ihre Ziele und Ihre aktuelle Situation, technisch und strategisch."
+      },
+      {
+        "phase": "Konzept & Festpreis",
+        "title": "Planen",
+        "text": "Sie erhalten ein klares Konzept mit Umfang, Zeitplan und Festpreis. Keine Überraschungen."
+      },
+      {
+        "phase": "Kurze Iterationen",
+        "title": "Umsetzen",
+        "text": "Design, Entwicklung, Produktion oder Migration, in kurzen Iterationen und mit regelmäßigen Abstimmungen."
+      },
+      {
+        "phase": "Laufend",
+        "title": "Betreuen",
+        "text": "Nach dem Launch bleiben wir an Ihrer Seite: Support, Wartung, Weiterentwicklung und Reporting."
+      }
+    ],
+    "cta": {
+      "label": "Projekt starten"
+    }
+  },
+  "stats": [
+    {
+      "label": "Unternehmen migriert"
+    },
+    {
+      "label": "Service-Sprachen"
+    },
+    {
+      "label": "Standorte"
+    },
+    {
+      "label": "Jahre Erfahrung"
+    }
+  ],
+  "locations": {
+    "eyebrow": "Standorte",
+    "title": "Zwei Standorte, ein Team",
+    "lead": "Von Tallinn bis Hua Hin bietet jeder Standort unser komplettes Leistungsspektrum: Webdesign, Marketing, Foto & Video und IT-Services. Persönlich, mehrsprachig und in Ihrer Zeitzone.",
+    "items": [
+      {
+        "title": "TechWebInnovations OÜ, Tallinn",
+        "city": "Tallinn",
+        "country": "Estland",
+        "region": "Europa",
+        "tag": "Webdesign · Marketing · IT-Services",
+        "text": "Von Tallinn aus betreuen wir Kunden in ganz Europa mit demselben Full-Service-Angebot: Webentwicklung, Branding, Medienproduktion und Enterprise-IT. Digital, effizient und EU-reguliert."
+      },
+      {
+        "title": "TechWebInnovations Co., Ltd., Hua Hin",
+        "city": "Hua Hin",
+        "country": "Thailand",
+        "region": "Südostasien",
+        "tag": "Webdesign · Marketing · IT-Services",
+        "text": "Unser Standort in Hua Hin bietet das identische Portfolio für Südostasien: Webdesign, Social Media, professionelle Foto- und Videoproduktion sowie IT-Services, direkt in Ihrer Zeitzone."
+      }
+    ],
+    "cta": {
+      "label": "Projekt starten"
+    }
+  },
+  "contact": {
+    "title": "Sprechen wir.",
+    "lead": "Ob neue Website, Onlineshop, Markenidentität oder Migration zu Microsoft 365: Erzählen Sie uns von Ihrem Projekt. Wir antworten innerhalb von 24 Stunden.",
+    "form": {
+      "fields": {
+        "name": "Name",
+        "email": "E-Mail",
+        "company": "Unternehmen (optional)",
+        "topic": "Thema",
+        "message": "Ihre Nachricht"
+      },
+      "topics": [
+        "Webdesign & Entwicklung",
+        "Marketing & Medien",
+        "IT-Services",
+        "Sonstiges"
+      ],
+      "submit": "Anfrage senden"
+    }
+  },
+  "footer": {
+    "links": [
+      "Impressum",
+      "Datenschutzerklärung",
+      "Cookie-Einstellungen"
+    ],
+    "backToTop": "Nach oben"
+  },
+  "cookieBanner": {
+    "text": "Wir verwenden Cookies und ähnliche Technologien. Technisch notwendige Speicherung (z. B. Ihre Sprachauswahl) gilt immer. Optionale Cookies für Statistik oder Marketing setzen wir nur mit Ihrer Einwilligung. Dürfen wir optionale Cookies speichern?",
+    "more": "Mehr in unserer Datenschutzerklärung",
+    "accept": "Ja, akzeptieren",
+    "decline": "Nein, ablehnen"
+  },
+  "legal": {
+    "title": "Impressum",
+    "intro": "Angaben zum Diensteanbieter:"
+  },
+  "privacy": {
+    "title": "Datenschutzerklärung",
+    "intro": "Der Schutz Ihrer Daten ist uns wichtig. Nachfolgend informieren wir Sie gemäß DSGVO über die Verarbeitung personenbezogener Daten auf dieser Website.",
+    "sections": [
+      {
+        "title": "1. Verantwortlicher",
+        "text": "TechWebInnovations OÜ, Sepapaja tn 6, 11415 Tallinn, Estland. E-Mail: info@techwebinnovations.com"
+      },
+      {
+        "title": "2. Hosting & Server-Logfiles",
+        "text": "Beim Besuch dieser Website verarbeitet unser Hosting-Anbieter automatisch technische Daten (z. B. IP-Adresse, Datum und Uhrzeit des Zugriffs, Browsertyp), soweit dies zur Bereitstellung, Stabilität und Sicherheit der Website erforderlich ist (Art. 6(1)(f) DSGVO). Diese Daten werden nach kurzer Zeit gelöscht."
+      },
+      {
+        "title": "3. Kontaktaufnahme",
+        "text": "Wenn Sie uns per E-Mail kontaktieren, verarbeiten wir Ihre Angaben ausschließlich zur Bearbeitung Ihrer Anfrage (Art. 6(1)(b) DSGVO)."
+      },
+      {
+        "title": "4. Cookies & lokaler Speicher",
+        "text": "Technisch notwendige Speicherung (z. B. Ihre Sprachauswahl und Ihre Cookie-Entscheidung im lokalen Speicher Ihres Browsers) erfolgt auf Grundlage von Art. 6(1)(f) DSGVO. Optionale Cookies (z. B. für Statistik oder Marketing) werden nur mit Ihrer Einwilligung gesetzt (Art. 6(1)(a) DSGVO). Sie können Ihre Entscheidung jederzeit über „Cookie-Einstellungen“ im Footer ändern."
+      },
+      {
+        "title": "5. Ihre Rechte",
+        "text": "Sie haben das Recht auf Auskunft, Berichtigung, Löschung, Einschränkung der Verarbeitung, Datenübertragbarkeit sowie Widerspruch gegen die Verarbeitung Ihrer Daten. Zudem haben Sie das Recht, sich bei einer Datenschutz-Aufsichtsbehörde zu beschweren. Kontakt: info@techwebinnovations.com"
+      }
+    ]
+  }
+}

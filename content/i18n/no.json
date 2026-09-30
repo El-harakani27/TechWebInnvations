@@ -1,0 +1,338 @@
+{
+  "meta": {
+    "title": "TechWebInnovations | Webdesign, markedsføring & IT-tjenester",
+    "description": "TechWebInnovations: webdesign, programmering, SEO & IT-tjenester (Microsoft 365, IT-support) fra én leverandør. 150+ kunder, 26 språk. Tallinn · Hua Hin.",
+    "ogDescription": "Webdesign, programmering, SEO, foto & video og bedrifts-IT fra én leverandør. 150+ bedrifter migrert · Service på 26 språk · Tallinn, Hua Hin."
+  },
+  "nav": [
+    {
+      "label": "Tjenester",
+      "description": "Web, media & IT"
+    },
+    {
+      "label": "Prosess",
+      "description": "Slik jobber vi"
+    },
+    {
+      "label": "Kontorer",
+      "description": "Tallinn · Hua Hin"
+    },
+    {
+      "label": "Kontakt",
+      "description": "La oss snakke"
+    }
+  ],
+  "ui": {
+    "menu": {
+      "open": "Meny",
+      "close": "Lukk",
+      "cta": "Start et prosjekt"
+    },
+    "language": {
+      "label": "Språk"
+    },
+    "hero": {
+      "navTags": [
+        "Webdesign",
+        "IT-tjenester"
+      ],
+      "officesPill": "Tallinn · Hua Hin",
+      "subtitle": "150+ bedrifter migrert · 26 språk",
+      "headingLines": [
+        "Design, kode & IT.",
+        "Ett team. Verden rundt."
+      ],
+      "about": "Vi kombinerer moderne webutvikling, profesjonell foto- og videoproduksjon og bedrifts-IT, fra skreddersydd programmering av nettsiden eller nettbutikken din til Microsoft 365-migrering og løpende IT-support.",
+      "ctaPrimary": "Start et prosjekt",
+      "ctaSecondary": "Utforsk tjenestene",
+      "chips": [
+        "Microsoft 365",
+        "E-handel",
+        "Branding"
+      ]
+    },
+    "services": {
+      "countLabel": "tjenester",
+      "imageAlts": [
+        "Utvikler som skriver kode på en bærbar PC",
+        "Kamera i et fotostudio",
+        "Serverrack i et datasenter"
+      ]
+    },
+    "contact": {
+      "eyebrow": "Kontakt",
+      "loopMain": "La oss snakke",
+      "loopServices": "Webdesign · Markedsføring · IT-tjenester",
+      "emailLabel": "E-post",
+      "responseLabel": "Svartid",
+      "responseValue": "Innen 24 timer",
+      "officesLabel": "Kontorer",
+      "languagesValue": "26 språk",
+      "note": "Vi svarer innen 24 timer.",
+      "sentNote": "E-postprogrammet ditt skal nå åpnes med forespørselen din. Trykk bare send.",
+      "mailSubject": "Ny prosjektforespørsel",
+      "mailFields": {
+        "name": "Navn",
+        "email": "E-post",
+        "company": "Bedrift",
+        "topic": "Tema",
+        "notGiven": "ikke oppgitt"
+      }
+    },
+    "footer": {
+      "navigation": "Navigasjon",
+      "services": "Tjenester",
+      "offices": "Kontorer",
+      "contact": "Kontakt",
+      "phone": "Telefon",
+      "backToTop": "Til toppen",
+      "close": "Lukk"
+    },
+    "legal": {
+      "contact": "Kontakt",
+      "email": "E-post",
+      "phone": "Telefon",
+      "representedBy": "Representert ved",
+      "registration": "Registreringsnummer (Registrikood)",
+      "responsible": "Ansvarlig for innholdet"
+    }
+  },
+  "hero": {
+    "eyebrow": "Webdesign · Markedsføring · IT-tjenester",
+    "title": "Ditt digitalbyrå for design, markedsføring og IT.",
+    "lead": "TechWebInnovations kombinerer moderne webutvikling, profesjonell foto- og videoproduksjon og bedrifts-IT: fra skreddersydd programmering av nettsiden eller nettbutikken din til Microsoft 365-migrering og løpende IT-support. Alt fra ett team, på 26 språk.",
+    "ctaPrimary": {
+      "label": "Start et prosjekt"
+    },
+    "ctaSecondary": {
+      "label": "Utforsk tjenestene"
+    },
+    "locations": [
+      {
+        "city": "Tallinn",
+        "country": "Estland"
+      },
+      {
+        "city": "Hua Hin",
+        "country": "Thailand"
+      }
+    ]
+  },
+  "services": {
+    "eyebrow": "Våre tjenester",
+    "title": "Alt bedriften din trenger digitalt",
+    "lead": "Webbyrå, kreativt studio og IT-leverandør i ett: vi designer, koder, produserer og drifter. Målbart, sikkert og flerspråklig.",
+    "cta": {
+      "label": "Start et prosjekt"
+    },
+    "groups": [
+      {
+        "eyebrow": "Utvikling",
+        "title": "Webdesign, programmering & markedsføring",
+        "text": "Moderne, raske nettsider, nettbutikker og skreddersydde webapper: søkemotoroptimalisert, bygget for konvertering og støttet av en merkevare folk husker.",
+        "items": [
+          {
+            "title": "Webdesign & utvikling",
+            "text": "Moderne, raske nettsider med responsivt design: søkemotoroptimalisert, universelt utformet og bygget for konvertering."
+          },
+          {
+            "title": "Skreddersydd programmering & nettbutikker",
+            "text": "Skreddersydde webløsninger, nettbutikker og e-handelssystemer, fra WooCommerce til helt egenutviklede webapper."
+          },
+          {
+            "title": "Branding & visuell identitet",
+            "text": "Logo, fargepalett, typografi og en merkevare folk husker, konsistent i alle kanaler."
+          },
+          {
+            "title": "Digital markedsføring & SEO",
+            "text": "Søkemotoroptimalisering, kampanjer og resultatrapportering. Synlighet du kan måle."
+          }
+        ]
+      },
+      {
+        "eyebrow": "Media",
+        "title": "Innhold, foto & video",
+        "text": "Strategi, redaksjonell planlegging og innholdsproduksjon, pluss profesjonell fotografering og video fra opptak til etterarbeid, for rekkevidde og tillit.",
+        "items": [
+          {
+            "title": "Sosiale medier & innhold",
+            "text": "Strategi, redaksjonell planlegging og innholdsproduksjon for mer rekkevidde og tillit til merkevaren din."
+          },
+          {
+            "title": "Profesjonell fotografering",
+            "text": "Produkt-, bedrifts- og merkevarefotografering på profesjonelt nivå, for nettsider, nettbutikker og sosiale medier."
+          },
+          {
+            "title": "Video, lyd & redigering",
+            "text": "Videoproduksjon fra opptak til etterarbeid, med profesjonell lyd, redigering og fargegradering."
+          }
+        ]
+      },
+      {
+        "eyebrow": "IT-tjenester",
+        "title": "Infrastruktur, support & prosjekter",
+        "text": "Microsoft 365, sky og infrastruktur: innført, sikret og driftet, med en flerspråklig hotline for teamet ditt. Over 150 bedrifter migrert.",
+        "items": [
+          {
+            "title": "Microsoft 365 & skymigrering",
+            "text": "Innføring, migrering og drift av Microsoft 365: Exchange, SharePoint, Teams og OneDrive, sikkert konfigurert. Over 150 bedrifter migrert."
+          },
+          {
+            "title": "IT-infrastruktur & administrasjon",
+            "text": "Planlegging, oppbygging og administrasjon av IT-miljøet ditt, lokalt, hybrid eller i Azure-skyen."
+          },
+          {
+            "title": "IT-hotline & IT-support",
+            "text": "En tilgjengelig, flerspråklig IT-hotline og rask support for teamet ditt, via fjernhjelp og proaktivt."
+          },
+          {
+            "title": "Managed services & drift",
+            "text": "Løpende drift, overvåking, oppdateringer og vedlikehold, slik at IT-en din rett og slett fungerer."
+          },
+          {
+            "title": "Sikkerhet & endepunktstyring",
+            "text": "Enhetsadministrasjon med Microsoft Intune, samsvarsregler og herding etter beste praksis."
+          },
+          {
+            "title": "Prosjekt- & endringsledelse",
+            "text": "Strukturerte IT-prosjekter fra planlegging til utrulling, inkludert endringsledelse og brukerkommunikasjon."
+          }
+        ]
+      }
+    ]
+  },
+  "process": {
+    "eyebrow": "Prosess",
+    "title": "Slik jobber vi",
+    "lead": "Tydelig strukturert og åpent kommunisert, fra første samtale til løpende drift.",
+    "steps": [
+      {
+        "phase": "Første samtale",
+        "title": "Forstå",
+        "text": "Vi lytter og analyserer målene dine og dagens situasjon, både teknisk og strategisk."
+      },
+      {
+        "phase": "Konsept & fastpris",
+        "title": "Planlegg",
+        "text": "Du får et tydelig konsept med omfang, tidsplan og fastpris. Ingen overraskelser."
+      },
+      {
+        "phase": "Korte iterasjoner",
+        "title": "Bygg",
+        "text": "Design, utvikling, produksjon eller migrering, i korte iterasjoner med jevnlige avstemminger."
+      },
+      {
+        "phase": "Løpende",
+        "title": "Følg opp",
+        "text": "Etter lansering blir vi med videre: support, vedlikehold, videreutvikling og rapportering."
+      }
+    ],
+    "cta": {
+      "label": "Start et prosjekt"
+    }
+  },
+  "stats": [
+    {
+      "label": "bedrifter migrert"
+    },
+    {
+      "label": "tjenestespråk"
+    },
+    {
+      "label": "kontorer"
+    },
+    {
+      "label": "års erfaring"
+    }
+  ],
+  "locations": {
+    "eyebrow": "Kontorer",
+    "title": "To kontorer, ett team",
+    "lead": "Fra Tallinn til Hua Hin tilbyr hvert kontor hele tjenestespekteret vårt: webdesign, markedsføring, foto & video og IT-tjenester. Personlig, flerspråklig og i din tidssone.",
+    "items": [
+      {
+        "title": "TechWebInnovations OÜ, Tallinn",
+        "city": "Tallinn",
+        "country": "Estland",
+        "region": "Europa",
+        "tag": "Webdesign · Markedsføring · IT-tjenester",
+        "text": "Fra Tallinn betjener vi kunder i hele Europa med det samme fullservicetilbudet: webutvikling, branding, medieproduksjon og bedrifts-IT. Digitalt, effektivt og EU-regulert."
+      },
+      {
+        "title": "TechWebInnovations Co., Ltd., Hua Hin",
+        "city": "Hua Hin",
+        "country": "Thailand",
+        "region": "Sørøst-Asia",
+        "tag": "Webdesign · Markedsføring · IT-tjenester",
+        "text": "Kontoret vårt i Hua Hin leverer nøyaktig samme portefølje for Sørøst-Asia: webdesign, sosiale medier, profesjonell foto- og videoproduksjon og IT-tjenester, rett i din tidssone."
+      }
+    ],
+    "cta": {
+      "label": "Start et prosjekt"
+    }
+  },
+  "contact": {
+    "title": "La oss snakke.",
+    "lead": "Enten det gjelder en ny nettside, nettbutikk, visuell identitet eller en Microsoft 365-migrering, fortell oss om prosjektet ditt. Vi svarer innen 24 timer.",
+    "form": {
+      "fields": {
+        "name": "Navn",
+        "email": "E-post",
+        "company": "Bedrift (valgfritt)",
+        "topic": "Tema",
+        "message": "Din melding"
+      },
+      "topics": [
+        "Webdesign & utvikling",
+        "Markedsføring & media",
+        "IT-tjenester",
+        "Annet"
+      ],
+      "submit": "Send forespørsel"
+    }
+  },
+  "footer": {
+    "links": [
+      "Juridisk informasjon",
+      "Personvernerklæring",
+      "Cookie-innstillinger"
+    ],
+    "backToTop": "Til toppen"
+  },
+  "cookieBanner": {
+    "text": "Vi bruker informasjonskapsler og lignende teknologier. Teknisk nødvendig lagring (f.eks. språkvalget ditt) gjelder alltid. Valgfrie informasjonskapsler for statistikk eller markedsføring brukes kun med ditt samtykke. Kan vi lagre valgfrie informasjonskapsler?",
+    "more": "Les mer i personvernerklæringen vår",
+    "accept": "Ja, godta",
+    "decline": "Nei, avslå"
+  },
+  "legal": {
+    "title": "Juridisk informasjon (Impressum)",
+    "intro": "Informasjon om tjenesteleverandøren:"
+  },
+  "privacy": {
+    "title": "Personvernerklæring",
+    "intro": "Det er viktig for oss å beskytte dataene dine. Nedenfor informerer vi deg, i samsvar med GDPR, om behandlingen av personopplysninger på dette nettstedet.",
+    "sections": [
+      {
+        "title": "1. Behandlingsansvarlig",
+        "text": "TechWebInnovations OÜ, Sepapaja tn 6, 11415 Tallinn, Estland. E-post: info@techwebinnovations.com"
+      },
+      {
+        "title": "2. Hosting & serverlogger",
+        "text": "Når du besøker dette nettstedet, behandler hostingleverandøren vår automatisk tekniske data (f.eks. IP-adresse, dato og klokkeslett for besøket, nettlesertype) i den grad det er nødvendig for å levere, stabilisere og sikre nettstedet (Art. 6(1)(f) GDPR). Disse dataene slettes etter kort tid."
+      },
+      {
+        "title": "3. Kontakt med oss",
+        "text": "Hvis du kontakter oss på e-post, behandler vi opplysningene dine utelukkende for å håndtere henvendelsen din (Art. 6(1)(b) GDPR)."
+      },
+      {
+        "title": "4. Informasjonskapsler & lokal lagring",
+        "text": "Teknisk nødvendig lagring (f.eks. språkvalget ditt og cookie-valget ditt i nettleserens lokale lagring) er basert på Art. 6(1)(f) GDPR. Valgfrie informasjonskapsler (f.eks. for statistikk eller markedsføring) settes kun med ditt samtykke (Art. 6(1)(a) GDPR). Du kan når som helst endre valget ditt via «Cookie-innstillinger» i bunnteksten."
+      },
+      {
+        "title": "5. Dine rettigheter",
+        "text": "Du har rett til innsyn, retting, sletting, begrensning av behandlingen, dataportabilitet og til å protestere mot behandlingen av dataene dine. Du har også rett til å klage til en tilsynsmyndighet for personvern. Kontakt: info@techwebinnovations.com"
+      }
+    ]
+  }
+}

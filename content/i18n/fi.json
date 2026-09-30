@@ -1,0 +1,338 @@
+{
+  "meta": {
+    "title": "TechWebInnovations | Verkkosuunnittelu, markkinointi & IT-palvelut",
+    "description": "TechWebInnovations: verkkosuunnittelu, ohjelmointi, SEO & IT-palvelut (Microsoft 365, IT-tuki) samasta paikasta. 150+ asiakasta, 26 kieltä. Tallinna · Hua Hin.",
+    "ogDescription": "Verkkosuunnittelu, ohjelmointi, SEO, valokuvaus & video sekä yritysten IT samasta paikasta. 150+ yritystä migroitu · Palvelua 26 kielellä · Tallinna, Hua Hin."
+  },
+  "nav": [
+    {
+      "label": "Palvelut",
+      "description": "Web, media & IT"
+    },
+    {
+      "label": "Prosessi",
+      "description": "Näin toimimme"
+    },
+    {
+      "label": "Toimipisteet",
+      "description": "Tallinna · Hua Hin"
+    },
+    {
+      "label": "Yhteystiedot",
+      "description": "Jutellaan"
+    }
+  ],
+  "ui": {
+    "menu": {
+      "open": "Valikko",
+      "close": "Sulje",
+      "cta": "Aloita projekti"
+    },
+    "language": {
+      "label": "Kieli"
+    },
+    "hero": {
+      "navTags": [
+        "Verkkosuunnittelu",
+        "IT-palvelut"
+      ],
+      "officesPill": "Tallinna · Hua Hin",
+      "subtitle": "150+ yritystä migroitu · 26 kieltä",
+      "headingLines": [
+        "Design, koodi & IT.",
+        "Yksi tiimi. Globaalisti."
+      ],
+      "about": "Yhdistämme modernin verkkokehityksen, ammattimaisen valokuva- ja videotuotannon sekä yritysten IT-palvelut, verkkosivustosi tai verkkokauppasi räätälöidystä ohjelmoinnista Microsoft 365 -migraatioon ja jatkuvaan IT-tukeen.",
+      "ctaPrimary": "Aloita projekti",
+      "ctaSecondary": "Tutustu palveluihin",
+      "chips": [
+        "Microsoft 365",
+        "Verkkokauppa",
+        "Brändäys"
+      ]
+    },
+    "services": {
+      "countLabel": "palvelua",
+      "imageAlts": [
+        "Kehittäjä kirjoittaa koodia kannettavalla tietokoneella",
+        "Kamera valokuvastudiossa",
+        "Palvelinkaappeja datakeskuksessa"
+      ]
+    },
+    "contact": {
+      "eyebrow": "Yhteystiedot",
+      "loopMain": "Jutellaan",
+      "loopServices": "Verkkosuunnittelu · Markkinointi · IT-palvelut",
+      "emailLabel": "Sähköposti",
+      "responseLabel": "Vastausaika",
+      "responseValue": "24 tunnin sisällä",
+      "officesLabel": "Toimistot",
+      "languagesValue": "26 kieltä",
+      "note": "Vastaamme 24 tunnin sisällä.",
+      "sentNote": "Sähköpostiohjelmasi pitäisi nyt avautua viestisi kanssa. Paina vain lähetä.",
+      "mailSubject": "Uusi projektipyyntö",
+      "mailFields": {
+        "name": "Nimi",
+        "email": "Sähköposti",
+        "company": "Yritys",
+        "topic": "Aihe",
+        "notGiven": "ei annettu"
+      }
+    },
+    "footer": {
+      "navigation": "Navigointi",
+      "services": "Palvelut",
+      "offices": "Toimistot",
+      "contact": "Yhteystiedot",
+      "phone": "Puhelin",
+      "backToTop": "Takaisin ylös",
+      "close": "Sulje"
+    },
+    "legal": {
+      "contact": "Yhteystiedot",
+      "email": "Sähköposti",
+      "phone": "Puhelin",
+      "representedBy": "Edustaja",
+      "registration": "Rekisterinumero (Registrikood)",
+      "responsible": "Sisällöstä vastaa"
+    }
+  },
+  "hero": {
+    "eyebrow": "Verkkosuunnittelu · Markkinointi · IT-palvelut",
+    "title": "Digitoimistosi designiin, markkinointiin ja IT:hen.",
+    "lead": "TechWebInnovations yhdistää modernin verkkokehityksen, ammattimaisen valokuva- ja videotuotannon sekä yritysten IT-palvelut: verkkosivustosi tai verkkokauppasi räätälöidystä ohjelmoinnista Microsoft 365 -migraatioon ja jatkuvaan IT-tukeen. Kaikki yhdeltä tiimiltä, 26 kielellä.",
+    "ctaPrimary": {
+      "label": "Aloita projekti"
+    },
+    "ctaSecondary": {
+      "label": "Tutustu palveluihin"
+    },
+    "locations": [
+      {
+        "city": "Tallinna",
+        "country": "Viro"
+      },
+      {
+        "city": "Hua Hin",
+        "country": "Thaimaa"
+      }
+    ]
+  },
+  "services": {
+    "eyebrow": "Palvelumme",
+    "title": "Kaikki, mitä yrityksesi tarvitsee digitaalisesti",
+    "lead": "Verkkosuunnittelutoimisto, luova studio ja IT-palveluntarjoaja yhdessä: suunnittelemme, koodaamme, tuotamme ja ylläpidämme. Mitattavasti, turvallisesti ja monikielisesti.",
+    "cta": {
+      "label": "Aloita projekti"
+    },
+    "groups": [
+      {
+        "eyebrow": "Kehitys",
+        "title": "Verkkosuunnittelu, ohjelmointi & markkinointi",
+        "text": "Modernit, nopeat verkkosivustot, verkkokaupat ja räätälöidyt verkkosovellukset: hakukoneoptimoituja, konversioon rakennettuja ja tukenaan brändi, joka jää mieleen.",
+        "items": [
+          {
+            "title": "Verkkosuunnittelu & -kehitys",
+            "text": "Modernit, nopeat ja responsiiviset verkkosivustot: hakukoneoptimoituja, saavutettavia ja konversioon rakennettuja."
+          },
+          {
+            "title": "Räätälöity ohjelmointi & verkkokaupat",
+            "text": "Räätälöidyt verkkoratkaisut, verkkokaupat ja e-commerce-järjestelmät, WooCommercesta täysin räätälöityihin verkkosovelluksiin."
+          },
+          {
+            "title": "Brändäys & yritysilme",
+            "text": "Logo, väripaletti, typografia ja mieleenpainuva brändi-ilme, yhtenäisenä jokaisessa kanavassa."
+          },
+          {
+            "title": "Verkkomarkkinointi & SEO",
+            "text": "Hakukoneoptimointi, kampanjat ja tulosraportointi. Näkyvyyttä, jonka voit mitata."
+          }
+        ]
+      },
+      {
+        "eyebrow": "Media",
+        "title": "Sisältö, valokuva & video",
+        "text": "Strategia, sisältösuunnittelu ja sisällöntuotanto sekä ammattimainen valokuvaus ja video kuvauksista jälkituotantoon, näkyvyyden ja luottamuksen kasvattamiseksi.",
+        "items": [
+          {
+            "title": "Some & sisältö",
+            "text": "Strategia, sisältösuunnittelu ja sisällöntuotanto, jotka tuovat brändillesi enemmän näkyvyyttä ja luottamusta."
+          },
+          {
+            "title": "Ammattivalokuvaus",
+            "text": "Tuote-, yritys- ja brändikuvausta ammattitasolla verkkosivuille, verkkokauppoihin ja sosiaaliseen mediaan."
+          },
+          {
+            "title": "Video, ääni & editointi",
+            "text": "Videotuotanto kuvauksista jälkituotantoon, ammattimaisella äänellä, editoinnilla ja värimäärittelyllä."
+          }
+        ]
+      },
+      {
+        "eyebrow": "IT-palvelut",
+        "title": "Infrastruktuuri, tuki & projektit",
+        "text": "Microsoft 365, pilvi ja infrastruktuuri: käyttöön otettuna, suojattuna ja ylläpidettynä, sekä monikielinen tukilinja tiimillesi. Yli 150 yritystä migroitu.",
+        "items": [
+          {
+            "title": "Microsoft 365 & pilvimigraatio",
+            "text": "Microsoft 365:n käyttöönotto, migraatio ja ylläpito: Exchange, SharePoint, Teams ja OneDrive turvallisesti määritettyinä. Yli 150 yritystä migroitu."
+          },
+          {
+            "title": "IT-infrastruktuuri & hallinta",
+            "text": "IT-ympäristösi suunnittelu, rakentaminen ja hallinta, paikallisesti, hybridinä tai Azure-pilvessä."
+          },
+          {
+            "title": "IT-tukilinja & IT-tuki",
+            "text": "Tavoitettava, monikielinen IT-tukilinja ja nopea tuki tiimillesi, etänä ja ennakoivasti."
+          },
+          {
+            "title": "Hallinnoidut palvelut & ylläpito",
+            "text": "Jatkuva ylläpito, valvonta, päivitykset ja huolto, jotta IT:si yksinkertaisesti toimii."
+          },
+          {
+            "title": "Tietoturva & päätelaitehallinta",
+            "text": "Laitehallinta Microsoft Intunella, vaatimustenmukaisuuskäytännöt ja koventaminen parhaiden käytäntöjen mukaisesti."
+          },
+          {
+            "title": "Projekti- & muutoshallinta",
+            "text": "Jäsennellyt IT-projektit suunnittelusta käyttöönottoon, mukaan lukien muutoshallinta ja käyttäjäviestintä."
+          }
+        ]
+      }
+    ]
+  },
+  "process": {
+    "eyebrow": "Prosessi",
+    "title": "Näin toimimme",
+    "lead": "Selkeästi jäsennelty ja avoimesti viestitty, ensimmäisestä keskustelusta jatkuvaan ylläpitoon.",
+    "steps": [
+      {
+        "phase": "Ensimmäinen keskustelu",
+        "title": "Ymmärrys",
+        "text": "Kuuntelemme ja analysoimme tavoitteesi ja nykytilanteesi, niin teknisesti kuin strategisesti."
+      },
+      {
+        "phase": "Konsepti & kiinteä hinta",
+        "title": "Suunnittelu",
+        "text": "Saat selkeän konseptin, jossa on laajuus, aikataulu ja kiinteä hinta. Ei yllätyksiä."
+      },
+      {
+        "phase": "Lyhyet iteraatiot",
+        "title": "Toteutus",
+        "text": "Suunnittelu, kehitys, tuotanto tai migraatio lyhyissä iteraatioissa, säännöllisin tilannekatsauksin."
+      },
+      {
+        "phase": "Jatkuva",
+        "title": "Tuki",
+        "text": "Julkaisun jälkeen pysymme rinnallasi: tuki, ylläpito, jatkokehitys ja raportointi."
+      }
+    ],
+    "cta": {
+      "label": "Aloita projekti"
+    }
+  },
+  "stats": [
+    {
+      "label": "migroitua yritystä"
+    },
+    {
+      "label": "palvelukieltä"
+    },
+    {
+      "label": "toimipistettä"
+    },
+    {
+      "label": "vuoden kokemus"
+    }
+  ],
+  "locations": {
+    "eyebrow": "Toimipisteet",
+    "title": "Kaksi toimipistettä, yksi tiimi",
+    "lead": "Tallinnasta Hua Hiniin jokainen toimipisteemme tarjoaa koko palveluvalikoimamme: verkkosuunnittelu, markkinointi, valokuva & video sekä IT-palvelut. Henkilökohtaisesti, monikielisesti ja sinun aikavyöhykkeelläsi.",
+    "items": [
+      {
+        "title": "TechWebInnovations OÜ, Tallinna",
+        "city": "Tallinna",
+        "country": "Viro",
+        "region": "Eurooppa",
+        "tag": "Verkkosuunnittelu · Markkinointi · IT-palvelut",
+        "text": "Tallinnasta palvelemme asiakkaita kaikkialla Euroopassa samalla täyden palvelun tarjonnalla: verkkokehitys, brändäys, mediatuotanto ja yritysten IT. Digitaalisesti, tehokkaasti ja EU-säänneltynä."
+      },
+      {
+        "title": "TechWebInnovations Co., Ltd., Hua Hin",
+        "city": "Hua Hin",
+        "country": "Thaimaa",
+        "region": "Kaakkois-Aasia",
+        "tag": "Verkkosuunnittelu · Markkinointi · IT-palvelut",
+        "text": "Hua Hinin toimipisteemme tarjoaa täsmälleen saman palveluvalikoiman Kaakkois-Aasiaan: verkkosuunnittelu, sosiaalinen media, ammattimainen valokuva- ja videotuotanto sekä IT-palvelut, suoraan sinun aikavyöhykkeelläsi."
+      }
+    ],
+    "cta": {
+      "label": "Aloita projekti"
+    }
+  },
+  "contact": {
+    "title": "Jutellaan.",
+    "lead": "Olipa kyseessä uusi verkkosivusto, verkkokauppa, brändi-identiteetti tai Microsoft 365 -migraatio, kerro meille projektistasi. Vastaamme 24 tunnin sisällä.",
+    "form": {
+      "fields": {
+        "name": "Nimi",
+        "email": "Sähköposti",
+        "company": "Yritys (valinnainen)",
+        "topic": "Aihe",
+        "message": "Viestisi"
+      },
+      "topics": [
+        "Verkkosuunnittelu & -kehitys",
+        "Markkinointi & media",
+        "IT-palvelut",
+        "Muu"
+      ],
+      "submit": "Lähetä pyyntö"
+    }
+  },
+  "footer": {
+    "links": [
+      "Yritystiedot",
+      "Tietosuojaseloste",
+      "Evästeasetukset"
+    ],
+    "backToTop": "Takaisin ylös"
+  },
+  "cookieBanner": {
+    "text": "Käytämme evästeitä ja vastaavia tekniikoita. Teknisesti välttämätön tallennus (esim. kielivalintasi) on aina käytössä. Valinnaiset evästeet tilastointiin tai markkinointiin vain suostumuksellasi. Saammeko tallentaa valinnaisia evästeitä?",
+    "more": "Lisätietoja tietosuojaselosteessamme",
+    "accept": "Kyllä, hyväksyn",
+    "decline": "Ei, kieltäydyn"
+  },
+  "legal": {
+    "title": "Yritystiedot (Impressum)",
+    "intro": "Tietoa palveluntarjoajasta:"
+  },
+  "privacy": {
+    "title": "Tietosuojaseloste",
+    "intro": "Tietojesi suojaaminen on meille tärkeää. Alla kerromme tietosuoja-asetuksen (GDPR) mukaisesti henkilötietojen käsittelystä tällä verkkosivustolla.",
+    "sections": [
+      {
+        "title": "1. Rekisterinpitäjä",
+        "text": "TechWebInnovations OÜ, Sepapaja tn 6, 11415 Tallinn, Viro. Sähköposti: info@techwebinnovations.com"
+      },
+      {
+        "title": "2. Hosting & palvelinlokit",
+        "text": "Kun vierailet tällä verkkosivustolla, hosting-palveluntarjoajamme käsittelee automaattisesti teknisiä tietoja (esim. IP-osoite, käynnin päivämäärä ja kellonaika, selaintyyppi) siinä laajuudessa kuin on tarpeen verkkosivuston tarjoamiseksi, vakauttamiseksi ja suojaamiseksi (Art. 6(1)(f) GDPR). Nämä tiedot poistetaan lyhyen ajan kuluttua."
+      },
+      {
+        "title": "3. Yhteydenotto",
+        "text": "Jos otat meihin yhteyttä sähköpostitse, käytämme antamiasi tietoja ainoastaan yhteydenottosi käsittelyyn (Art. 6(1)(b) GDPR)."
+      },
+      {
+        "title": "4. Evästeet & paikallinen tallennus",
+        "text": "Teknisesti välttämätön tallennus (esim. kielivalintasi ja evästepäätöksesi selaimesi paikallisessa tallennustilassa) perustuu Art. 6(1)(f) GDPR:ään. Valinnaisia evästeitä (esim. tilastointiin tai markkinointiin) asetetaan vain suostumuksellasi (Art. 6(1)(a) GDPR). Voit muuttaa päätöstäsi milloin tahansa alatunnisteen kohdasta ”Evästeasetukset”."
+      },
+      {
+        "title": "5. Oikeutesi",
+        "text": "Sinulla on oikeus saada pääsy tietoihisi sekä oikeus tietojen oikaisemiseen, poistamiseen, käsittelyn rajoittamiseen, siirtämiseen järjestelmästä toiseen ja käsittelyn vastustamiseen. Sinulla on myös oikeus tehdä valitus tietosuojavalvontaviranomaiselle. Yhteystiedot: info@techwebinnovations.com"
+      }
+    ]
+  }
+}

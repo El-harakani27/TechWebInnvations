@@ -1,0 +1,338 @@
+{
+  "meta": {
+    "title": "TechWebInnovations | Webdesign, marketing & IT služby",
+    "description": "TechWebInnovations: webdesign, programování, SEO & IT služby (Microsoft 365, IT podpora) z jednoho zdroje. 150+ klientů, 26 jazyků. Tallinn · Hua Hin.",
+    "ogDescription": "Webdesign, programování, SEO, foto & video a podnikové IT z jednoho zdroje. 150+ migrovaných firem · Služby v 26 jazycích · Tallinn, Hua Hin."
+  },
+  "nav": [
+    {
+      "label": "Služby",
+      "description": "Web, média & IT"
+    },
+    {
+      "label": "Postup",
+      "description": "Jak pracujeme"
+    },
+    {
+      "label": "Pobočky",
+      "description": "Tallinn · Hua Hin"
+    },
+    {
+      "label": "Kontakt",
+      "description": "Pojďme si promluvit"
+    }
+  ],
+  "ui": {
+    "menu": {
+      "open": "Menu",
+      "close": "Zavřít",
+      "cta": "Začít projekt"
+    },
+    "language": {
+      "label": "Jazyk"
+    },
+    "hero": {
+      "navTags": [
+        "Webdesign",
+        "IT služby"
+      ],
+      "officesPill": "Tallinn · Hua Hin",
+      "subtitle": "150+ migrovaných firem · 26 jazyků",
+      "headingLines": [
+        "Design, kód & IT.",
+        "Jeden tým. Celý svět."
+      ],
+      "about": "Spojujeme moderní vývoj webů, profesionální foto a video produkci a podnikové IT, od programování na míru pro váš web nebo e-shop až po migraci na Microsoft 365 a průběžnou IT podporu.",
+      "ctaPrimary": "Začít projekt",
+      "ctaSecondary": "Prohlédnout služby",
+      "chips": [
+        "Microsoft 365",
+        "E-commerce",
+        "Branding"
+      ]
+    },
+    "services": {
+      "countLabel": "služeb",
+      "imageAlts": [
+        "Vývojář píše kód na notebooku",
+        "Fotoaparát ve fotostudiu",
+        "Serverové racky v datovém centru"
+      ]
+    },
+    "contact": {
+      "eyebrow": "Kontakt",
+      "loopMain": "Pojďme si promluvit",
+      "loopServices": "Webdesign · Marketing · IT služby",
+      "emailLabel": "E-mail",
+      "responseLabel": "Odpověď",
+      "responseValue": "Do 24 hodin",
+      "officesLabel": "Kanceláře",
+      "languagesValue": "26 jazyků",
+      "note": "Odpovíme do 24 hodin.",
+      "sentNote": "Měl by se vám otevřít e-mailový program s vaší poptávkou. Stačí ji odeslat.",
+      "mailSubject": "Nová poptávka projektu",
+      "mailFields": {
+        "name": "Jméno",
+        "email": "E-mail",
+        "company": "Firma",
+        "topic": "Téma",
+        "notGiven": "neuvedeno"
+      }
+    },
+    "footer": {
+      "navigation": "Navigace",
+      "services": "Služby",
+      "offices": "Kanceláře",
+      "contact": "Kontakt",
+      "phone": "Telefon",
+      "backToTop": "Zpět nahoru",
+      "close": "Zavřít"
+    },
+    "legal": {
+      "contact": "Kontakt",
+      "email": "E-mail",
+      "phone": "Telefon",
+      "representedBy": "Zastoupená",
+      "registration": "Registrační číslo (Registrikood)",
+      "responsible": "Odpovědnost za obsah"
+    }
+  },
+  "hero": {
+    "eyebrow": "Webdesign · Marketing · IT služby",
+    "title": "Vaše digitální agentura pro design, marketing a IT.",
+    "lead": "TechWebInnovations spojuje moderní vývoj webů, profesionální foto a video produkci a podnikové IT: od programování na míru pro váš web nebo e-shop až po migraci na Microsoft 365 a průběžnou IT podporu. Vše od jednoho týmu, v 26 jazycích.",
+    "ctaPrimary": {
+      "label": "Začít projekt"
+    },
+    "ctaSecondary": {
+      "label": "Prohlédnout služby"
+    },
+    "locations": [
+      {
+        "city": "Tallinn",
+        "country": "Estonsko"
+      },
+      {
+        "city": "Hua Hin",
+        "country": "Thajsko"
+      }
+    ]
+  },
+  "services": {
+    "eyebrow": "Naše služby",
+    "title": "Vše, co vaše firma v digitálním světě potřebuje",
+    "lead": "Webdesignová agentura, kreativní studio a poskytovatel IT služeb v jednom: navrhujeme, programujeme, produkujeme a provozujeme. Měřitelně, bezpečně a vícejazyčně.",
+    "cta": {
+      "label": "Začít projekt"
+    },
+    "groups": [
+      {
+        "eyebrow": "Vývoj",
+        "title": "Webdesign, programování & marketing",
+        "text": "Moderní, rychlé weby, e-shopy a webové aplikace na míru: optimalizované pro vyhledávače, stavěné na konverze a podpořené značkou, která utkví v paměti.",
+        "items": [
+          {
+            "title": "Webdesign & vývoj",
+            "text": "Moderní, rychlé weby s responzivním designem: optimalizované pro vyhledávače, přístupné a stavěné na konverze."
+          },
+          {
+            "title": "Programování na míru & e-shopové systémy",
+            "text": "Webová řešení na míru, e-shopy a e-commerce systémy, od WooCommerce až po plně individuální webové aplikace."
+          },
+          {
+            "title": "Branding & firemní identita",
+            "text": "Logo, barevná paleta, typografie a prezentace značky, která utkví v paměti, jednotná ve všech kanálech."
+          },
+          {
+            "title": "Online marketing & SEO",
+            "text": "Optimalizace pro vyhledávače, kampaně a reporting výkonu. Viditelnost, kterou lze změřit."
+          }
+        ]
+      },
+      {
+        "eyebrow": "Média",
+        "title": "Obsah, foto & video",
+        "text": "Strategie, redakční plánování a tvorba obsahu, k tomu profesionální fotografie a video od natáčení po postprodukci, pro dosah a důvěru.",
+        "items": [
+          {
+            "title": "Sociální sítě & obsah",
+            "text": "Strategie, redakční plánování a tvorba obsahu pro větší dosah a důvěru ve vaši značku."
+          },
+          {
+            "title": "Profesionální fotografie",
+            "text": "Produktová, firemní a brandová fotografie na profesionální úrovni, pro weby, e-shopy a sociální sítě."
+          },
+          {
+            "title": "Video, zvuk & střih",
+            "text": "Videoprodukce od natáčení po postprodukci, s profesionálním zvukem, střihem a barevnými korekcemi."
+          }
+        ]
+      },
+      {
+        "eyebrow": "IT služby",
+        "title": "Infrastruktura, podpora & projekty",
+        "text": "Microsoft 365, cloud a infrastruktura: zavedené, zabezpečené a provozované, s vícejazyčnou hotline pro váš tým. Přes 150 migrovaných firem.",
+        "items": [
+          {
+            "title": "Microsoft 365 & migrace do cloudu",
+            "text": "Zavedení, migrace a provoz Microsoft 365: Exchange, SharePoint, Teams a OneDrive, bezpečně nakonfigurované. Přes 150 migrovaných firem."
+          },
+          {
+            "title": "IT infrastruktura & správa",
+            "text": "Plánování, budování a správa vašeho IT prostředí, on-premises, hybridně nebo v cloudu Azure."
+          },
+          {
+            "title": "IT hotline & IT podpora",
+            "text": "Dostupná, vícejazyčná IT hotline a rychlá podpora pro váš tým, vzdáleně a proaktivně."
+          },
+          {
+            "title": "Managed services & provoz",
+            "text": "Průběžný provoz, monitoring, aktualizace a údržba, aby vaše IT prostě fungovalo."
+          },
+          {
+            "title": "Bezpečnost & správa koncových zařízení",
+            "text": "Správa zařízení pomocí Microsoft Intune, zásady dodržování předpisů a zabezpečení podle osvědčených postupů."
+          },
+          {
+            "title": "Řízení projektů & změn",
+            "text": "Strukturované IT projekty od plánování po nasazení, včetně řízení změn a komunikace s uživateli."
+          }
+        ]
+      }
+    ]
+  },
+  "process": {
+    "eyebrow": "Postup",
+    "title": "Jak pracujeme",
+    "lead": "Jasná struktura a transparentní komunikace, od prvního rozhovoru po průběžný provoz.",
+    "steps": [
+      {
+        "phase": "První rozhovor",
+        "title": "Porozumění",
+        "text": "Nasloucháme a analyzujeme vaše cíle a současnou situaci, technicky i strategicky."
+      },
+      {
+        "phase": "Koncept & pevná cena",
+        "title": "Plánování",
+        "text": "Dostanete jasný koncept s rozsahem, harmonogramem a pevnou cenou. Žádná překvapení."
+      },
+      {
+        "phase": "Krátké iterace",
+        "title": "Realizace",
+        "text": "Design, vývoj, produkce nebo migrace, v krátkých iteracích s pravidelnými kontrolními schůzkami."
+      },
+      {
+        "phase": "Průběžně",
+        "title": "Podpora",
+        "text": "Po spuštění zůstáváme: podpora, údržba, další vývoj a reporting."
+      }
+    ],
+    "cta": {
+      "label": "Začít projekt"
+    }
+  },
+  "stats": [
+    {
+      "label": "migrovaných firem"
+    },
+    {
+      "label": "jazyků podpory"
+    },
+    {
+      "label": "pobočky"
+    },
+    {
+      "label": "let zkušeností"
+    }
+  ],
+  "locations": {
+    "eyebrow": "Pobočky",
+    "title": "Dvě pobočky, jeden tým",
+    "lead": "Od Tallinnu po Hua Hin nabízí každá pobočka kompletní rozsah našich služeb: webdesign, marketing, foto & video a IT služby. Osobně, vícejazyčně a ve vašem časovém pásmu.",
+    "items": [
+      {
+        "title": "TechWebInnovations OÜ, Tallinn",
+        "city": "Tallinn",
+        "country": "Estonsko",
+        "region": "Evropa",
+        "tag": "Webdesign · Marketing · IT služby",
+        "text": "Z Tallinnu obsluhujeme klienty po celé Evropě se stejnou kompletní nabídkou: vývoj webů, branding, mediální produkce a podnikové IT. Digitálně, efektivně a v souladu s regulací EU."
+      },
+      {
+        "title": "TechWebInnovations Co., Ltd., Hua Hin",
+        "city": "Hua Hin",
+        "country": "Thajsko",
+        "region": "Jihovýchodní Asie",
+        "tag": "Webdesign · Marketing · IT služby",
+        "text": "Naše pobočka v Hua Hin nabízí totožné portfolio pro jihovýchodní Asii: webdesign, sociální sítě, profesionální foto a video produkci a IT služby, přímo ve vašem časovém pásmu."
+      }
+    ],
+    "cta": {
+      "label": "Začít projekt"
+    }
+  },
+  "contact": {
+    "title": "Pojďme si promluvit.",
+    "lead": "Ať jde o nový web, e-shop, identitu značky nebo migraci na Microsoft 365, řekněte nám o svém projektu. Odpovíme do 24 hodin.",
+    "form": {
+      "fields": {
+        "name": "Jméno",
+        "email": "E-mail",
+        "company": "Firma (nepovinné)",
+        "topic": "Téma",
+        "message": "Vaše zpráva"
+      },
+      "topics": [
+        "Webdesign & vývoj",
+        "Marketing & média",
+        "IT služby",
+        "Jiné"
+      ],
+      "submit": "Odeslat poptávku"
+    }
+  },
+  "footer": {
+    "links": [
+      "Právní informace",
+      "Ochrana osobních údajů",
+      "Nastavení cookies"
+    ],
+    "backToTop": "Zpět nahoru"
+  },
+  "cookieBanner": {
+    "text": "Používáme cookies a podobné technologie. Technicky nezbytné ukládání (např. vaší volby jazyka) probíhá vždy. Volitelné cookies pro statistiku nebo marketing používáme pouze s vaším souhlasem. Smíme ukládat volitelné cookies?",
+    "more": "Více v našich zásadách ochrany osobních údajů",
+    "accept": "Ano, přijmout",
+    "decline": "Ne, odmítnout"
+  },
+  "legal": {
+    "title": "Právní informace (Impressum)",
+    "intro": "Informace o poskytovateli služeb:"
+  },
+  "privacy": {
+    "title": "Zásady ochrany osobních údajů",
+    "intro": "Ochrana vašich údajů je pro nás důležitá. Níže vás v souladu s GDPR informujeme o zpracování osobních údajů na tomto webu.",
+    "sections": [
+      {
+        "title": "1. Správce",
+        "text": "TechWebInnovations OÜ, Sepapaja tn 6, 11415 Tallinn, Estonsko. E-mail: info@techwebinnovations.com"
+      },
+      {
+        "title": "2. Hosting & serverové logy",
+        "text": "Při návštěvě tohoto webu náš poskytovatel hostingu automaticky zpracovává technické údaje (např. IP adresu, datum a čas přístupu, typ prohlížeče) v rozsahu nezbytném k zajištění provozu, stability a bezpečnosti webu (Art. 6(1)(f) GDPR). Tyto údaje jsou po krátké době vymazány."
+      },
+      {
+        "title": "3. Kontaktování",
+        "text": "Pokud nás kontaktujete e-mailem, zpracováváme vaše údaje výhradně za účelem vyřízení vašeho dotazu (Art. 6(1)(b) GDPR)."
+      },
+      {
+        "title": "4. Cookies & místní úložiště",
+        "text": "Technicky nezbytné ukládání (např. vaší volby jazyka a vašeho rozhodnutí o cookies v místním úložišti prohlížeče) je založeno na Art. 6(1)(f) GDPR. Volitelné cookies (např. pro statistiku nebo marketing) se ukládají pouze s vaším souhlasem (Art. 6(1)(a) GDPR). Své rozhodnutí můžete kdykoli změnit prostřednictvím „Nastavení cookies“ v zápatí."
+      },
+      {
+        "title": "5. Vaše práva",
+        "text": "Máte právo na přístup, opravu, výmaz, omezení zpracování a přenositelnost údajů a také právo vznést námitku proti zpracování vašich údajů. Dále máte právo podat stížnost u dozorového úřadu pro ochranu osobních údajů. Kontakt: info@techwebinnovations.com"
+      }
+    ]
+  }
+}

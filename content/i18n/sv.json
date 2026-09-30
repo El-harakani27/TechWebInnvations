@@ -1,0 +1,338 @@
+{
+  "meta": {
+    "title": "TechWebInnovations | Webbdesign, marknadsföring & IT-tjänster",
+    "description": "TechWebInnovations: webbdesign, programmering, SEO & IT-tjänster (Microsoft 365, IT-support) från en och samma leverantör. 150+ kunder, 26 språk. Tallinn · Hua Hin.",
+    "ogDescription": "Webbdesign, programmering, SEO, foto & video och företags-IT från en och samma leverantör. 150+ migrerade företag · Service på 26 språk · Tallinn, Hua Hin."
+  },
+  "nav": [
+    {
+      "label": "Tjänster",
+      "description": "Webb, media & IT"
+    },
+    {
+      "label": "Process",
+      "description": "Så arbetar vi"
+    },
+    {
+      "label": "Kontor",
+      "description": "Tallinn · Hua Hin"
+    },
+    {
+      "label": "Kontakt",
+      "description": "Låt oss prata"
+    }
+  ],
+  "ui": {
+    "menu": {
+      "open": "Meny",
+      "close": "Stäng",
+      "cta": "Starta ett projekt"
+    },
+    "language": {
+      "label": "Språk"
+    },
+    "hero": {
+      "navTags": [
+        "Webbdesign",
+        "IT-tjänster"
+      ],
+      "officesPill": "Tallinn · Hua Hin",
+      "subtitle": "150+ migrerade företag · 26 språk",
+      "headingLines": [
+        "Design, kod & IT.",
+        "Ett team. Världen över."
+      ],
+      "about": "Vi kombinerar modern webbutveckling, professionell foto- och videoproduktion och företags-IT, från skräddarsydd programmering av din webbplats eller webbutik till Microsoft 365-migrering och löpande IT-support.",
+      "ctaPrimary": "Starta ett projekt",
+      "ctaSecondary": "Utforska tjänsterna",
+      "chips": [
+        "Microsoft 365",
+        "E-handel",
+        "Branding"
+      ]
+    },
+    "services": {
+      "countLabel": "tjänster",
+      "imageAlts": [
+        "Utvecklare som skriver kod på en bärbar dator",
+        "Kamera i en fotostudio",
+        "Serverrack i ett datacenter"
+      ]
+    },
+    "contact": {
+      "eyebrow": "Kontakt",
+      "loopMain": "Låt oss prata",
+      "loopServices": "Webbdesign · Marknadsföring · IT-tjänster",
+      "emailLabel": "E-post",
+      "responseLabel": "Svarstid",
+      "responseValue": "Inom 24 timmar",
+      "officesLabel": "Kontor",
+      "languagesValue": "26 språk",
+      "note": "Vi svarar inom 24 timmar.",
+      "sentNote": "Ditt e-postprogram bör nu öppnas med din förfrågan. Tryck bara på skicka.",
+      "mailSubject": "Ny projektförfrågan",
+      "mailFields": {
+        "name": "Namn",
+        "email": "E-post",
+        "company": "Företag",
+        "topic": "Ämne",
+        "notGiven": "ej angivet"
+      }
+    },
+    "footer": {
+      "navigation": "Navigering",
+      "services": "Tjänster",
+      "offices": "Kontor",
+      "contact": "Kontakt",
+      "phone": "Telefon",
+      "backToTop": "Till toppen",
+      "close": "Stäng"
+    },
+    "legal": {
+      "contact": "Kontakt",
+      "email": "E-post",
+      "phone": "Telefon",
+      "representedBy": "Företrädd av",
+      "registration": "Registreringsnummer (Registrikood)",
+      "responsible": "Ansvarig för innehållet"
+    }
+  },
+  "hero": {
+    "eyebrow": "Webbdesign · Marknadsföring · IT-tjänster",
+    "title": "Din digitala byrå för design, marknadsföring och IT.",
+    "lead": "TechWebInnovations kombinerar modern webbutveckling, professionell foto- och videoproduktion och företags-IT: från skräddarsydd programmering av din webbplats eller webbutik till Microsoft 365-migrering och löpande IT-support. Allt från ett team, på 26 språk.",
+    "ctaPrimary": {
+      "label": "Starta ett projekt"
+    },
+    "ctaSecondary": {
+      "label": "Utforska tjänsterna"
+    },
+    "locations": [
+      {
+        "city": "Tallinn",
+        "country": "Estland"
+      },
+      {
+        "city": "Hua Hin",
+        "country": "Thailand"
+      }
+    ]
+  },
+  "services": {
+    "eyebrow": "Våra tjänster",
+    "title": "Allt ditt företag behöver digitalt",
+    "lead": "Webbyrå, kreativ studio och IT-leverantör i ett: vi designar, kodar, producerar och driftar. Mätbart, säkert och flerspråkigt.",
+    "cta": {
+      "label": "Starta ett projekt"
+    },
+    "groups": [
+      {
+        "eyebrow": "Utveckling",
+        "title": "Webbdesign, programmering & marknadsföring",
+        "text": "Moderna, snabba webbplatser, webbutiker och skräddarsydda webbappar: sökmotoroptimerade, byggda för konvertering och med ett varumärke som folk minns.",
+        "items": [
+          {
+            "title": "Webbdesign & utveckling",
+            "text": "Moderna, snabba webbplatser med responsiv design: sökmotoroptimerade, tillgängliga och byggda för konvertering."
+          },
+          {
+            "title": "Skräddarsydd programmering & webbutiker",
+            "text": "Skräddarsydda webblösningar, webbutiker och e-handelssystem, från WooCommerce till helt specialbyggda webbappar."
+          },
+          {
+            "title": "Branding & visuell identitet",
+            "text": "Logotyp, färgpalett, typografi och ett varumärke som folk minns, enhetligt i alla kanaler."
+          },
+          {
+            "title": "Digital marknadsföring & SEO",
+            "text": "Sökmotoroptimering, kampanjer och resultatrapportering. Synlighet som går att mäta."
+          }
+        ]
+      },
+      {
+        "eyebrow": "Media",
+        "title": "Innehåll, foto & video",
+        "text": "Strategi, redaktionell planering och innehållsproduktion, plus professionell fotografering och video från inspelning till efterbearbetning, för räckvidd och förtroende.",
+        "items": [
+          {
+            "title": "Sociala medier & innehåll",
+            "text": "Strategi, redaktionell planering och innehållsproduktion för mer räckvidd och förtroende för ditt varumärke."
+          },
+          {
+            "title": "Professionell fotografering",
+            "text": "Produkt-, företags- och varumärkesfotografering på professionell nivå, för webbplatser, webbutiker och sociala medier."
+          },
+          {
+            "title": "Video, ljud & redigering",
+            "text": "Videoproduktion från inspelning till efterbearbetning, med professionellt ljud, redigering och färggradering."
+          }
+        ]
+      },
+      {
+        "eyebrow": "IT-tjänster",
+        "title": "Infrastruktur, support & projekt",
+        "text": "Microsoft 365, moln och infrastruktur: infört, säkrat och i drift, med en flerspråkig hotline för ditt team. Över 150 migrerade företag.",
+        "items": [
+          {
+            "title": "Microsoft 365 & molnmigrering",
+            "text": "Införande, migrering och drift av Microsoft 365: Exchange, SharePoint, Teams och OneDrive, säkert konfigurerat. Över 150 migrerade företag."
+          },
+          {
+            "title": "IT-infrastruktur & administration",
+            "text": "Planering, uppbyggnad och administration av din IT-miljö, lokalt, hybrid eller i Azure-molnet."
+          },
+          {
+            "title": "IT-hotline & IT-support",
+            "text": "En nåbar, flerspråkig IT-hotline och snabb support för ditt team, på distans och proaktivt."
+          },
+          {
+            "title": "Managed services & drift",
+            "text": "Löpande drift, övervakning, uppdateringar och underhåll, så att din IT helt enkelt fungerar."
+          },
+          {
+            "title": "Säkerhet & endpointhantering",
+            "text": "Enhetshantering med Microsoft Intune, efterlevnadsprinciper och härdning enligt bästa praxis."
+          },
+          {
+            "title": "Projekt- & förändringsledning",
+            "text": "Strukturerade IT-projekt från planering till utrullning, inklusive förändringsledning och användarkommunikation."
+          }
+        ]
+      }
+    ]
+  },
+  "process": {
+    "eyebrow": "Process",
+    "title": "Så arbetar vi",
+    "lead": "Tydligt strukturerat och öppet kommunicerat, från första samtalet till löpande drift.",
+    "steps": [
+      {
+        "phase": "Första samtalet",
+        "title": "Förstå",
+        "text": "Vi lyssnar och analyserar dina mål och din nuvarande situation, både tekniskt och strategiskt."
+      },
+      {
+        "phase": "Koncept & fast pris",
+        "title": "Planera",
+        "text": "Du får ett tydligt koncept med omfattning, tidsplan och fast pris. Inga överraskningar."
+      },
+      {
+        "phase": "Korta iterationer",
+        "title": "Bygg",
+        "text": "Design, utveckling, produktion eller migrering, i korta iterationer med regelbundna avstämningar."
+      },
+      {
+        "phase": "Löpande",
+        "title": "Stötta",
+        "text": "Efter lanseringen finns vi kvar: support, underhåll, vidareutveckling och rapportering."
+      }
+    ],
+    "cta": {
+      "label": "Starta ett projekt"
+    }
+  },
+  "stats": [
+    {
+      "label": "migrerade företag"
+    },
+    {
+      "label": "servicespråk"
+    },
+    {
+      "label": "kontor"
+    },
+    {
+      "label": "års erfarenhet"
+    }
+  ],
+  "locations": {
+    "eyebrow": "Kontor",
+    "title": "Två kontor, ett team",
+    "lead": "Från Tallinn till Hua Hin erbjuder varje kontor hela vårt tjänsteutbud: webbdesign, marknadsföring, foto & video och IT-tjänster. Personligt, flerspråkigt och i din tidszon.",
+    "items": [
+      {
+        "title": "TechWebInnovations OÜ, Tallinn",
+        "city": "Tallinn",
+        "country": "Estland",
+        "region": "Europa",
+        "tag": "Webbdesign · Marknadsföring · IT-tjänster",
+        "text": "Från Tallinn betjänar vi kunder i hela Europa med samma fullserviceerbjudande: webbutveckling, branding, medieproduktion och företags-IT. Digitalt, effektivt och EU-reglerat."
+      },
+      {
+        "title": "TechWebInnovations Co., Ltd., Hua Hin",
+        "city": "Hua Hin",
+        "country": "Thailand",
+        "region": "Sydostasien",
+        "tag": "Webbdesign · Marknadsföring · IT-tjänster",
+        "text": "Vårt kontor i Hua Hin levererar exakt samma utbud för Sydostasien: webbdesign, sociala medier, professionell foto- och videoproduktion och IT-tjänster, direkt i din tidszon."
+      }
+    ],
+    "cta": {
+      "label": "Starta ett projekt"
+    }
+  },
+  "contact": {
+    "title": "Låt oss prata.",
+    "lead": "Oavsett om det gäller en ny webbplats, webbutik, visuell identitet eller en Microsoft 365-migrering, berätta om ditt projekt. Vi svarar inom 24 timmar.",
+    "form": {
+      "fields": {
+        "name": "Namn",
+        "email": "E-post",
+        "company": "Företag (valfritt)",
+        "topic": "Ämne",
+        "message": "Ditt meddelande"
+      },
+      "topics": [
+        "Webbdesign & utveckling",
+        "Marknadsföring & media",
+        "IT-tjänster",
+        "Övrigt"
+      ],
+      "submit": "Skicka förfrågan"
+    }
+  },
+  "footer": {
+    "links": [
+      "Juridisk information",
+      "Integritetspolicy",
+      "Cookieinställningar"
+    ],
+    "backToTop": "Till toppen"
+  },
+  "cookieBanner": {
+    "text": "Vi använder cookies och liknande tekniker. Tekniskt nödvändig lagring (t.ex. ditt språkval) gäller alltid. Valfria cookies för statistik eller marknadsföring används endast med ditt samtycke. Får vi spara valfria cookies?",
+    "more": "Läs mer i vår integritetspolicy",
+    "accept": "Ja, acceptera",
+    "decline": "Nej, avböj"
+  },
+  "legal": {
+    "title": "Juridisk information (Impressum)",
+    "intro": "Information om tjänsteleverantören:"
+  },
+  "privacy": {
+    "title": "Integritetspolicy",
+    "intro": "Skyddet av dina uppgifter är viktigt för oss. Nedan informerar vi dig, i enlighet med GDPR, om behandlingen av personuppgifter på denna webbplats.",
+    "sections": [
+      {
+        "title": "1. Personuppgiftsansvarig",
+        "text": "TechWebInnovations OÜ, Sepapaja tn 6, 11415 Tallinn, Estland. E-post: info@techwebinnovations.com"
+      },
+      {
+        "title": "2. Hosting & serverloggar",
+        "text": "När du besöker denna webbplats behandlar vår hostingleverantör automatiskt tekniska uppgifter (t.ex. IP-adress, datum och tid för besöket, webbläsartyp) i den utsträckning som krävs för att tillhandahålla, stabilisera och skydda webbplatsen (Art. 6(1)(f) GDPR). Dessa uppgifter raderas efter kort tid."
+      },
+      {
+        "title": "3. Kontakt med oss",
+        "text": "Om du kontaktar oss via e-post behandlar vi dina uppgifter enbart för att hantera din förfrågan (Art. 6(1)(b) GDPR)."
+      },
+      {
+        "title": "4. Cookies & lokal lagring",
+        "text": "Tekniskt nödvändig lagring (t.ex. ditt språkval och ditt cookieval i webbläsarens lokala lagring) grundar sig på Art. 6(1)(f) GDPR. Valfria cookies (t.ex. för statistik eller marknadsföring) sätts endast med ditt samtycke (Art. 6(1)(a) GDPR). Du kan när som helst ändra ditt val via ”Cookieinställningar” i sidfoten."
+      },
+      {
+        "title": "5. Dina rättigheter",
+        "text": "Du har rätt till tillgång, rättelse, radering, begränsning av behandlingen, dataportabilitet och att invända mot behandlingen av dina uppgifter. Du har också rätt att lämna in ett klagomål till en tillsynsmyndighet för dataskydd. Kontakt: info@techwebinnovations.com"
+      }
+    ]
+  }
+}

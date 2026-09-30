@@ -1,0 +1,338 @@
+{
+  "meta": {
+    "title": "TechWebInnovations | Thiết kế web, Marketing & Dịch vụ IT",
+    "description": "TechWebInnovations: thiết kế web, lập trình, SEO & dịch vụ IT (Microsoft 365, hỗ trợ IT) trọn gói từ một nơi. Hơn 150 khách hàng, 26 ngôn ngữ. Tallinn · Hua Hin.",
+    "ogDescription": "Thiết kế web, lập trình, SEO, ảnh & video và IT doanh nghiệp trọn gói từ một nơi. Hơn 150 doanh nghiệp đã chuyển đổi hệ thống · Phục vụ bằng 26 ngôn ngữ · Tallinn, Hua Hin."
+  },
+  "nav": [
+    {
+      "label": "Dịch vụ",
+      "description": "Web, truyền thông & IT"
+    },
+    {
+      "label": "Quy trình",
+      "description": "Cách chúng tôi làm việc"
+    },
+    {
+      "label": "Văn phòng",
+      "description": "Tallinn · Hua Hin"
+    },
+    {
+      "label": "Liên hệ",
+      "description": "Hãy trò chuyện"
+    }
+  ],
+  "ui": {
+    "menu": {
+      "open": "Menu",
+      "close": "Đóng",
+      "cta": "Bắt đầu dự án"
+    },
+    "language": {
+      "label": "Ngôn ngữ"
+    },
+    "hero": {
+      "navTags": [
+        "Thiết kế web",
+        "Dịch vụ IT"
+      ],
+      "officesPill": "Tallinn · Hua Hin",
+      "subtitle": "150+ doanh nghiệp đã chuyển đổi · 26 ngôn ngữ",
+      "headingLines": [
+        "Thiết kế, Code & IT.",
+        "Một đội ngũ. Toàn cầu."
+      ],
+      "about": "Chúng tôi kết hợp phát triển web hiện đại, sản xuất ảnh và video chuyên nghiệp cùng IT doanh nghiệp, từ lập trình theo yêu cầu cho website hoặc cửa hàng trực tuyến của bạn đến chuyển đổi sang Microsoft 365 và hỗ trợ IT liên tục.",
+      "ctaPrimary": "Bắt đầu dự án",
+      "ctaSecondary": "Khám phá dịch vụ",
+      "chips": [
+        "Microsoft 365",
+        "Thương mại điện tử",
+        "Thương hiệu"
+      ]
+    },
+    "services": {
+      "countLabel": "dịch vụ",
+      "imageAlts": [
+        "Lập trình viên đang viết code trên laptop",
+        "Máy ảnh trong studio chụp ảnh",
+        "Tủ rack máy chủ trong trung tâm dữ liệu"
+      ]
+    },
+    "contact": {
+      "eyebrow": "Liên hệ",
+      "loopMain": "Hãy trò chuyện",
+      "loopServices": "Thiết kế web · Marketing · Dịch vụ IT",
+      "emailLabel": "Email",
+      "responseLabel": "Phản hồi",
+      "responseValue": "Trong vòng 24 giờ",
+      "officesLabel": "Văn phòng",
+      "languagesValue": "26 ngôn ngữ",
+      "note": "Chúng tôi phản hồi trong vòng 24 giờ.",
+      "sentNote": "Ứng dụng email của bạn sẽ mở ra cùng yêu cầu của bạn. Bạn chỉ cần nhấn gửi.",
+      "mailSubject": "Yêu cầu dự án mới",
+      "mailFields": {
+        "name": "Họ tên",
+        "email": "Email",
+        "company": "Công ty",
+        "topic": "Chủ đề",
+        "notGiven": "không cung cấp"
+      }
+    },
+    "footer": {
+      "navigation": "Điều hướng",
+      "services": "Dịch vụ",
+      "offices": "Văn phòng",
+      "contact": "Liên hệ",
+      "phone": "Điện thoại",
+      "backToTop": "Lên đầu trang",
+      "close": "Đóng"
+    },
+    "legal": {
+      "contact": "Liên hệ",
+      "email": "Email",
+      "phone": "Điện thoại",
+      "representedBy": "Người đại diện",
+      "registration": "Mã số đăng ký (Registrikood)",
+      "responsible": "Chịu trách nhiệm nội dung"
+    }
+  },
+  "hero": {
+    "eyebrow": "Thiết kế web · Marketing · Dịch vụ IT",
+    "title": "Agency kỹ thuật số của bạn về thiết kế, marketing và IT.",
+    "lead": "TechWebInnovations kết hợp phát triển web hiện đại, sản xuất ảnh và video chuyên nghiệp cùng IT doanh nghiệp: từ lập trình theo yêu cầu cho website hoặc cửa hàng trực tuyến của bạn đến chuyển đổi sang Microsoft 365 và hỗ trợ IT liên tục. Tất cả từ một đội ngũ, bằng 26 ngôn ngữ.",
+    "ctaPrimary": {
+      "label": "Bắt đầu dự án"
+    },
+    "ctaSecondary": {
+      "label": "Khám phá dịch vụ"
+    },
+    "locations": [
+      {
+        "city": "Tallinn",
+        "country": "Estonia"
+      },
+      {
+        "city": "Hua Hin",
+        "country": "Thái Lan"
+      }
+    ]
+  },
+  "services": {
+    "eyebrow": "Dịch vụ của chúng tôi",
+    "title": "Mọi thứ doanh nghiệp bạn cần trong thế giới số",
+    "lead": "Vừa là agency thiết kế web, studio sáng tạo vừa là nhà cung cấp dịch vụ IT: chúng tôi thiết kế, lập trình, sản xuất và vận hành. Đo lường được, an toàn và đa ngôn ngữ.",
+    "cta": {
+      "label": "Bắt đầu dự án"
+    },
+    "groups": [
+      {
+        "eyebrow": "Phát triển",
+        "title": "Thiết kế web, Lập trình & Marketing",
+        "text": "Website, cửa hàng trực tuyến và ứng dụng web tùy chỉnh hiện đại, nhanh chóng: tối ưu cho công cụ tìm kiếm, xây dựng để tăng chuyển đổi và được nâng đỡ bởi một thương hiệu đáng nhớ.",
+        "items": [
+          {
+            "title": "Thiết kế & Phát triển web",
+            "text": "Website hiện đại, nhanh với thiết kế responsive: tối ưu SEO, dễ tiếp cận và xây dựng để tăng chuyển đổi."
+          },
+          {
+            "title": "Lập trình theo yêu cầu & Hệ thống shop",
+            "text": "Giải pháp web, cửa hàng trực tuyến và hệ thống thương mại điện tử được may đo riêng, từ WooCommerce đến ứng dụng web tùy chỉnh hoàn toàn."
+          },
+          {
+            "title": "Thương hiệu & Nhận diện doanh nghiệp",
+            "text": "Logo, bảng màu, kiểu chữ và hình ảnh thương hiệu đáng nhớ, nhất quán trên mọi kênh."
+          },
+          {
+            "title": "Marketing trực tuyến & SEO",
+            "text": "Tối ưu hóa công cụ tìm kiếm, chiến dịch và báo cáo hiệu quả. Mức độ hiển thị bạn có thể đo lường."
+          }
+        ]
+      },
+      {
+        "eyebrow": "Truyền thông",
+        "title": "Nội dung, Ảnh & Video",
+        "text": "Chiến lược, lập kế hoạch biên tập và sản xuất nội dung, cùng nhiếp ảnh và video chuyên nghiệp từ khâu quay chụp đến hậu kỳ, để tăng độ phủ và niềm tin.",
+        "items": [
+          {
+            "title": "Mạng xã hội & Nội dung",
+            "text": "Chiến lược, lập kế hoạch biên tập và sản xuất nội dung để tăng độ phủ và niềm tin vào thương hiệu của bạn."
+          },
+          {
+            "title": "Nhiếp ảnh chuyên nghiệp",
+            "text": "Ảnh sản phẩm, doanh nghiệp và thương hiệu ở đẳng cấp chuyên nghiệp, cho website, cửa hàng trực tuyến và mạng xã hội."
+          },
+          {
+            "title": "Quay phim, Âm thanh & Dựng phim",
+            "text": "Sản xuất video từ khâu quay đến hậu kỳ, với âm thanh, dựng phim và chỉnh màu chuyên nghiệp."
+          }
+        ]
+      },
+      {
+        "eyebrow": "Dịch vụ IT",
+        "title": "Hạ tầng, Hỗ trợ & Dự án",
+        "text": "Microsoft 365, cloud và hạ tầng: triển khai, bảo mật và vận hành, cùng đường dây nóng đa ngôn ngữ cho đội ngũ của bạn. Hơn 150 doanh nghiệp đã chuyển đổi hệ thống.",
+        "items": [
+          {
+            "title": "Microsoft 365 & Chuyển đổi lên cloud",
+            "text": "Triển khai, chuyển đổi và vận hành Microsoft 365: Exchange, SharePoint, Teams và OneDrive, được cấu hình an toàn. Hơn 150 doanh nghiệp đã chuyển đổi hệ thống."
+          },
+          {
+            "title": "Hạ tầng & Quản trị IT",
+            "text": "Lập kế hoạch, xây dựng và quản trị môi trường IT của bạn, tại chỗ (on-premises), hybrid hoặc trên cloud Azure."
+          },
+          {
+            "title": "Hotline IT & Hỗ trợ IT",
+            "text": "Đường dây nóng IT đa ngôn ngữ luôn liên lạc được và hỗ trợ nhanh chóng cho đội ngũ của bạn, từ xa và chủ động."
+          },
+          {
+            "title": "Dịch vụ quản lý & Vận hành",
+            "text": "Vận hành, giám sát, cập nhật và bảo trì liên tục, để hệ thống IT của bạn luôn hoạt động trơn tru."
+          },
+          {
+            "title": "Bảo mật & Quản lý thiết bị",
+            "text": "Quản lý thiết bị với Microsoft Intune, chính sách tuân thủ và gia cố bảo mật theo các thực tiễn tốt nhất."
+          },
+          {
+            "title": "Quản lý dự án & Thay đổi",
+            "text": "Dự án IT có cấu trúc từ lập kế hoạch đến triển khai, bao gồm quản lý thay đổi và truyền thông tới người dùng."
+          }
+        ]
+      }
+    ]
+  },
+  "process": {
+    "eyebrow": "Quy trình",
+    "title": "Cách chúng tôi làm việc",
+    "lead": "Cấu trúc rõ ràng, giao tiếp minh bạch, từ buổi trao đổi đầu tiên đến vận hành lâu dài.",
+    "steps": [
+      {
+        "phase": "Trao đổi đầu tiên",
+        "title": "Thấu hiểu",
+        "text": "Chúng tôi lắng nghe, phân tích mục tiêu và hiện trạng của bạn, cả về kỹ thuật lẫn chiến lược."
+      },
+      {
+        "phase": "Phương án & Giá cố định",
+        "title": "Lập kế hoạch",
+        "text": "Bạn nhận được một phương án rõ ràng với phạm vi, tiến độ và mức giá cố định. Không có bất ngờ."
+      },
+      {
+        "phase": "Chu kỳ ngắn",
+        "title": "Xây dựng",
+        "text": "Thiết kế, phát triển, sản xuất hoặc chuyển đổi, theo các chu kỳ ngắn, với các buổi cập nhật định kỳ."
+      },
+      {
+        "phase": "Liên tục",
+        "title": "Đồng hành",
+        "text": "Sau khi ra mắt, chúng tôi vẫn đồng hành: hỗ trợ, bảo trì, phát triển thêm và báo cáo."
+      }
+    ],
+    "cta": {
+      "label": "Bắt đầu dự án"
+    }
+  },
+  "stats": [
+    {
+      "label": "doanh nghiệp đã chuyển đổi"
+    },
+    {
+      "label": "ngôn ngữ phục vụ"
+    },
+    {
+      "label": "văn phòng"
+    },
+    {
+      "label": "năm kinh nghiệm"
+    }
+  ],
+  "locations": {
+    "eyebrow": "Văn phòng",
+    "title": "Hai văn phòng, một đội ngũ",
+    "lead": "Từ Tallinn đến Hua Hin, mỗi văn phòng đều cung cấp đầy đủ các dịch vụ của chúng tôi: thiết kế web, marketing, ảnh & video và dịch vụ IT. Tận tâm, đa ngôn ngữ và cùng múi giờ với bạn.",
+    "items": [
+      {
+        "title": "TechWebInnovations OÜ, Tallinn",
+        "city": "Tallinn",
+        "country": "Estonia",
+        "region": "Châu Âu",
+        "tag": "Thiết kế web · Marketing · Dịch vụ IT",
+        "text": "Từ Tallinn, chúng tôi phục vụ khách hàng trên khắp châu Âu với cùng một gói dịch vụ trọn gói: phát triển web, xây dựng thương hiệu, sản xuất nội dung truyền thông và IT doanh nghiệp. Số hóa, hiệu quả và tuân thủ quy định của EU."
+      },
+      {
+        "title": "TechWebInnovations Co., Ltd., Hua Hin",
+        "city": "Hua Hin",
+        "country": "Thái Lan",
+        "region": "Đông Nam Á",
+        "tag": "Thiết kế web · Marketing · Dịch vụ IT",
+        "text": "Văn phòng Hua Hin cung cấp danh mục dịch vụ giống hệt cho khu vực Đông Nam Á: thiết kế web, mạng xã hội, sản xuất ảnh và video chuyên nghiệp cùng dịch vụ IT, ngay trong múi giờ của bạn."
+      }
+    ],
+    "cta": {
+      "label": "Bắt đầu dự án"
+    }
+  },
+  "contact": {
+    "title": "Hãy trò chuyện.",
+    "lead": "Dù là website mới, cửa hàng trực tuyến, bộ nhận diện thương hiệu hay chuyển đổi sang Microsoft 365, hãy kể cho chúng tôi về dự án của bạn. Chúng tôi phản hồi trong vòng 24 giờ.",
+    "form": {
+      "fields": {
+        "name": "Họ tên",
+        "email": "Email",
+        "company": "Công ty (không bắt buộc)",
+        "topic": "Chủ đề",
+        "message": "Tin nhắn của bạn"
+      },
+      "topics": [
+        "Thiết kế & phát triển web",
+        "Marketing & truyền thông",
+        "Dịch vụ IT",
+        "Khác"
+      ],
+      "submit": "Gửi yêu cầu"
+    }
+  },
+  "footer": {
+    "links": [
+      "Thông tin pháp lý",
+      "Chính sách bảo mật",
+      "Cài đặt cookie"
+    ],
+    "backToTop": "Lên đầu trang"
+  },
+  "cookieBanner": {
+    "text": "Chúng tôi sử dụng cookie và các công nghệ tương tự. Lưu trữ cần thiết về mặt kỹ thuật (ví dụ: lựa chọn ngôn ngữ của bạn) luôn được áp dụng. Cookie tùy chọn cho thống kê hoặc marketing chỉ được dùng khi có sự đồng ý của bạn. Bạn có cho phép chúng tôi lưu cookie tùy chọn không?",
+    "more": "Xem thêm trong chính sách bảo mật",
+    "accept": "Có, chấp nhận",
+    "decline": "Không, từ chối"
+  },
+  "legal": {
+    "title": "Thông tin pháp lý (Impressum)",
+    "intro": "Thông tin về nhà cung cấp dịch vụ:"
+  },
+  "privacy": {
+    "title": "Chính sách bảo mật",
+    "intro": "Bảo vệ dữ liệu của bạn là điều quan trọng với chúng tôi. Dưới đây, theo GDPR, chúng tôi thông báo cho bạn về việc xử lý dữ liệu cá nhân trên website này.",
+    "sections": [
+      {
+        "title": "1. Bên kiểm soát dữ liệu",
+        "text": "TechWebInnovations OÜ, Sepapaja tn 6, 11415 Tallinn, Estonia. Email: info@techwebinnovations.com"
+      },
+      {
+        "title": "2. Hosting & tệp nhật ký máy chủ",
+        "text": "Khi bạn truy cập website này, nhà cung cấp hosting của chúng tôi tự động xử lý dữ liệu kỹ thuật (ví dụ: địa chỉ IP, ngày và giờ truy cập, loại trình duyệt) trong phạm vi cần thiết để cung cấp, duy trì ổn định và bảo mật website (Art. 6(1)(f) GDPR). Dữ liệu này được xóa sau một thời gian ngắn."
+      },
+      {
+        "title": "3. Liên hệ với chúng tôi",
+        "text": "Nếu bạn liên hệ với chúng tôi qua email, chúng tôi chỉ xử lý thông tin của bạn để giải quyết yêu cầu của bạn (Art. 6(1)(b) GDPR)."
+      },
+      {
+        "title": "4. Cookie & bộ nhớ cục bộ",
+        "text": "Việc lưu trữ cần thiết về mặt kỹ thuật (ví dụ: lựa chọn ngôn ngữ và quyết định về cookie của bạn trong bộ nhớ cục bộ của trình duyệt) dựa trên Art. 6(1)(f) GDPR. Cookie tùy chọn (ví dụ: cho thống kê hoặc marketing) chỉ được thiết lập khi có sự đồng ý của bạn (Art. 6(1)(a) GDPR). Bạn có thể thay đổi quyết định bất cứ lúc nào qua mục “Cài đặt cookie” ở chân trang."
+      },
+      {
+        "title": "5. Quyền của bạn",
+        "text": "Bạn có quyền truy cập, chỉnh sửa, xóa, hạn chế xử lý, di chuyển dữ liệu và phản đối việc xử lý dữ liệu của bạn. Bạn cũng có quyền khiếu nại với cơ quan giám sát bảo vệ dữ liệu. Liên hệ: info@techwebinnovations.com"
+      }
+    ]
+  }
+}

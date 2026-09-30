@@ -1,0 +1,314 @@
+/* ---------- Section ---------- */
+
+.section {
+  position: relative;
+  padding: 72px 16px 80px;
+  background: var(--white);
+}
+
+.inner {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+
+/* ---------- Intro (mobile: centred, see agent.md) ---------- */
+
+.intro {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.label {
+  display: inline-flex;
+  align-items: center;
+  height: 30px;
+  padding: 0 14px;
+  margin-bottom: 22px;
+  border: 1px dashed rgba(0, 0, 0, 0.28);
+  border-radius: 999px;
+  font-size: 11px;
+  font-weight: 500;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: var(--ink);
+}
+
+.title {
+  font-size: clamp(2.25rem, 9vw, 4.5rem);
+  font-weight: 300;
+  line-height: 1;
+  letter-spacing: -0.035em;
+  color: var(--ink);
+}
+
+.titleDot {
+  color: var(--blue-deep);
+}
+
+.lead {
+  max-width: 440px;
+  margin: 20px auto 28px;
+  font-size: 15px;
+  line-height: 1.55;
+  color: rgba(16, 20, 28, 0.62);
+}
+
+.cta {
+  display: inline-flex;
+  align-items: center;
+  gap: 12px;
+  height: 48px;
+  padding: 0 6px 0 22px;
+  border-radius: 999px;
+  background: var(--ink);
+  color: var(--white);
+  font-size: 13px;
+  font-weight: 500;
+  transition: background 0.3s ease;
+}
+
+.cta:hover {
+  background: var(--blue-deep);
+}
+
+.ctaCircle {
+  display: grid;
+  place-items: center;
+  width: 36px;
+  height: 36px;
+  border-radius: 999px;
+  border: 1px solid rgba(255, 255, 255, 0.35);
+}
+
+.ctaCircle span {
+  width: 6px;
+  height: 6px;
+  border-radius: 999px;
+  background: var(--white);
+  transition: transform 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.cta:hover .ctaCircle span {
+  transform: scale(1.6);
+}
+
+/* ---------- Steps ---------- */
+
+.steps {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  padding: 6px;
+  list-style: none;
+  border-radius: 28px;
+  background: var(--pill);
+  border: 1px solid rgba(0, 0, 0, 0.05);
+}
+
+/*
+ * Dark highlights — two shapes (one for the bar, one for the card) that GSAP
+ * glides between steps. Layering: white step backgrounds < highlight < text.
+ */
+.highlight {
+  position: absolute;
+  top: 0;
+  left: 6px;
+  right: 6px;
+  height: 0;
+  z-index: 1;
+  visibility: hidden;
+  pointer-events: none;
+  background: var(--ink);
+  will-change: transform, height;
+}
+
+.highlightBar {
+  border-radius: 14px;
+}
+
+.highlightCard {
+  border-radius: 22px;
+  box-shadow: 0 24px 48px -28px rgba(16, 20, 28, 0.65);
+}
+
+.step {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.bar,
+.card {
+  position: relative;
+  overflow: hidden;
+  background: var(--white);
+  color: var(--ink);
+  /* Text colour turns over as the highlight arrives / leaves */
+  transition: color 0.7s cubic-bezier(0.65, 0, 0.35, 1) 0.25s;
+}
+
+.bar > *,
+.card > * {
+  position: relative;
+  z-index: 2;
+}
+
+/* Header bar: label centred, ticks pinned right (mobile) */
+.bar {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 44px;
+  padding: 0 52px;
+  border-radius: 14px;
+}
+
+.barLabel {
+  font-size: 11px;
+  font-weight: 600;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  white-space: nowrap;
+}
+
+.ticks {
+  position: absolute !important;
+  right: 16px;
+  top: 50%;
+  display: flex;
+  gap: 3px;
+  transform: translateY(-50%);
+}
+
+.ticks i {
+  display: block;
+  width: 2px;
+  height: 11px;
+  border-radius: 2px;
+  background: rgba(16, 20, 28, 0.2);
+  transition: background 0.7s ease 0.25s;
+}
+
+.ticks i[data-on='true'] {
+  background: var(--blue-deep);
+}
+
+.step[data-active='true'] .ticks i[data-on='true'] {
+  background: var(--blue);
+}
+
+.step[data-active='true'] .ticks i:not([data-on='true']) {
+  background: rgba(255, 255, 255, 0.22);
+}
+
+/* Card */
+.card {
+  padding: 28px 22px 30px;
+  border-radius: 22px;
+  text-align: center;
+}
+
+.cardNumber {
+  display: block;
+  margin-bottom: 18px;
+  font-size: 15px;
+  font-weight: 500;
+  font-variant-numeric: tabular-nums;
+  color: var(--blue-deep);
+  transition: color 0.7s ease 0.25s;
+}
+
+.cardTitle {
+  margin-bottom: 10px;
+  font-size: 26px;
+  font-weight: 400;
+  line-height: 1.1;
+  letter-spacing: -0.025em;
+}
+
+.cardText {
+  max-width: 440px;
+  margin: 0 auto;
+  font-size: 15px;
+  line-height: 1.55;
+  color: rgba(16, 20, 28, 0.62);
+  transition: color 0.7s ease 0.25s;
+}
+
+/* Active step colours (the dark itself comes from the gliding highlight) */
+.step[data-active='true'] .bar,
+.step[data-active='true'] .card {
+  color: var(--white);
+}
+
+.step[data-active='true'] .cardNumber {
+  color: var(--blue);
+}
+
+.step[data-active='true'] .cardText {
+  color: rgba(255, 255, 255, 0.74);
+}
+
+/* ---------- Tablet+ ---------- */
+
+@media (min-width: 768px) {
+  .section {
+    padding: 112px 32px 120px;
+  }
+
+  .bar {
+    justify-content: flex-start;
+    padding: 0 18px;
+  }
+
+  .ticks {
+    right: 18px;
+  }
+
+  .card {
+    padding: 30px 28px 32px;
+    text-align: left;
+  }
+
+  .cardText {
+    margin: 0;
+  }
+}
+
+/* ---------- Desktop: two columns, sticky intro ---------- */
+
+@media (min-width: 1024px) {
+  .inner {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+    gap: 64px;
+    align-items: start;
+  }
+
+  /* Stays pinned while the steps column scrolls past, until the section ends */
+  .intro {
+    position: sticky;
+    top: 120px;
+    align-items: flex-start;
+    text-align: left;
+  }
+
+  .lead {
+    margin-left: 0;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .bar,
+  .card,
+  .cardNumber,
+  .cardText,
+  .ticks i {
+    transition: none;
+  }
+}

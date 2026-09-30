@@ -1,0 +1,338 @@
+{
+  "meta": {
+    "title": "TechWebInnovations | 网页设计、营销 & IT服务",
+    "description": "TechWebInnovations：网页设计、程序开发、SEO & IT服务（Microsoft 365、IT支持）一站式提供。150+家客户，26种语言。塔林 · 华欣。",
+    "ogDescription": "网页设计、程序开发、SEO、摄影 & 视频以及企业IT，一站式提供。已为150+家企业完成迁移 · 26种语言服务 · 塔林、华欣。"
+  },
+  "nav": [
+    {
+      "label": "服务",
+      "description": "网页、媒体 & IT"
+    },
+    {
+      "label": "流程",
+      "description": "我们的工作方式"
+    },
+    {
+      "label": "地点",
+      "description": "塔林 · 华欣"
+    },
+    {
+      "label": "联系",
+      "description": "欢迎洽谈"
+    }
+  ],
+  "ui": {
+    "menu": {
+      "open": "菜单",
+      "close": "关闭",
+      "cta": "开始项目"
+    },
+    "language": {
+      "label": "语言"
+    },
+    "hero": {
+      "navTags": [
+        "网页设计",
+        "IT服务"
+      ],
+      "officesPill": "塔林 · 华欣",
+      "subtitle": "已迁移150+家企业 · 26种语言",
+      "headingLines": [
+        "设计、代码 & IT。",
+        "一个团队。服务全球。"
+      ],
+      "about": "我们将现代网页开发、专业摄影与视频制作以及企业IT融为一体，从为您的网站或网店定制程序开发，到Microsoft 365迁移和持续的IT支持。",
+      "ctaPrimary": "开始项目",
+      "ctaSecondary": "了解服务",
+      "chips": [
+        "Microsoft 365",
+        "电子商务",
+        "品牌塑造"
+      ]
+    },
+    "services": {
+      "countLabel": "项服务",
+      "imageAlts": [
+        "开发人员在笔记本电脑上编写代码",
+        "摄影棚中的相机",
+        "数据中心的服务器机架"
+      ]
+    },
+    "contact": {
+      "eyebrow": "联系",
+      "loopMain": "欢迎洽谈",
+      "loopServices": "网页设计 · 营销 · IT服务",
+      "emailLabel": "邮箱",
+      "responseLabel": "回复",
+      "responseValue": "24小时内",
+      "officesLabel": "办公室",
+      "languagesValue": "26种语言",
+      "note": "我们将在24小时内回复。",
+      "sentNote": "您的邮件应用将打开并已填好您的请求，只需点击发送即可。",
+      "mailSubject": "新项目咨询",
+      "mailFields": {
+        "name": "姓名",
+        "email": "邮箱",
+        "company": "公司",
+        "topic": "主题",
+        "notGiven": "未填写"
+      }
+    },
+    "footer": {
+      "navigation": "导航",
+      "services": "服务",
+      "offices": "办公室",
+      "contact": "联系",
+      "phone": "电话",
+      "backToTop": "返回顶部",
+      "close": "关闭"
+    },
+    "legal": {
+      "contact": "联系方式",
+      "email": "邮箱",
+      "phone": "电话",
+      "representedBy": "代表人",
+      "registration": "注册号（Registrikood）",
+      "responsible": "内容负责人"
+    }
+  },
+  "hero": {
+    "eyebrow": "网页设计 · 营销 · IT服务",
+    "title": "您的数字化代理机构，专注设计、营销与IT。",
+    "lead": "TechWebInnovations将现代网页开发、专业摄影与视频制作以及企业IT融为一体：从为您的网站或网店定制程序开发，到Microsoft 365迁移和持续的IT支持。全部由同一个团队提供，支持26种语言。",
+    "ctaPrimary": {
+      "label": "开始项目"
+    },
+    "ctaSecondary": {
+      "label": "了解服务"
+    },
+    "locations": [
+      {
+        "city": "塔林",
+        "country": "爱沙尼亚"
+      },
+      {
+        "city": "华欣",
+        "country": "泰国"
+      }
+    ]
+  },
+  "services": {
+    "eyebrow": "我们的服务",
+    "title": "满足您企业的一切数字化需求",
+    "lead": "集网页设计公司、创意工作室与IT服务商于一身：我们负责设计、编码、制作与运营。可衡量、安全、多语言。",
+    "cta": {
+      "label": "开始项目"
+    },
+    "groups": [
+      {
+        "eyebrow": "开发",
+        "title": "网页设计、程序开发 & 营销",
+        "text": "现代、快速的网站、网店和定制网页应用：针对搜索引擎优化，以转化为导向，并以令人过目不忘的品牌为支撑。",
+        "items": [
+          {
+            "title": "网页设计 & 开发",
+            "text": "采用响应式设计的现代、快速网站：针对搜索引擎优化、支持无障碍访问，并以转化为导向。"
+          },
+          {
+            "title": "定制开发 & 商城系统",
+            "text": "量身定制的网页解决方案、网店和电子商务系统，从WooCommerce到完全定制的网页应用。"
+          },
+          {
+            "title": "品牌 & 企业形象",
+            "text": "标志、配色、字体以及令人难忘的品牌形象，在所有渠道保持一致。"
+          },
+          {
+            "title": "网络营销 & SEO",
+            "text": "搜索引擎优化、营销活动和效果报告。可衡量的曝光度。"
+          }
+        ]
+      },
+      {
+        "eyebrow": "媒体",
+        "title": "内容、摄影 & 视频",
+        "text": "策略、编辑规划和内容制作，以及从拍摄到后期制作的专业摄影与视频，助您提升影响力与信任度。",
+        "items": [
+          {
+            "title": "社交媒体 & 内容",
+            "text": "策略、编辑规划和内容制作，提升品牌的影响力与信任度。"
+          },
+          {
+            "title": "专业摄影",
+            "text": "专业水准的产品、商务和品牌摄影，适用于网站、网店和社交媒体。"
+          },
+          {
+            "title": "视频拍摄、音频 & 剪辑",
+            "text": "从拍摄到后期制作的视频制作，配备专业音频、剪辑和调色。"
+          }
+        ]
+      },
+      {
+        "eyebrow": "IT服务",
+        "title": "基础设施、支持 & 项目",
+        "text": "Microsoft 365、云与基础设施：部署、加固与运维，并为您的团队提供多语言热线。已为超过150家企业完成迁移。",
+        "items": [
+          {
+            "title": "Microsoft 365 & 云迁移",
+            "text": "Microsoft 365的部署、迁移与运维：Exchange、SharePoint、Teams和OneDrive，安全配置。已为超过150家企业完成迁移。"
+          },
+          {
+            "title": "IT基础设施 & 管理",
+            "text": "规划、搭建和管理您的IT环境，无论是本地部署、混合架构还是Azure云。"
+          },
+          {
+            "title": "IT热线 & IT支持",
+            "text": "随时可联系的多语言IT热线，为您的团队提供快速支持，远程且主动。"
+          },
+          {
+            "title": "托管服务 & 运维",
+            "text": "持续运维、监控、更新与维护，让您的IT稳定运行。"
+          },
+          {
+            "title": "安全 & 终端管理",
+            "text": "使用Microsoft Intune进行设备管理，配合合规策略并按最佳实践进行安全加固。"
+          },
+          {
+            "title": "项目 & 变更管理",
+            "text": "结构化的IT项目，从规划到上线，包括变更管理和用户沟通。"
+          }
+        ]
+      }
+    ]
+  },
+  "process": {
+    "eyebrow": "流程",
+    "title": "我们的工作方式",
+    "lead": "结构清晰，沟通透明，从初次沟通到持续运维。",
+    "steps": [
+      {
+        "phase": "初次沟通",
+        "title": "了解",
+        "text": "我们认真倾听，从技术和战略两方面分析您的目标与现状。"
+      },
+      {
+        "phase": "方案 & 固定价格",
+        "title": "规划",
+        "text": "您将获得清晰的方案，包含范围、时间表和固定价格。没有意外。"
+      },
+      {
+        "phase": "短周期迭代",
+        "title": "构建",
+        "text": "设计、开发、制作或迁移，以短周期迭代推进，并定期沟通进展。"
+      },
+      {
+        "phase": "持续",
+        "title": "支持",
+        "text": "上线之后，我们依然与您同行：支持、维护、持续开发与报告。"
+      }
+    ],
+    "cta": {
+      "label": "开始项目"
+    }
+  },
+  "stats": [
+    {
+      "label": "家企业已迁移"
+    },
+    {
+      "label": "种服务语言"
+    },
+    {
+      "label": "个办公地点"
+    },
+    {
+      "label": "年经验"
+    }
+  ],
+  "locations": {
+    "eyebrow": "地点",
+    "title": "两个地点，一个团队",
+    "lead": "从塔林到华欣，每个地点都提供我们的全方位服务：网页设计、营销、摄影 & 视频以及IT服务。贴心、多语言，与您处于同一时区。",
+    "items": [
+      {
+        "title": "TechWebInnovations OÜ，塔林",
+        "city": "塔林",
+        "country": "爱沙尼亚",
+        "region": "欧洲",
+        "tag": "网页设计 · 营销 · IT服务",
+        "text": "我们从塔林为全欧洲的客户提供同样的全方位服务：网页开发、品牌塑造、媒体制作和企业IT。数字化、高效，并受欧盟法规监管。"
+      },
+      {
+        "title": "TechWebInnovations Co., Ltd.，华欣",
+        "city": "华欣",
+        "country": "泰国",
+        "region": "东南亚",
+        "tag": "网页设计 · 营销 · IT服务",
+        "text": "我们的华欣办公室为东南亚提供完全相同的服务组合：网页设计、社交媒体、专业摄影与视频制作以及IT服务，与您处于同一时区。"
+      }
+    ],
+    "cta": {
+      "label": "开始项目"
+    }
+  },
+  "contact": {
+    "title": "欢迎洽谈。",
+    "lead": "无论是新网站、网店、品牌形象还是Microsoft 365迁移，欢迎告诉我们您的项目。我们将在24小时内回复。",
+    "form": {
+      "fields": {
+        "name": "姓名",
+        "email": "邮箱",
+        "company": "公司（选填）",
+        "topic": "主题",
+        "message": "您的留言"
+      },
+      "topics": [
+        "网页设计 & 开发",
+        "营销 & 媒体",
+        "IT服务",
+        "其他"
+      ],
+      "submit": "发送咨询"
+    }
+  },
+  "footer": {
+    "links": [
+      "法律声明",
+      "隐私政策",
+      "Cookie设置"
+    ],
+    "backToTop": "返回顶部"
+  },
+  "cookieBanner": {
+    "text": "我们使用Cookie及类似技术。技术上必需的存储（例如您的语言选择）始终适用。用于统计或营销的可选Cookie仅在您同意后使用。是否允许我们存储可选Cookie？",
+    "more": "详见我们的隐私政策",
+    "accept": "是，接受",
+    "decline": "否，拒绝"
+  },
+  "legal": {
+    "title": "法律声明（Impressum）",
+    "intro": "服务提供者信息："
+  },
+  "privacy": {
+    "title": "隐私政策",
+    "intro": "我们重视您的数据保护。以下我们根据GDPR（《通用数据保护条例》）向您说明本网站对个人数据的处理情况。",
+    "sections": [
+      {
+        "title": "1. 数据控制者",
+        "text": "TechWebInnovations OÜ，Sepapaja tn 6, 11415 Tallinn，爱沙尼亚。邮箱：info@techwebinnovations.com"
+      },
+      {
+        "title": "2. 托管 & 服务器日志文件",
+        "text": "当您访问本网站时，我们的托管服务商会自动处理技术数据（例如IP地址、访问日期和时间、浏览器类型），处理范围以提供、稳定运行和保护网站所必需为限（Art. 6(1)(f) GDPR）。这些数据会在短期内删除。"
+      },
+      {
+        "title": "3. 联系我们",
+        "text": "如果您通过电子邮件与我们联系，我们仅为处理您的咨询而处理您的信息（Art. 6(1)(b) GDPR）。"
+      },
+      {
+        "title": "4. Cookie & 本地存储",
+        "text": "技术上必需的存储（例如您在浏览器本地存储中保存的语言选择和Cookie决定）依据Art. 6(1)(f) GDPR。可选Cookie（例如用于统计或营销）仅在您同意后设置（Art. 6(1)(a) GDPR）。您可以随时通过页脚中的“Cookie设置”更改您的决定。"
+      },
+      {
+        "title": "5. 您的权利",
+        "text": "您有权访问、更正、删除您的数据，限制其处理，要求数据可携带，以及反对对您数据的处理。您还有权向数据保护监管机构提出投诉。联系方式：info@techwebinnovations.com"
+      }
+    ]
+  }
+}

@@ -1,0 +1,371 @@
+/* ---------- Section ---------- */
+
+.section {
+  position: relative;
+  padding: 24px 0 88px;
+  background: var(--white);
+  overflow: hidden;
+}
+
+/* ---------- Crossing ribbons ---------- */
+
+/* Crops the TextLoop viewBox (1200×520) down to the band the waves actually use */
+.loops {
+  position: relative;
+  width: 100%;
+  aspect-ratio: 1200 / 260;
+  overflow: hidden;
+  /* Mobile: overscan so the ribbons read larger on a narrow screen */
+  width: 180%;
+  margin-left: -40%;
+}
+
+.loopsInner {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.loop {
+  /* both loops share the same box so the waves line up */
+}
+
+.loopsInner > .loop + .loop {
+  position: absolute;
+  inset: 0;
+}
+
+/* ---------- Content ---------- */
+
+.inner {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  padding: 40px 16px 0;
+}
+
+/* Intro (mobile: centred, see agent.md) */
+.intro {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.label {
+  display: inline-flex;
+  align-items: center;
+  height: 30px;
+  padding: 0 14px;
+  margin-bottom: 22px;
+  border: 1px dashed rgba(0, 0, 0, 0.28);
+  border-radius: 999px;
+  font-size: 11px;
+  font-weight: 500;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: var(--ink);
+}
+
+.title {
+  font-size: clamp(2.5rem, 11vw, 5.5rem);
+  font-weight: 300;
+  line-height: 1;
+  letter-spacing: -0.04em;
+  color: var(--ink);
+}
+
+.titleDot {
+  color: var(--blue-deep);
+}
+
+.lead {
+  max-width: 440px;
+  margin: 20px auto 32px;
+  font-size: 15px;
+  line-height: 1.55;
+  color: rgba(16, 20, 28, 0.62);
+}
+
+.details {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  width: 100%;
+  max-width: 420px;
+  list-style: none;
+}
+
+.detail {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 14px;
+  padding: 14px 18px;
+  border-radius: 18px;
+  background: var(--pill);
+  text-align: left;
+  transition: background 0.3s ease;
+}
+
+a.detail:hover {
+  background: #eaecf0;
+}
+
+.detailIcon {
+  display: grid;
+  place-items: center;
+  flex-shrink: 0;
+  width: 34px;
+  height: 34px;
+  border-radius: 999px;
+  background: var(--ink);
+  color: var(--white);
+}
+
+.detailLabel {
+  display: block;
+  font-size: 11px;
+  font-weight: 500;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: rgba(16, 20, 28, 0.5);
+}
+
+.detailValue {
+  display: block;
+  margin-top: 2px;
+  font-size: 14px;
+  font-weight: 500;
+  color: var(--ink);
+}
+
+.detailArrow {
+  position: absolute;
+  right: 16px;
+  color: rgba(16, 20, 28, 0.45);
+  transition: transform 0.4s cubic-bezier(0.16, 1, 0.3, 1), color 0.3s ease;
+}
+
+a.detail:hover .detailArrow {
+  color: var(--blue-deep);
+  transform: translate(2px, -2px);
+}
+
+/* ---------- Form ---------- */
+
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  padding: 22px 16px;
+  border-radius: 28px;
+  background: var(--pill);
+  border: 1px solid rgba(0, 0, 0, 0.05);
+}
+
+.row {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.field {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  min-width: 0;
+  border: 0;
+}
+
+.fieldLabel {
+  padding: 0;
+  font-size: 11px;
+  font-weight: 600;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  text-align: center;
+  color: rgba(16, 20, 28, 0.55);
+}
+
+.input {
+  width: 100%;
+  height: 50px;
+  padding: 0 16px;
+  border-radius: 14px;
+  border: 1px solid rgba(16, 20, 28, 0.08);
+  background: var(--white);
+  font: inherit;
+  font-size: 15px;
+  color: var(--ink);
+  outline: none;
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.input:hover {
+  border-color: rgba(16, 20, 28, 0.2);
+}
+
+.input:focus {
+  border-color: var(--blue-deep);
+  box-shadow: 0 0 0 4px rgba(77, 163, 255, 0.18);
+}
+
+.textarea {
+  height: auto;
+  min-height: 132px;
+  padding: 14px 16px;
+  line-height: 1.5;
+  resize: vertical;
+}
+
+.topics {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 6px;
+}
+
+.topic {
+  height: 38px;
+  padding: 0 16px;
+  border-radius: 999px;
+  border: 1px solid rgba(16, 20, 28, 0.12);
+  background: var(--white);
+  font-size: 13px;
+  font-weight: 500;
+  color: var(--ink);
+  transition: background 0.3s ease, color 0.3s ease, border-color 0.3s ease;
+}
+
+.topic:hover {
+  border-color: rgba(16, 20, 28, 0.3);
+}
+
+.topic[data-selected='true'] {
+  background: var(--ink);
+  border-color: var(--ink);
+  color: var(--white);
+}
+
+.submitRow {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 14px;
+  margin-top: 6px;
+}
+
+.submit {
+  display: inline-flex;
+  align-items: center;
+  gap: 12px;
+  height: 52px;
+  padding: 0 6px 0 24px;
+  border-radius: 999px;
+  background: var(--ink);
+  color: var(--white);
+  font-size: 14px;
+  font-weight: 500;
+  transition: background 0.3s ease;
+}
+
+.submit:hover {
+  background: var(--blue-deep);
+}
+
+.submitCircle {
+  display: grid;
+  place-items: center;
+  width: 40px;
+  height: 40px;
+  border-radius: 999px;
+  background: var(--white);
+  color: var(--ink);
+  transition: transform 0.5s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.submit:hover .submitCircle {
+  transform: rotate(45deg);
+}
+
+.note {
+  font-size: 13px;
+  text-align: center;
+  color: rgba(16, 20, 28, 0.55);
+}
+
+/* ---------- Tablet+ ---------- */
+
+@media (min-width: 768px) {
+  .section {
+    padding: 40px 0 120px;
+  }
+
+  .loops {
+    width: 100%;
+    margin-left: 0;
+  }
+
+  .inner {
+    padding: 56px 32px 0;
+  }
+
+  .row {
+    flex-direction: row;
+  }
+
+  .row > * {
+    flex: 1;
+  }
+
+  .form {
+    padding: 28px;
+  }
+
+  .fieldLabel {
+    text-align: left;
+  }
+
+  .topics {
+    justify-content: flex-start;
+  }
+
+  .submitRow {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .note {
+    text-align: right;
+  }
+}
+
+/* ---------- Desktop: intro left, form right ---------- */
+
+@media (min-width: 1024px) {
+  .inner {
+    display: grid;
+    grid-template-columns: minmax(0, 0.9fr) minmax(0, 1.1fr);
+    gap: 64px;
+    align-items: start;
+  }
+
+  .intro {
+    position: sticky;
+    top: 120px;
+    align-items: flex-start;
+    text-align: left;
+  }
+
+  .lead {
+    margin-left: 0;
+  }
+
+  .detail {
+    justify-content: flex-start;
+  }
+}
